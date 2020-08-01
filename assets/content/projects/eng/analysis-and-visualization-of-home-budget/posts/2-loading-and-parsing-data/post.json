@@ -1,0 +1,55 @@
+{
+	"projectTitle": "Analysis and visualization of home budget",
+	"postTitle": "#2 Loading and parsing data",
+
+	"previousLink": "1-introduction",
+	"previousTitle": "#1 Introduction",
+
+	"nextLink": "3-single-month-analysis",
+	"nextTitle": "#3 Single month analysis",
+	
+	"content": [
+				{
+					"p": "<strong>Here I will discuss the first part of the program. Before the data is processed and visualized, it must be read from .xlsx files. Then their content will be loaded into the attributes of classes' instances which correspond to a worksheet and a workbook (file). Next, these objects will be further analyzed.</strong>"
+				},
+				
+				{
+					"p": "The data are stored in such a way that one Excel worksheet corresponds to one month. They can be stored in separate files (for a single month analysis scenario) as well as collectively in one file (for long-term scenarios) – see project <a href='https://github.com/patrykpalej/home-budget-calculator' target=_blank>repository</a>, <code>data_and_results/</code> folder. In both cases .xlsx file corresponds to <i>MyWorkbook</i> class and a single worksheet corresponds to <i>MyWorksheet</i> class. Regardless of what scenario we use, objects of both of these classes are created."
+				},
+				
+				{
+					"p": "For all monthly, yearly and total analysis (covering the entire period of data collection), we start with creating an instance of <i>MyWorkbook</i> class:"
+				},
+
+				{
+					"code": "<code>myWorkbook = MyWorkbook(file_path)</code>"
+				},
+
+				{
+					"p": "defining a proper path before. This class only consists of a constructor which performs two tasks. Firstly, it creates (as an attribute of the object) a list of <i>MyWorksheet</i> class instances which correspond to subsequent sheets (months) from which the given workbook consists. Each of these instances stores the information contained in the corresponding sheet. The second task of the constructor is to gather and sum up over all sheets (months) all the relevant information existing in the given workbook, treating it like it was a one long month. The whole algorithm for the monthly scenario is the following:"
+				},
+
+
+				{
+					"img": ["image1.svg", "Algorithm of loading and preparing the data for the monthly scenario", "40%"]
+				},
+
+				{
+					"p": "and for the yearly scenario:"
+				},
+
+				{
+					"img": ["image2.svg", "Algorithm of loading and preparing the data for the yearly scenario", "40%"]
+				},
+
+
+				{
+					"h3": "Summary"
+				},
+
+				
+				{
+					"p": "To summarize, after creating the instances of the classes discussed above, we received objects containing all key information existing in Excel files. These data are stored in variables, specifically in the attributes of objects corresponding to the adequate workbooks and worksheets. After making such preparations we can proceed to the actual analysis. All required text and numerical values have been loaded from files to a convenient form. What happens next will be discussed in the next post."
+				}
+			]
+}

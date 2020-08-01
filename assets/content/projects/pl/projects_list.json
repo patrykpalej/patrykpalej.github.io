@@ -1,0 +1,21 @@
+[
+   {
+      "name": "analiza-i-wizualizacja-budzetu-domowego", 
+      "title": "Analiza i wizualizacja budżetu domowego", 
+      "shortDescription": "Program, który na podstawie danych o przychodach i wydatkach w domowym budżecie automatycznie generuje raporty finansowe. Dostępne są różne scenariusze, które uwzględniają jeden miesiąc, cały rok lub dowolnie wybrany okres."
+   },
+   
+
+   {
+      "name": "analiza-dokladnosci-prognozowania-pogody", 
+      "title": "Analiza dokładności prognozowania pogody", 
+      "shortDescription": "Wykorzystując otwarte API pogodowe przeanalizowano korelację między prognozowanymi wartościami temperatury a rzeczywistymi wartościami, które później zostały zarejestrowane. Analiza została przeprowadzona dla kilku lokalizacji na całym świecie."
+   },
+
+   {
+      "name": "symulacja-apokalipsy-zombie", 
+      "title": "Symulacja apokalipsy zombie", 
+      "shortDescription": "Symulacja bitwy między grupą ludzi oraz zombie rozgrywająca się na zamkniętej i ograniczonej przestrzeni. Postaci każdej z obu klas mają swoją własną strategię walki, przy czym strategia ludzi jest sparametryzowana, co pozwala na jej optymalizację."
+   }
+   
+]

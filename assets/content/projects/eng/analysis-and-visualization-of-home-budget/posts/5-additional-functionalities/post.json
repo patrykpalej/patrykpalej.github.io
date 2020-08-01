@@ -1,0 +1,65 @@
+{
+	"projectTitle": "Analysis and visualization of home budget",
+	"postTitle": "#5 Additional functionalities",
+
+	"previousLink": "4-long-term-analysis",
+	"previousTitle": "#4 Long-term analysis",
+
+	"nextLink": "",
+	"nextTitle": "",
+	
+	"content": [
+				{
+					"p": "To make using the program as automated as possible, I added a few scripts that perform time-consuming or simple but repetitive actions which sometimes have to be performed."
+				},
+				
+				{
+					"h3": "create_new_month_sheet.py"
+				},
+
+				{
+					"p": "This script is used to create a monthly .xlsx sheet for a new month based on a previously prepared template."
+				},
+
+				{
+					"h3": "copy_month_sheet.py"
+				},
+
+				{
+					"p": "This script is used to copy a monthly sheet to files containing sets of sheets for one year and for the entire recorded period."
+				},
+
+				{
+					"h3": "delete_last_sheet.py"
+				},
+
+				{
+					"p": "This script allows you to remove the last sheet from files containing data for one year and for the entire recorded period."
+				},
+
+				{
+					"h3": "check_total_balance.py"
+				},
+
+				{
+					"p": "This script allows you to compare all your savings and total expenses against all money earned. It helps you to check whether the balance is correct and thus whether all expenses have been written down."
+				},
+
+				{
+					"h3": "spendings_finder.py"
+				},
+
+				{
+					"p": "This script allows you to search all expenses and find those that contain specific phrases in the description. It generates a file that lists these spendings along with the date and category name. It's useful, for example, to check the cost of expenses which were made long ago."
+				},
+
+				{
+					"br": 2
+				},
+				
+				
+				{
+					"p": "All described scripts are located in the repository in <code>util_scripts/</code> folder."
+				}
+			]
+}

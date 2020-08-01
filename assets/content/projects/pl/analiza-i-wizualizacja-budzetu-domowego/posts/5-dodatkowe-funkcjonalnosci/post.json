@@ -1,0 +1,65 @@
+{
+	"projectTitle": "Analiza i wizualizacja budżetu domowego",
+	"postTitle": "#5 Dodatkowe funkcjonalności",
+
+	"previousLink": "4-analiza-dlugoterminowa",
+	"previousTitle": "#4 Analiza długoterminowa",
+
+	"nextLink": "",
+	"nextTitle": "",
+	
+	"content": [
+				{
+					"p": "Aby korzystanie z programu było możliwie najbardziej zautomatyzowane, dodałem kilka skryptów, które wykonują czasochłonne lub proste ale powtarzalne czynności jakie czasami muszą być wykonane. Niektóre z tych skryptów wykonują się automatycznie co miesiąc według harmonogramu który zaplanowałem na swoim komputerze."
+				},
+				
+				{
+					"h3": "create_new_month_sheet.py"
+				},
+
+				{
+					"p": "Skrypt ten służy do comiesięcznego tworzenia arkusza .xlsx na nowy miesiąc na podstawie przygotowanego wcześniej wzoru."
+				},
+
+				{
+					"h3": "copy_month_sheet.py"
+				},
+
+				{
+					"p": "Skrypt ten służy do comiesięcznego kopiowania arkusza dla jednego miesiąca do plików zawierających zestaw arkuszy dla jednego roku oraz dla całego rejestrowanego przedziału czasu."
+				},
+
+				{
+					"h3": "delete_last_sheet.py"
+				},
+
+				{
+					"p": "Skrypt ten pozwala usunać ostatni arkusz z plików zawierających dane dla jednego roku oraz dla całego rejestrowanego przedziału czasu."
+				},
+
+				{
+					"h3": "check_total_balance.py"
+				},
+
+				{
+					"p": "Skrypt ten pozwala porównać wszystkie posiadane oszczędności oraz całkowitą sumę wydatków do wszystkich zarobionych pieniędzy. Dzięki temu można przekonać się czy bilans się zgadza a tym samym czy wszystkie wydatki zostały spisane."
+				},
+
+				{
+					"h3": "spendings_finder.py"
+				},
+
+				{
+					"p": "Skrypt ten pozwala przeszukać wszystkie spisane wydatki i znaleźć te, które w opisie zawierają określone frazy. Generuje plik, który zawiera te wydatki razem z datą i nazwą kategorii. Przydatne na przykład do sprawdzenia jaki był koszt dawno wykonanych zakupów."
+				},
+
+				{
+					"br": 2
+				},
+				
+				
+				{
+					"p": "Wszystkie opisane skrypty znajdują się w repozytorium w folderze <code>util_scripts/</code>."
+				}
+			]
+}

@@ -1,0 +1,28 @@
+{
+    "title": "Analysis and visualization of home budget", 
+
+    "github": "https://github.com/patrykpalej/home-budget-calculator", 
+    
+    "longDescription": "This project arised in order to help me to control my home budget better. Over time, apart from just gathering data in Excel spreadsheets I wanted to introduce an element of its analysis and visualization in the form of reports/Powerpoint presentations. The longer the project lasted, the more automation and new functionalities have been implemented. Manual reports preparation was replaced with automated with a use of python-pptx library. Then, the one month analysis and visualization scenario was expanded with long-term scenarios covering a part or the whole of the available data. Finally, such actions as creating a worksheet for a new month or monthly executing the script with analysis have been automated. What still requires manual operation is primarily writing down the expenses and incomes into Excel files.",
+    
+    "posts": [
+        {"postTitle": "#1 Introduction", 
+         "postDescription": "In the introductory post there is a presentation of the program concept and description of its functionalities",
+         "postName": "1-introduction"}, 
+
+        {"postTitle": "#2 Loading and parsing data", 
+         "postDescription": "Here I describe how the input data is loaded and parsed",
+         "postName": "2-loading-and-parsing-data"},
+        
+        {"postTitle": "#3 Single month analysis", 
+         "postDescription": "Description of the single month analysis scenario",
+         "postName": "3-single-month-analysis"},
+
+        {"postTitle": "#4 Long-term analysis", 
+         "postDescription": "Description of scenarios for the analysis of one year and the whole or a part of the entire time span for which data was collected",
+         "postName": "4-long-term-analysis"},
+
+         {"postTitle": "#5 Additional functionalities", 
+          "postDescription": "Additional functionalities that the program offers which allow to enhance automation",
+          "postName": "5-additional-functionalities"}
+]}

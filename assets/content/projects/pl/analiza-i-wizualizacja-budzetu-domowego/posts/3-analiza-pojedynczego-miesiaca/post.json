@@ -1,0 +1,57 @@
+{
+	"projectTitle": "Analiza i wizualizacja budżetu domowego",
+	"postTitle": "#3 Analiza pojedynczego miesiąca",
+
+	"previousLink": "2-wczytywanie-i-parsowanie-danych",
+	"previousTitle": "#2 Wczytywanie i parsowanie danych",
+
+	"nextLink": "4-analiza-dlugoterminowa",
+	"nextTitle": "#4 Analiza długoterminowa",
+	
+	"content": [
+				{
+					"p": "<strong>Podstawową i najmniejszą jednostką czasu wykorzystywaną w tym projekcie jest miesiąc. Pojedynczy arkusz z danymi odnosi się do jednego miesiąca a chcąc przeprowadzić analizę dłuższego okresu należy złączyć odpowiednią liczbę takich arkuszy w jeden workbook. W tym poście opiszę jak można zwizualizować i przedstawić informacje zawarte w jednym worksheecie.</strong>"
+				},
+				
+				{
+					"p": "Omówiłem już w jaki sposób można wczytać i sparsować dane z plików .xlsx. Teraz, kiedy wszystko jest już zapisane w atrybutach utworzonej instancji klasy <i>MyWorksheet</i>, zajmiemy się kolejnym etapem pipeline'u. Na początek należy zastanowić się co chcemy zwizualizować. Czy wszystkie zgromadzone informacje są na tyle istotne, że warto je przedstawić na wykresach? Może jest coś co warto pominąć i tym samym zwiększyć czytelność raportu, który zostanie później stworzony? Ja zdecydowałem się zwizualizować następujące dane: <br><br> 1. Kwoty wydawane na kolejne kategorie wydatków uszeregowane malejąco <br> 2. Kwoty wydawane na kilka najważniejszych kategorii + pozostałe (zbiorczo) <br> 3. Podział wydatków na metakategorie <br> 4. Podział przychodów na poszczególne źródła <br> 5. Podział zarobków na poszczególne źródła <br> 6. Podział wydatków spożywczych na podkategorie <br> 7. Zestawienie największych wydatków w danym miesiącu (powyżej 100zł)"
+				},
+				
+				
+				{
+					"p": "Kod oraz pełne wyniki można znaleźć na <a href='https://github.com/patrykpalej/home-budget-calculator' target='_blank'>GitHubie</a>, natomiast kilka wykresów dla przykładowego miesiąca znajduje się poniżej: "
+				},
+
+				{
+					"img": ["image1.svg", "Kwoty wydawane miesięcznie na kolejne kategorie", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image2.svg", "Struktura miesięcznych wydatków z podziałem na kategorie", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image3.svg", "Podział przychodów na poszczególne źródła", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image4.svg", "Największe wydatki w miesiącu", "80%"]
+				},
+
+				{
+					"p": "Scenariusz miesięczny jest o tyle mało ciekawy, że nie pokazuje zmian żadnych wartości w czasie. Wszystkie wykresy są statyczne. Analiza całego roku czy nawet dowolnie długiego okresu daje dużo większe możliwości. Ten temat został omówiony w kolejnym wpisie."
+				}
+			]
+}

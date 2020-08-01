@@ -1,1 +1,0 @@
-# patrykpalej.github.io

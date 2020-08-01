@@ -1,0 +1,18 @@
+{
+    "title": "Weather forecasting accuracy assessment", 
+
+    "github": "https://github.com/patrykpalej/weather-forecast-accuracy-assessment", 
+    
+    "longDescription": "It is widely known that long time horizon makes the forecast less accurate. This applies primarily to phenomena such as weather. Once, I wondered what is the numerical measure of the accuracy decrease over time. For how many days ahead of the forecast we can still be quite sure that the forecast is correct? How does is depend on the climate of the area where the weather station is located? In this project I'm answering myself these questions by comparing temperature forecasts in six different places around the world to the actually registered values.", 
+    
+    "posts": [
+        {"postTitle": "#1 Data acquisition via API", 
+         "postDescription": "Introduction to the project and description of the process of gathering and saving the data",
+         "postName": "1-data-acquisition-via-api"
+        }, 
+
+        {"postTitle": "#2 Visualization of the acquired data", 
+         "postDescription": "Data visualization and conclusions drawn",
+         "postName": "2-visualization-of-the-acquired-data"
+        }
+]}

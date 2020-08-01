@@ -1,0 +1,95 @@
+{
+	"projectTitle": "Weather forecasting accuracy assessment",
+	"postTitle": "#2 Visualization of the acquired data",
+
+	"previousLink": "1-data-acquisition-via-api",
+	"previousTitle": "#1 Data acquisition via API",
+
+	"nextLink": "",
+	"nextTitle": "",
+	
+	"content": [
+				{
+					"p": "Acquired forecasts and actual values are stored in .json files, which contain such information as timestamp (with one-hour precision) and temperature. It's possible to add more weather parameters, but for now I limited them to just one. Moreover, forecasts contain information about time horizon of them. To analyze their accuracy we need to make a collation of a forecast and the actual temperature which was measured in that time. Next, we compare vectors of predicted and actual temperatures, considering time horizon of the forecasts."
+				},
+				
+
+				{
+					"p": "The data was gathered for six weather stations located in: <br> - London <br> - Moscow <br> - New York <br> - Novosibirsk <br> - Rome <br> - Warsaw"
+				},
+				
+				
+				{
+					"p": "Collations were created automatically every week based on forecasts downloaded on daily basis and historical data which were acquired just before preparing the collation. Data for each of weather stations were stored separately. Next, for the whole period of the program's operation the following plots were generated:  <br> <br> 1. Pearson's correlation coefficient for the whole period vs. location of the weather station <br> 2. Pearson's correlation coefficient vs. location and time horizon of the forecast <br> 3. Pearson's correlation coefficient vs. time horizon of the forecast (averaged for all locations) <br> 4. Pearson's correlation coefficient vs. time horizon of the forecast (separately for each location) <br> 5. Forecasted vs. actual temperature (together for all locations) <br> 6. Forecasted vs. actual temperature (separately for each location)"
+				},
+
+				{
+					"p": "For example, for 10.01.2020 - 13.02.2020 time range plots are the following:"
+				},
+
+				{
+					"img": ["image1.svg", "Pearson's correlation coefficient for the whole period vs. location of the weather station", "90%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image2.svg", "Pearson's correlation coefficient vs. location and time horizon of the forecast", "90%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image3.svg", "Pearson's correlation coefficient vs. time horizon of the forecast (averaged for all locations)", "80%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image4.svg", "Pearson's correlation coefficient vs. time horizon of the forecast (separately for each location)", "90%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image5.svg", "Forecasted vs. actual temperature (together for all locations)", "80%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image6.svg", "Forecasted vs. actual temperature (separately for each location)", "90%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"h3": "Conclusions"
+				},
+
+				{
+					"p": "From the above plots a few conclusions can be drawn. Firstly - correlation coefficient, instead of decreasing continuously, changes periodically. The period is about 24 hours. This is undoubtedly interesting and may result from the fact that the data published at the current time were not updated by Meteostat on a regular basis but in fact it is a forecast from a few hours ago. It would decrease precision of the forecast at the time when it's acquired and could introduce periodic inaccuracy."
+				},
+
+				{
+					"p": "In addition - which is quite obvious - the accuracy of the forecast decreases with its time horizon. This is clearly seen on the last two scatterplots. The red points, which indicate forecasts for even 9 days ahead, significantly deviate from the actually recorded temperature. For different stations, this distribution of points around the y=x line is different, which may result from both the climate characteristics (which is different in each of these places) and the measuring system."
+				},
+
+				{
+					"p": "Data collected in Rome and New York suggest that the measurement accuracy there is smaller than at the other stations. You can also see that there are places where a three-day forecast works quite well and only then the accuracy begins to decrease. There are also stations where the accuracy decreases faster. For example in Novosibirsk short-term forecast is really accurate, but long-term forecast - totally oposite."
+				}
+
+			]
+}

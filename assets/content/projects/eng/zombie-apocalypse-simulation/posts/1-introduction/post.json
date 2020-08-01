@@ -1,0 +1,34 @@
+{
+	"projectTitle": "Zombie apocalypse simulation",
+	"postTitle": "#1 Introduction",
+
+	"previousLink": "",
+	"previousTitle": "",
+
+	"nextLink": "2-discussion-of-the-zombies-strategy",
+	"nextTitle": "#2 Discussion of the zombies' strategy",
+	
+	"content": [
+
+				{
+					"p": "<strong>The simulation of humans vs. zombies battle which I created is based on quite simple rules which I am going to describe in this post. I tried not to overcomplicate it but at the same time I wanted to make a real-time simulation with a simple environment and interactions between the characters.</strong>"
+				},
+
+				{
+					"br": 3
+				},
+				
+				{
+					"img": ["image1.svg", "General rules of the simulation", "100%"]
+				},
+
+				{
+					"br": 5
+				},
+				
+				{
+					"img": ["image2.svg", "Map of the simulation with some characters on it. Zombies - red, humans - blue. Shade of the color corresponds with number of Battle Points", "100%"]
+				}
+				
+			]
+}

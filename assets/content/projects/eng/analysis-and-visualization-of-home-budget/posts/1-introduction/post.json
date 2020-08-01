@@ -1,0 +1,60 @@
+{
+	"projectTitle": "Analysis and visualization of home budget",
+	"postTitle": "#1 Introduction",
+
+	"previousLink": "",
+	"previousTitle": "",
+
+	"nextLink": "2-loading-and-parsing-data",
+	"nextTitle": "#2 Loading and parsing data",
+	
+	"content": [
+				{
+					"p": "<strong>The objective of this project was to create a set of scripts enabling analysis and visualization of the gathered data concerning home budget, especially incomes and expenses. The program presents amounts and sources of the earned money in a clear way, as well as spendings amounts along with their purpose. Excel worksheets (filled manually) are used as the input data and .pptx presentations are generated as the output. There are several analysis scenarios, which operate on different time ranges — from one month up to any length of time covering all collected data.</strong>"
+				},
+
+				{
+					"h3": "Discussion of the input data"
+				},
+				
+				{
+					"p": "As the input data, which are to be analyzed, we use properly prepared Excel worksheets. All examples will be discussed based on artificially created data (for 2099). Below there is a short explanation of what we'll find in the sheet. Files with data for the whole year and subsequent months can be found in the project's <a href='https://github.com/patrykpalej/home-budget-calculator' target=_blank>repository</a> in <code>data_and_results/</code> folder. A single worksheet corresponds with a single month."
+				},
+				
+				{
+					"img": ["image1.svg", "The most important elements of the worksheet with single month data", "100%"]
+				},
+				
+				{
+					"p": "A single month worksheet consists of a few tables. Its most important elements are:  <br><br> <strong>A</strong> — area used for writing down single spendings grouped in categories (columns). Cell in bright orange color are intended to be filled (it applies to the whole sheet). Each spending can be - or should be - described with a comment. Over the categories' names there are sums (calculated automatically) and percentage shares in a given month<br><br> <strong>B</strong> — sum of spendings from the whole month <br><br> <strong>C</strong> — table showing division of spendings into arbitrarily chosen 'metacategories' which are groups of plain categories. They can be defined in A6-C6 cells. There is also a cell for amount of long-term savings gathered in a given month<br><br> <strong>D</strong> — in this section there are all incomes from a given month and their sources. There is a division into earnings and incomes (as the incomes may in fact come later) <br><br> <strong>E</strong> — in this table differences between incomes/earnings and spendings are calculated automatically"
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"h3": "Output information"
+				},
+
+				{
+					"p": "After loading and preprocessing of the input data they are analyzed and then — as the output information — .pptx presentation is generated automatically. In the presentation there are charts presenting such information as e.g. spendings' division into categories in a given month / year / another period, incomes distribution for subsequent sources and — for long-term scenarios — changes of some indicators in time."
+				},
+
+				{
+					"img": ["image2.svg", "Part of a report for a single month", "100%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"h3": "Used technologies"
+				},
+
+				{
+					"p": "The project was created with Python, especially with such libraries as <i>openpyxl</i> and <i>python-pptx</i>, which were used to interact with .xlsx and .pptx files."
+				}
+			]
+}

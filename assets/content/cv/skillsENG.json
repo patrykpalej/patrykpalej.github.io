@@ -1,0 +1,5 @@
+{
+  "workingKnowledge": ["Python", "Jupyter Notebook", "Machine Learning", "Data visualization", "Git", "Matlab", "Web scraping", "Statistics, calculus, algebra"],
+
+  "basic": ["R", "Deep learning (Keras)", "SQL & database management", "Flask & SQLAlchemy", "Time series analysis and forecasting", "Unit testing", "HTML / CSS / JavaScript"]
+}

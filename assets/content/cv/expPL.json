@@ -1,0 +1,15 @@
+[
+  {
+    "description": "Od października 2019 pracuję jako <strong>Machine Learning Engineer</strong> w Comarchu w  obszarze branży telekomunikacyjnej. <br> <br> Główne projekty nad którymi pracowałem to:",
+
+    "projects": [
+      "Współtworzenie algorytmu służącego do parowania urządzeń znajdujących się w dwóch osobnych zbiorach danych z wykorzystaniem metryk podobieństwa tekstów. Program był opakowany w desktopowe GUI (TKinter) oraz REST API (Flask & SQLAlchemy)", 
+    
+      "Opracowanie algorytmu do segmentacji zgłoszonych problemów związanych z funkcjonowaniem sieci telekomunikacyjnej. Parametrami wejściowymi były: czas zgłoszenia, lokalizacja oraz zestaw zmiennych kategorycznych opisujących zgłoszenie",
+      
+       "Opracowanie algorytmu do rekomendowania akcji, które muszą zostać podjęte na podstawie alarmów wygenerowanych przez sieć telekomunikacyjną", 
+       
+       "Przeprowadzenie szkolenia dla nietechnicznych pracowników o tematyce sztucznych sieci neuronowych"
+      ]
+  }
+]

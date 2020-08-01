@@ -1,0 +1,24 @@
+{
+    "title": "Zombie apocalypse simulation", 
+
+    "github": "https://github.com/patrykpalej/zombie-simulation", 
+    
+    "longDescription": "In this project I created a simulation of a battle between two groups - humans and zombies. They fight each other on a 2D map. Who stays on the map wins. Humans can kill their enemies and the zombies are able to infect humans to spread the plague. Each of these two classes of characters has its own method of moving on the map. Zombies' strategy is very straightforward. Humans consider more factors, they can speed up or slow down if needed and their strategy is parametrized with a set of numbers. It allows to improve their performance using AI algorithms.", 
+    
+    "posts": [
+        {"postTitle": "#1 Introduction", 
+         "postDescription": "Introduction to the project and explanation of the rules",
+         "postName": "1-introduction"}, 
+
+        {"postTitle": "#2 Discussion of the zombies' strategy", 
+         "postDescription": "Here I describe the zombies' strategy",
+         "postName": "2-discussion-of-the-zombies-strategy"},
+
+        {"postTitle": "#3 Discussion of the humans' strategy", 
+         "postDescription": "Here I describe the humans' strategy",
+         "postName": "3-discussion-of-the-humans-strategy"},
+
+         {"postTitle": "#4 Simulation course", 
+          "postDescription": "Simulation course discussion",
+          "postName": "4-simulation-course"}
+]}

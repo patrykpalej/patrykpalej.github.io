@@ -1,0 +1,21 @@
+[
+   {
+      "name": "analysis-and-visualization-of-home-budget", 
+      "title": "Analysis and visualization of home budget", 
+      "shortDescription": "Program which automatically generates financial reports based on incomes and spendings data. There are various scenarios available which consider one month, whole year or any chosen time span."
+   },
+   
+
+   {
+      "name": "weather-forecasting-accuracy-assessment", 
+      "title": "Weather forecasting accuracy assessment", 
+      "shortDescription": "Using open weather API, correlation between forecasted and actually registered temperatures was analyzed. The analysis was carried out for several locations around the world."
+   },
+
+
+   {
+      "name": "zombie-apocalypse-simulation", 
+      "title": "Zombie apocalypse simulation", 
+      "shortDescription": "Simulation of a battle between a group of people and zombies taking place in a closed and limited space. The characters of each of the two classes have their own fighting strategy, with humans' strategy being parameterized, which allows it to be optimized."
+   }
+]
