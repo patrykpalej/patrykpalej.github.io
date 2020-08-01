@@ -1,0 +1,57 @@
+{
+	"projectTitle": "Analysis and visualization of home budget",
+	"postTitle": "#3 Single month analysis",
+
+	"previousLink": "2-loading-and-parsing-data",
+	"previousTitle": "#2 Loading and parsing data",
+
+	"nextLink": "4-long-term-analysis",
+	"nextTitle": "#4 Long-term analysis",
+	
+	"content": [
+				{
+					"p": "<strong>One month is a basic and atomic time unit used in this project. Single worksheet refers to one month and to perform an analysis of any longer period we need to combine many worksheets into one workbook. In this post I'm going to describe how to visualize and present information contained in a single worksheet.</strong>"
+				},
+				
+				{
+					"p": "I already discussed how to load and parse data from .xlsx files. Now, when everything is stored in attributes of <i>MyWorksheet</i> class instance, we'll deal with the next element of the pipeline. Firstly, we need to consider what we want to visualize. Are all gathered data sufficiently significant to present them on the charts? Maybe some of them can be omitted to increase readiblity of the report which is to be created? I decided to visualize the following data: <br><br> 1. Amounts spent for the subsequent categories sorted descending <br> 2. Amounts spent for a few most important categories + others (altogether)<br> 3. Division of the spendings into metacategories <br> 4. Division of the incomes into subsequent sources <br> 5. Division of the earnings into subsequent sources <br> 6. Division of food spendings into subcategories <br> 7. Listing of the largest expenses in a given month (over 100 PLN)"
+				},
+
+				{
+					"p": "Code and all results can be found on <a href='https://github.com/patrykpalej/home-budget-calculator' target='_blank'>GitHub</a>. Chosen charts for an exemplary month are presented below:"
+				},
+				
+				
+				{
+					"img": ["image1.svg", "Amounts spent monthly for subsequent categories", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image2.svg", "Structure of monthly spendings divided into categories", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image3.svg", "Division of incomes into individual sources", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image4.svg", "Biggest expenses in a given month", "80%"]
+				},
+
+				{
+					"p": "Month scenario is not particularly interesting because it doesn't show any changes in time. All charts are static. Analysis of the whole year or any long time range gives you much more options. This is the subject of the next post."
+				}
+			]
+}

@@ -1,0 +1,89 @@
+{
+	"projectTitle": "Analysis and visualization of home budget",
+	"postTitle": "#4 Long-term analysis",
+
+	"previousLink": "3-single-month-analysis",
+	"previousTitle": "#3 Single month analysis",
+
+	"nextLink": "5-additional-functionalities",
+	"nextTitle": "#5 Additional functionalities",
+	
+	"content": [
+				{
+					"p": "<strong>In the previous post I described home budget single month analysis scenario. Results of such an analysis are static – they don't consider any changes in time which may appear in a long run. That's why a long-term analysis is much more interesting. Here I consider primarily two scenarios – first one for a calendar year and second one for the whole registered time range. There is also a scenario which considers any selected range of months.</strong>"
+				},
+				
+				{
+					"p": "Two main long-term scenarios are very similar to each other, so I'm going to discuss only the yearly one. They differ mainly by the analyzed period. Moreover, in the scenario covering all available data there are a few charts more. The code and all results for both scenarios can be found on my <a href='https://github.com/patrykpalej/home-budget-calculator' target='_blank'>GitHub</a>."
+				},
+
+				{
+					"p": " <i>yearAnalysis.py</i> script generates three output files - one .pptx and two .xlsx. The first one is a report in the form of Powerpoint presentation from the analyzed year. The presentation consists of three parts - in the first one the year is treated as a whole, in the second one the results are recalculated for an averaged month and the third one presents the data for subsequent months with a timeline. In the first part I visualized mainly the same information as in the single-month scenario: <br> <br>1. Amounts spent for the subsequent categories <br>2. Amounts spent for a few main categories + others (altogether) <br>3. Division of the spendings into metacategories <br> 4. Division of the incomes into the their sources <br> 5. Division of food expenses into subcategories"
+				},
+
+				{
+					"h3": "Charts with a timeline"
+				},
+				
+				{
+					"p": "In the second part – the one with averaged month – plots 2-4 from the above list are generated. But what is the most interesting in this scenario is the third part, which enables to see how the budget has been changing over time. There are 7 charts there: <br><br>1. Cumulative amounts of spendings for subsequent categories over time <br>2. Cumulative amounts of incomes, spendings and savings over time <br>3. Incomes and spendings in the subsequent months <br> 4. Current average monthly expenses for individual categories over time <br> 5. Incomes from main sources over time <br> 6. Incomes-spendings relationship with a trend line <br> 7. Metacategories of spendings over time <br><br> Some of them are presented below:"
+				},
+
+				{
+					"img": ["image1.svg", "Cumulative amounts of spendings for subsequent categories over time", "90%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image2.svg", "Cumulative amounts of incomes, spendings and savings over time", "90%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image3.svg", "Incomes from main sources over time", "90%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image4.svg", "Incomes-spendings relationship with a trend line", "90%"]
+				},
+
+
+				{
+					"h3": "Summary in numbers"
+				},
+
+				{
+					"p": "Apart from a presentation / report, the script generates two .xlsx files. One of them is a listing of the biggest expenses (>100 PLN) from the whole year along with their categories. The second one is a summary with average and median spendings, earnings and income, total surplus of incomes over spendings and all spendings in chosen categories in subsequent months."
+				},
+
+				{
+					"img": ["image5.svg", "Listing of the biggest expenses in the whole year", "90%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image6.svg", "General budget statistics for the year", "90%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image7.svg", "Listing of all expenses in chosen categories", "90%"]
+				}
+			]
+}

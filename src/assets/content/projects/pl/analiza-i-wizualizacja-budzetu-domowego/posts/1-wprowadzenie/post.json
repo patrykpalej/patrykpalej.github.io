@@ -1,0 +1,61 @@
+{
+	"projectTitle": "Analiza i wizualizacja budżetu domowego",
+	"postTitle": "#1 Wprowadzenie",
+
+	"previousLink": "",
+	"previousTitle": "",
+
+	"nextLink": "2-wczytywanie-i-parsowanie-danych",
+	"nextTitle": "#2 Wczytywanie i parsowanie danych",
+	
+	"content": [
+				
+				{
+					"p": "<strong>Celem tego projektu było stworzenie zestawu skryptów umożlwiających analizę i wizualizację zbieranych danych dotyczących domowych finansów, w szczególności przychodów oraz wydatków. Program w czytelny sposób przedstawia ilość oraz źródła uzyskanych przychodów a także kwoty wydatków wraz z tym, na co zostały przeznaczone. Jako dane wejściowe wykorzystuje arkusze Excela, które powinny być uzupełniane ręcznie a zwraca raporty w postaci prezentacji .pptx. Istnieje kilka scenariuszy analizy, które operują na różnych przedziałach czasu - od jednego miesiąca do dowolnie długiego przedziału obejmującego całość zebranych danych.</strong>"
+				},
+				
+				{
+					"h3": "Omówienie danych wejściowych"
+				},
+				
+				{
+					"p": "Jako dane wejściowe, które będą podlegać analizie wykorzystamy odpowiednio przygotowane arkusze Excela. Wszystkie przykłady omówię na sztucznie stworzonych danych (na rok 2099). Poniżej znajduje się krótkie omówienie tego co znajdziemy w arkuszu, natomiast pliki z danymi dla całego roku oraz poszczególnych miesięcy można znaleźć w <a href='https://github.com/patrykpalej/home-budget-calculator' target=_blank>repozytorium</a> projektu w folderze <code>data_and_results/</code>. Pojedynczy arkusz odpowiada jednemu miesiącowi."
+				},
+
+				{
+					"img": ["image1.svg", "Najważniejsze elementy arkusza z danymi dla pojedynczego miesiąca", "100%"]
+				},
+
+				{
+					"p": "Arkusz składa się z kilku tabel. Jego najważniejsze elementy to: <br><br> <strong>A</strong> — obszar używany do spisywania pojedynczych wydatków pogrupowanych w kategorie (kolumny). Komórki w kolorze jasnopomarańczowym przeznaczone są do edycji, dotyczy to całego arkusza. Każdy wydatek można - a nawet warto - opisać za pomocą komentarza. Ponad nazwami kategorii znajdują się obliczane automatycznie sumy wydatków a jeszcze wyżej ich udział procentowy w danym miesiącu <br><br> <strong>B</strong> — suma wydatków z całego miesiąca <br><br> <strong>C</strong> — tabela pokazująca podział wydatków na arbitralnie wydzielone 'metakategorie', czyli grupy zwykłych kategorii. Można je zdefiniować w komórkach A6-C6. Oprócz tego znajdują się tam 'Oszczędności' czyli kwota oszczędności długoterminowych odłożona w danym miesiącu <br><br> <strong>D</strong> — w tej sekcji znajdują się przychody z danego miesiąca oraz ich źródła. Rozróżnione są kwoty zarobione oraz same przychody (które mogą pojawić się w późniejszym terminie) <br><br> <strong>E</strong> — w tej tabeli automatycznie wyliczają się różnice między przychodami/zarobkami a wydatkami"
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"h3": "Informacje wyjściowe"
+				},
+
+				{
+					"p": "Po wczytaniu i przetworzeniu danych wejściowych dokonywana jest ich analiza a następnie w ramach informacji wyjściowych generowana jest automatycznie prezentacja .pptx. W prezentacji znajdują się wykresy przedstawiające takie informacje jak np. podział wydatków na kategorie w danym miesiącu / roku / innym okresie, rozkład przychodów na poszczególne źródła a także - w przypadku scenariuszy długoterminowych - zmiany pewnych wskaźników w czasie."
+				},
+
+				{
+					"img": ["image2.svg", "Fragment raportu za pojedynczy miesiąc", "100%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"h3": "Użyte technologie"
+				},
+
+				{
+					"p": "Projekt powstał z wykorzystaniem Pythona, w szczególności takich bibliotek jak <i>openpyxl</i> oraz <i>python-pptx</i>, które służą do interakcji z plikami .xlsx oraz .pptx."
+				}
+			]
+}

@@ -1,0 +1,7 @@
+{
+  "header": "Patryk Palej", 
+  "subheader": "Data Scientist", 
+  "description": "Hi! My name is Patryk and I've been working in data science industry since 2018. I have background in the field of renewable energy, as well as physics of heat-flow processes and their mathematical modeling. Currently I work as a Machine Learning Engineer and I'm developing towards this direction. I encourage you to read about my side projects, which are described in the <i>Projects</i> section and to check information in the <i>CV</i> section.",
+  "navigation": ["Home", "Projects", "CV", "Contact"],
+  "contact": ["Contact me!", "I am open for new opportunities. <br/> If you have one for me - let's talk about it.", "patrykpalej@gmail.com"]
+}

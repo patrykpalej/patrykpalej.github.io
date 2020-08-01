@@ -1,0 +1,176 @@
+.blogpost-layout {
+
+}
+
+.blogpost-content {
+  width: 50%;
+  min-width: 700px;
+  margin: 0 auto 20vh;
+
+  @media (max-width: $tablet) {
+    width: 90%;
+    min-width: 200px;
+  }
+  
+  
+  &__goup {
+    display: inline;
+    border-bottom: 2px solid $bigStoneTransparent;
+    color: $bigStoneTransparent;
+    padding: 5px;
+    position: fixed;
+    right: 5vw;
+    bottom: 100px;
+    // top: 1000px;
+    text-decoration: none;
+
+    &:visited {
+      color: $bigStoneTransparent;
+    }
+
+    @media (max-width: $smallScreen) {
+      right: 2vw;
+    }
+    
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  
+  &__paragraph{
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Roboto';
+    line-height: 1.9rem;
+    text-align: justify;
+
+    &--intro {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: justify;
+    }
+
+  }
+
+  &__header {
+    font-size: 1.7rem;
+  }
+
+  &__img-container {
+    display: grid;
+    justify-items: center;
+  }
+
+  &__img {
+    width: 100%;
+
+    @media (max-width: $tablet) {
+      width: 600px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 450px;
+    }
+
+    @media (max-width: $smallMobile) {
+      width: 300px;
+    }
+  }
+}
+
+.blogpost-header {
+  display: grid;
+  max-width: 80vw;
+  justify-items: center;
+  grid-row-gap: 50px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  margin: 0 auto;
+
+  &__anchor {
+    color: $grey;
+    text-decoration: none;
+    
+    &:visited {
+      color: $grey;
+    }
+  }
+
+  &__h1 {
+    color: grey;
+    margin: 0 auto;
+    text-align: center;
+
+    transition: all 200ms ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__img {
+    width: 600px;
+  }
+
+  &__h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    width: 80%;
+  }
+
+  &__img {
+    @media (max-width: $tablet) {
+      width: 600px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 450px;
+    }
+
+    @media (max-width: $smallMobile) {
+      width: 300px;
+    }
+  }
+
+}
+
+
+.blogpost-links {
+  list-style-type: none;
+  width: 700px;  
+  margin: 0 auto 20vh;
+
+  @media (max-width: $smallMobile) {
+    width: 300px;
+  }
+
+  &__link {
+    line-height: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  &__goup {
+    color: $bigStone;
+
+    &:visited {
+      color: $bigStone;
+    }
+  }
+
+  &__previous {
+    color: $bigStone;
+
+    &:visited {
+      color: $bigStone;
+    }
+  }
+
+  &__next {
+    color: $bigStone;
+
+    &:visited {
+      color: $bigStone;
+    }
+  }
+}

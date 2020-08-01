@@ -1,0 +1,89 @@
+{
+	"projectTitle": "Analiza i wizualizacja budżetu domowego",
+	"postTitle": "#4 Analiza długoterminowa",
+	
+	"previousLink": "3-analiza-pojedynczego-miesiaca",
+	"previousTitle": "#3 Analiza pojedynczego miesiąca",
+
+	"nextLink": "5-dodatkowe-funkcjonalnosci",
+	"nextTitle": "#5 Dodatkowe funkcjonalności",
+
+	"content": [
+				{
+					"p": "<strong>W poprzednim poście opisałem scenariusz analizy finansów dla pojedynczego miesiąca, który w tym projekcie stanowi najmniejszą - niepodzielną - jednostkę czasu. Wyniki takiej analizy są statyczne - nie uwzględniają zmian w czasie czy trendów, które mogą pojawić się w dłuższej perspektywie. Dlatego uważam że znacznie ciekawsza jest wizualizacja danych dla większego zakresu miesięcy. Rozważam tutaj przede wszystkim dwa scenariusze - jeden dla roku kalendarzowego, drugi dla całego przedziału czasu kiedy zbierane były dane. Oprócz tego istnieje scenariusz, który uwzględnia dowolnie wybrany zakres miesięcy.</strong>"
+				},
+				
+				{
+					"p": "Oba główne scenariusze długoterminowe są do siebie bardzo podobne, więc omówię tylko jeden z nich - roczny. Różnią się one przede wszystkim analizowanym okresem. Oprócz tego w scenariuszu całościowym jest o kilka wykresów więcej. Kod oraz pełne wyniki dla obydwu znajdują się na <a href='https://github.com/patrykpalej/home-budget-calculator' target='_blank'>GitHubie</a>."
+				},
+
+				{
+					"p": "Skrypt <i>yearAnalysis.py</i> generuje trzy pliki wynikowe - jeden .pptx oraz dwa .xlsx. Ten pierwszy stanowi raport w postaci prezentacji PowerPoint z analizowanego roku. Prezentacja składa się z trzech części - w pierwszej z nich rok jest traktowany jako jedna całość, w drugiej wyniki przeliczane są na uśredniony miesiąc a trzecia część przedstawia dane dla kolejnych miesięcy z uwzględnieniem osi czasu. W pierwszej części zwizualizowałem w dużej mierze to samo co w analizie pojedynczego miesiąca, czyli: <br> <br>1. Kwoty wydawane na kolejne kategorie wydatków <br>2. Kwoty wydawane na kilka najważniejszych kategorii + pozostałe (zbiorczo) <br>3. Podział wydatków na metakategorie <br> 4. Podział przychodów na poszczególne źródła <br> 5. Podział wydatków spożywczych na podkategorie"
+				},
+
+				{
+					"h3": "Wykresy z osią czasu"
+				},
+				
+				{
+					"p": "W drugiej części - tej, w której mamy do czynienia z uśrednionym miesiącem - generowane są wykresy 2-4 z powyższej listy. Jednak to co jest najciekawsze w tym scenariuszu to część trzecia, która pozwala zobaczyć jak nasz budżet domowy kształtował się na przestrzeni czasu w kolejnych miesiącach. Jest tam 7 wykresów: <br><br>1. Skumulowane wartości wydatków na poszczególne kategorie na przestrzeni roku <br>2. Skumulowane wartości przychodów, wydatków i oszczędności na przestrzeni roku <br>3. Przychody i wydatki w kolejnych miesiącach <br> 4. Dotychczasowe średnie miesięczne wydatki na poszczególne kategorie <br> 5. Kwoty przychodów z najważniejszych źródeł na przestrzeni roku <br> 6. Wykres punktowy obrazujący relację przychodów do wydatków wraz z linią trendu oraz ich ewentualną korelację <br> 7. Metakategorie wydatków na przestrzeni czasu <br><br> Wybrane z nich znajdują się poniżej:"
+				},
+
+				{
+					"img": ["image1.svg", "Skumulowane wartości wydatków na poszczególne kategorie na przestrzeni roku ", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image2.svg", "Skumulowane wartości przychodów, wydatków i oszczędności na przestrzeni roku ", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image3.svg", "Kwoty przychodów z najważniejszych źródeł na przestrzeni roku", "80%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image4.svg", "Wykres punktowy obrazujący relację przychodów do wydatków wraz z linią trendu oraz ich ewentualną korelację", "80%"]
+				},
+
+
+				{
+					"h3": "Zestawienia i podsumowania w liczbach"
+				},
+
+				{
+					"p": "Oprócz raportu / prezentacji skrypt generuje również dwa pliki .xlsx. Jeden z nich to zestawienie największych wydatków (>100zł) z całego roku z uwzględnieniem kategorii. Drugi natomiast to podsumowanie w postaci: średniej oraz mediany wydatków, zarobków i przychodów, całkowitej nadwyżki przychodów nad wydatkami a także wszystkich wydatków z wybranych kategorii w kolejnych miesiącach."
+				},
+
+				{
+					"img": ["image5.svg", "Zestawienie największych wydatków w danym roku", "90%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image6.svg", "Ogólne statystyki finansowe w danym roku", "90%"]
+				},
+
+				{
+					"br": 2
+				},
+
+				{
+					"img": ["image7.svg", "Zestawienie rocznych wydatków w poszczególnych (wybranych) kategoriach", "90%"]
+				}
+			]
+}

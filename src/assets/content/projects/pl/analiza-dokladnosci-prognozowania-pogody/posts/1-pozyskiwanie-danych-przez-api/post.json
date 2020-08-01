@@ -1,0 +1,29 @@
+{
+	"projectTitle": "Analiza dokładności prognozowania pogody",
+	"postTitle": "#1 Pozyskiwanie danych przez API",
+
+	"previousLink": "",
+	"previousTitle": "",
+
+	"nextLink": "2-wizualizacja-zebranych-danych",
+	"nextTitle": "#2 Wizualizacja zebranych danych",
+	
+	"content": [
+				{
+					"p": "<strong>Jakiś czas temu zastanawiałem się nad tym, w jakim tempie prognoza pogody traci na wartości wraz ze wzrostem jej zasięgu czasowego. Z pomocą przyszło odkrycie pogodowych API, które udostępniają nie tylko prognozy ale również wartości historyczne. Pobierając takie dane przez odpowiednio długi czas można porównać wartości prognozowane z rzeczywiście zaobserwowanymi a następnie przedstawić tę zależność dla różnych horyzontów czasowych. Na tym właśnie polegał ten projekt.</strong>"
+				},
+				
+				{
+					"p": "API pogodowych można znaleźć w internecie całkiem sporo, ale niewiele jest takich, które jednocześnie udostępniają prognozy, dane historyczne a przy tym są bezpłatne. Ostatecznie skorzystałem z serwisu Meteostat. Aby pobrać dane dla zadanego przedziału czasu należy wykorzystać poniższy adres URL: <br><br> <code>https://api.meteostat.net/v1/history/hourly?station=station_id&start=start_data&end=end_date&key=API_key</code><br><br> wstawiając w odpowiednie miejsca: <br> - numer ID stacji pogodowej <br> - datę początkową (<i>yyyy-mm-dd</i>) <br> - datę końcową (<i>yyyy-mm-dd</i>) <br> - klucz API"
+				},
+				
+				
+				{
+					"p": "Jeśli podamy daty z przyszłości otrzymamy prognozę, jeśli z przeszłości - dane historyczne. Wyniki zwracane są z dokładnością do godziny. API zwraca JSONa, który zawiera takiego informacje jak data i godzina oraz szereg parametrów pogodowych - temperatura, ciśnienie, wilgotność powietrza itd. Sposób w jaki dane te mogą zostać pobrane z poziomu Pythona można zobaczyć w kodzie, który udostępniam na <a href='https://github.com/patrykpalej/weather-forecast-accuracy-assessment' target=_blank>GitHubie</a>."
+				},
+
+				{
+					"p": "Aby otrzymać wyniki należy odpowiednio długo pobierać i zapisywać prognozy a następnie zestawiać je z danymi historycznymi dla danego przedziału czasu. W praktyce polegało to na automatycznym codziennym wywoływaniu skryptu pozyskującego prognozy oraz cotygodniowym wywoływaniem skryptu, który pobierał dane historyczne dla całego okresu i generował wykresy z wynikami. W kolejnym poście opiszę w jaki sposób zwizualizowałem zgromadzone dane i omówię wyniki."
+				}
+			]
+}

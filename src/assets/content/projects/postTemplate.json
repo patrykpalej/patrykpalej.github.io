@@ -1,0 +1,39 @@
+{
+	"projectTitle": "Project name",
+	"postTitle": "#1 Post title",
+	
+	"content": [
+				
+				{
+					"p": "<strong>Lorem ipsum orem ipsum orem ipsum orem ipsum ipsum orem ipsum orem ipsum orem ipsum ipsum orem ipsum orem ipsum orem ipsum ipsum orem ipsum orem ipsum orem ipsum</strong>"
+				},
+				
+				{
+					"h3": "Nagłówek"
+				},
+				
+				{
+					"p": "Lorem ipsum orem ipsum orem ipsum orem ipsum"
+				},
+
+				{
+					"img": ["image1.svg", "Opis obrazka"]
+				},
+
+				{
+					"p": "Kolejny paragraf"
+				},
+
+				{
+					"h3": "Drugi nagłówek"
+				},
+
+				{
+					"p": "Następny paragraf"
+				},
+
+				{
+					"br": 2
+				}
+			]
+}

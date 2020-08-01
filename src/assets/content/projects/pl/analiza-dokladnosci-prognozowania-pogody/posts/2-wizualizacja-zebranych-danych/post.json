@@ -1,0 +1,95 @@
+{
+	"projectTitle": "Analiza dokładności prognozowania pogody",
+	"postTitle": "#2 Wizualizacja zebranych danych",
+
+	"previousLink": "1-pozyskiwanie-danych-przez-api",
+	"previousTitle": "#1 Pozyskiwanie danych przez API",
+
+	"nextLink": "",
+	"nextTitle": "",
+	
+	"content": [
+				{
+					"p": "Pobrane prognozy oraz wartości zmierzone przechowywane są w plikach .json, które zawierają takie informacje jak timestamp (z godzinną dokładnością) oraz temperatura. Możliwe jest również dodanie innych parametrów pogodowych, ale obecnie ograniczyłem się do jednego. Dodatkowo prognozy zawierają również informacje o tym na jak długo są one wykonywane. Aby przeanalizować ich dokładność należy zestawić prognozę z faktyczną temperaturą jaka została zmierzona w określonym czasie. Następnie wystarczy porównać wektor temperatur przewidywanych oraz rzeczywistych z uwzględnieniem horyzontu czasowego prognozy."
+				},
+				
+
+				{
+					"p": "Dane były zbierane dla sześciu stacji zlokalizowanych w: <br> - Londynie <br> - Moskwie <br> - Nowym Jorku <br> - Nowosybirsku <br> - Rzymie <br> - Warszawie"
+				},
+				
+				
+				{
+					"p": "Zestawienia były tworzone automatycznie co tydzień na podstawie codziennie pobieranych prognoz oraz danych historycznych pobieranych tuż przed dokonaniem zestawienia. Dane dla każdej stacji były zapisywane osobno. Następnie dla całego dotychczasowego okresu działania programu generowane były następujące wykresy: <br> <br> 1. Współczynnik korelacji Pearsona dla całego okresu vs. lokalizacja stacji pogodowej <br> 2. Współczynnik korelacji Pearsona vs. lokalizacja i horyzont czasowy prognozy <br> 3. Współczynnik korelacji Pearsona vs. horyzont czasowy prognozy (uśredniony dla wszystkich lokalizacji) <br> 4. Współczynnik korelacji Pearsona vs. horyzont czasowy prognozy (osobno dla każdej lokalizacji) <br> 5. Temperatura prognozowana vs. rzeczywista (łącznie dla wszystkich lokalizacji) <br> 6. Temperatura prognozowana vs. rzeczywista (osobno dla każdej lokalizacji)"
+				},
+
+
+				{
+					"p": "Przykładowo dla okresu 10.01.2020 - 13.02.2020 wykresy te wyglądają następująco:"
+				},
+
+				{
+					"img": ["image1.svg", "Współczynnik korelacji Pearsona dla całego okresu vs. lokalizacja stacji pogodowej ", "90%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image2.svg", "Współczynnik korelacji Pearsona vs. lokalizacja i horyzont czasowy prognozy", "90%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image3.svg", "Współczynnik korelacji Pearsona vs. horyzont czasowy prognozy (uśredniony dla wszystkich lokalizacji", "80%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image4.svg", "Współczynnik korelacji Pearsona vs. horyzont czasowy prognozy (osobno dla każdej lokalizacji)", "90%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image5.svg", "Temperatura prognozowana vs. rzeczywista (łącznie dla wszystkich lokalizacji)", "80%"]
+				},
+
+				{
+					"br": 1
+				},
+
+				{
+					"img": ["image6.svg", "Temperatura prognozowana vs. rzeczywista (osobno dla każdej lokalizacji)", "90%"]
+				},
+
+				{
+					"br": 1
+				},
+				
+				{
+					"h3": "Wnioski"
+				},
+
+				{
+					"p": "Z powyższych wykresów można wyciągnąć kilka informacji. Po pierwsze - współczynnik korelacji zamiast opadać stopniowo w dół charakteryzuje się pewną okresowością. Okres wynosi około jednej doby. Jest to niewątpliwie ciekawe i może wynikać z tego, że dane publikowane na obecną godzinę nie były przez Meteostat aktualizowane na bieżąco i w rzeczywistości są prognozą sprzed kilku godzin. To zmniejszałoby dokładność prognozy o tej godzinie, kiedy jest ona pobierana i może wprowadzić okresowe wahania dokładności."
+				},
+					
+				{
+					"p": "Poza tym - co zupełnie oczywiste - dokładność prognozy spada wraz z jej horyzontem czasowym. Dobrze widać to na dwóch ostatnich scatterplotach. Punkty czerwone, które oznaczają prognozę nawet na za 9 dni zazwyczaj znacznie odbiegają od faktycznie zarejestrowanej temperatury. Dla różnych stacji ten rozkład punktów wokół prostej y=x jest jednak różny co może wynikać zarówno z charakterystyki klimatu - który w każdym z tych miejsc jest odmienny - jak i z aparatury pomiarowej."
+				},
+				
+				{
+					"p": "Dane zebrane w Rzymie i Nowym Jorku sugerują, że dokładność pomiaru jest tam mniejsza niż w pozostałych stacjach. Widać też że są miejsca, gdzie trzydniowa prognoza sprawdza się całkiem nieźle a dopiero potem dokładność zaczyna spadać. Są też takie, gdzie ta dokładność spada szybciej. W Nowosybirsku na przykład, prognoza krótkoterminowa jest wyjątkowo dokładna, jednak ta wyznaczona na długi czas - wyjątkowo niedokładna."
+				}
+			]
+}

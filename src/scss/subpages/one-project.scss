@@ -1,0 +1,155 @@
+.one-project-about {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-row-gap: 20px;
+  grid-template-columns: 80vw;
+  grid-auto-rows: 60px auto auto auto;
+  margin-bottom: 100px;
+
+  @media (max-width: $smallMobile) {
+    margin-bottom: 50px;
+  }
+  
+    &__header1 {
+      color: grey;
+      margin: 0 auto 5vw;
+      transition: all 200ms ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+    }
+  
+    &__header2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    &__header3 {
+      height: 1.4rem;
+      margin: 0;
+      
+      &__link {
+        color: $blue;
+        font-size: 1.1rem;
+        height: 1rem;
+        text-decoration: none;
+        &:visited {
+          color: $blue;
+        }
+      }
+    
+      &__description {
+        margin: 0;
+        text-align: justify;
+        font-size: 1.1rem;
+        width: 700px;
+        
+    
+        @media (max-width: $mobile) {
+          width: 400px;
+        }
+
+        @media (max-width: $smallMobile) {
+          width: 300px;
+        }
+      }
+    }
+
+    &__anchor {
+      color: $grey;
+      text-decoration: none;
+      &:visited {
+        color: $grey;
+      }
+    }
+
+  &__container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-auto-rows: 2rem 2rem 2rem auto;
+    grid-area: auto;
+
+    @media (max-width: $smallMobile) {
+      grid-template-columns: 350px;        
+    }
+  }
+
+  &__img {
+    width: 50%;
+  }
+}
+
+.one-project-posts {
+  margin-bottom: 200px;
+}
+
+.posts-list {
+  display: grid;
+  grid-column-gap: 150px;
+  grid-row-gap: 150px;
+  grid-template-columns: 380px 380px;
+  justify-content: center;
+  padding: 0;
+  @media (max-width: $smallMobile) {
+    grid-row-gap: 80px;
+  }
+
+  @media (min-width: $bigScreen) {
+    grid-template-columns: repeat(3, 380px);
+  }
+
+  @media (max-width: $smallScreen) {
+    grid-template-columns: 380px;
+  }
+
+  &__anchor {
+    color: $black;
+    font-size: 1.2rem;
+    height: 1rem;
+    text-decoration: none;
+    
+    &:visited {
+      color: $black;
+    }
+  }
+
+  &__container {
+    background-size: 100% 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 10;
+    padding: 8px;
+    transition: all 200ms ease;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+
+  &__header {
+    font-size: 1.5rem;
+    margin: 0;
+    
+  }
+
+  &__item {   
+    list-style-type: none;    
+    transition: all 200ms ease;
+    height: 237.5px;
+    width: 380px;
+
+    @media (max-width: $smallMobile) {
+      height: calc(237.5px/1.2);
+      width: calc(380px/1.2);
+      margin-left: 20px;
+    }    
+  }
+}

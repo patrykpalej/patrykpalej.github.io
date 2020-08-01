@@ -1,0 +1,24 @@
+{
+    "title": "Symulacja apokalipsy zombie", 
+
+    "github": "https://github.com/patrykpalej/zombie-simulation", 
+    
+    "longDescription": "W tym projekcie stworzyłem symulację bitwy pomiędzy dwoma obozami - ludźmi oraz zombie. Walczą one przeciwko sobie na dwuwymiarowej mapie. Ten kto pozostanie na mapie - wygrywa. Ludzie potrafią zabijać swoich wrogów a zombie są w stanie infekować ludzi szerząc zarazę. Każda z obu klas postaci posiada własne metody poruszania się po mapie. Strategia zombie jest bardzo prosta. Ludzie rozważają więcej czynników, mogą w razie potrzeby przyspieszyć lub zwolnić a ich strategia jest sparametryzowana przez zestaw liczb. To pozwala na ulepszenie ich wyników z wykorzystaniem algorytmów AI.", 
+    
+    "posts": [
+        {"postTitle": "#1 Wprowadzenie", 
+         "postDescription": "Wprowadzenie do projektu oraz wyjaśnienie zasad",
+         "postName": "1-wprowadzenie"}, 
+
+        {"postTitle": "#2 Omówienie strategii zombie", 
+         "postDescription": "Opis strategii zombie",
+         "postName": "2-omowienie-strategii-zombie"},
+
+        {"postTitle": "#3 Omówienie strategii ludzi", 
+         "postDescription": "Opis strategii ludzi",
+         "postName": "3-omowienie-strategii-ludzi"},
+
+         {"postTitle": "#4 Przebieg symulacji", 
+            "postDescription": "Omówienie przebiegu symulacji",
+            "postName": "4-przebieg-symulacji"}
+]}

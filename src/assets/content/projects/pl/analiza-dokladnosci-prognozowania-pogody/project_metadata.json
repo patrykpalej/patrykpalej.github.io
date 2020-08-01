@@ -1,0 +1,16 @@
+{
+    "title": "Analiza dokładności prognozowania pogody", 
+
+    "github": "https://github.com/patrykpalej/weather-forecast-accuracy-assessment", 
+    
+    "longDescription": "Jak wiadomo im dalej w przyszłość sięga jakaś prognoza, tym mniej jest pewna. Dotyczy to zwłaszcza zjawisk takich jak pogoda. Zastanowiłem się kiedyś jak ilościowo wygląda spadek tej dokładności wraz z czasem na jaki dana prognoza jest wystawiona. Do ilu dni naprzód możemy być w miarę przekonani, że może się ona spełnić? W jaki sposób zależy to od klimatu w jakim znajduje się stacja pogodowa? W tym projekcie odpowiadam sobie na te pytania porównując prognozy dotyczące temperatury w sześciu różnych miastach świata do wartości, które później zostały rzeczywiście zmierzone.", 
+    
+    "posts": [
+        {"postTitle": "#1 Pozyskiwanie danych przez API", 
+         "postDescription": "Wprowadzenie do projektu oraz opis procesu pozyskiwania i zapisu danych",
+         "postName": "1-pozyskiwanie-danych-przez-api"},
+
+        {"postTitle": "#2 Wizualizacja zebranych danych", 
+         "postDescription": "Wizualizacja danych na wykresach oraz wnioski wyciągnięte z analizy",
+         "postName": "2-wizualizacja-zebranych-danych"}
+]}

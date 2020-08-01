@@ -1,0 +1,53 @@
+{
+	"projectTitle": "Analiza i wizualizacja budżetu domowego",
+	"postTitle": "#2 Wczytywanie i parsowanie danych",
+
+	"previousLink": "1-wprowadzenie",
+	"previousTitle": "#1 Wprowadzenie",
+
+	"nextLink": "3-analiza-pojedynczego-miesiaca",
+	"nextTitle": "#3 Analiza pojedynczego miesiąca",
+	
+	"content": [
+				{
+					"p": "<strong>Tutaj zajmę się omówieniem pierwszego etapu działania programu. Zanim dane zostaną przetworzone oraz zwizualizowane należy wczytać je z plików .xlsx. Następnie ich zawartość zostanie wczytana do atrybutów instacji klas odpowiadających arkuszowi i workbookowi (plikowi). Dopiero później obiekty te zostaną poddane dalszej analizie.</strong"
+				},
+				
+				{
+					"p": "Dane przechowywane są w taki sposób, że jednemu miesiącowi odpowiada jeden excelowy worksheet. Mogą one być przechowywane w osobnych plikach (na potrzeby scenariusza analizy pojedyncznego miesiąca) a także zbiorczo w jednym pliku (na potrzeby scenariuszy długoterminowych) – patrz <a href='https://github.com/patrykpalej/home-budget-calculator' target=_blank>repozytorium</a> projektu, folder <code>data_and_results/</code>. W obu przypadkach plikowi .xlsx odpowiada klasa <i>MyWorkbook</i> a każdemu jego arkuszowi klasa <i>MyWorksheet</i>. Niezależnie od tego jakiego scenariusza używamy, tworzone są obiekty obu tych klas."
+				},
+
+				{
+					"p": "Zarówno dla analizy miesięcznej, rocznej jak i całościowej (obejmującej cały okres zbierania danych) zaczynamy od stworzenia instancji klasy <i>MyWorkbook</i>:"
+				},
+
+				{
+					"code": "<code>myWorkbook = MyWorkbook(file_path)</code>"
+				},
+
+				{
+					"p": "wcześniej definiując ścieżkę do odpowiedniego pliku .xlsx. Klasa ta składa się jedynie z konstruktora, który wykonuje dwa zadania. Po pierwsze, tworzy (jako atrybut obiektu) listę instancji klasy <i>MyWorksheet</i> odpowiadających kolejnym arkuszom (miesiącom), z których składa się dany workbook. Każda z tych instancji przechowuje informacje zawarte w odpowiadającym jej arkuszu. Drugim zadaniem konstruktora jest zebranie i zsumowanie po wszystkich arkuszach (miesiącach) istotnych informacji zawartych w danym workbooku, traktując go tak jakby był to jeden długi miesiąc. Cały algorytm dla scenariusza miesięcznego wygląda następująco:"
+				},
+
+				{
+					"img": ["image1.svg", "Algorytm wczytania oraz przygotowania danych dla scenariusza miesięcznego", "40%"]
+				},
+
+				{
+					"p": "a dla rocznego:"
+				},
+
+				{
+					"img": ["image2.svg", "Algorytm wczytania oraz przygotowania danych dla scenariusza rocznego", "40%"]
+				},
+
+
+				{
+					"h3": "Podsumowanie"
+				},
+
+				{
+					"p": "Podsumowując, po utworzeniu instancji omówionych wyżej klas otrzymano obiekty zawierające wszystkie kluczowe informacje zawarte w uzupełnianych wcześniej arkuszach Excela. Dane te są zapisane w zmiennych a konkretnie w atrybutach obiektów odpowiadających danym workbookom oraz worksheetom. Kiedy poczynimy tego typu przygotowania można zacząć właściwą analizę. Wszystkie potrzebne wartości liczbowe i tekstowe zostały już wczytane z plików do wygodnej w użyciu postaci. To, co dzieje się później zostanie omówione w kolejnym wpisie."
+				}
+			]
+}

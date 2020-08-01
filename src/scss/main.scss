@@ -1,0 +1,41 @@
+// General CSS modules
+@import "_normalize";
+@import "_variables";
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700&display=swap&subset=latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap&subset=latin-ext');
+
+// Subpages modules
+@import "subpages/home.scss";
+@import "subpages/projects.scss";
+@import "subpages/one-project.scss";
+@import "subpages/one-post.scss";
+@import "subpages/cv.scss";
+
+
+// Main classes
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
+  
+  @media (max-width: $smallMobile) {
+    font-size: 12px;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $white;
+  color: $black;
+  font-family: 'Lato';
+}

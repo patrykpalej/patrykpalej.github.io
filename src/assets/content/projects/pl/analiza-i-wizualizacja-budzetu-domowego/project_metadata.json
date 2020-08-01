@@ -1,0 +1,28 @@
+{
+    "title": "Analiza i wizualizacja budżetu domowego", 
+
+    "github": "https://github.com/patrykpalej/home-budget-calculator", 
+    
+    "longDescription": "Ten projekt powstał w odpowiedzi na potrzebę sprawowania większej kontroli nad domowymi finansami. Z czasem oprócz samego gromadzenia danych w arkuszach Excela wprowadziłem element ich analizy oraz wizualizacji w postaci raportów/prezentacji w Powerpoincie. Im dłużej trwał projekt tym więcej automatyzacji i nowych funkcji zaczęło się pojawiać. Ręczne tworzenie raportów zastąpiłem automatycznym z wykorzystaniem biblioteki python-pptx. Następnie do scenariusza analizy i wizualizacji danych dla jednego miesiąca dołączyłem scenariusze długoterminowe obejmujące część lub całość dostępnych danych. W końcu również takie czynności jak tworzenie arkusza dla nowego miesiąca oraz comiesięczne uruchamianie skryptu z analizą zostały zautomatyzowane. Tym co wymaga ręcznego działania jest obecnie przede wszystkim spisywanie wydatków i przychodów. Cała reszta dzieje się sama.", 
+    
+    "posts": [
+        {"postTitle": "#1 Wprowadzenie", 
+         "postDescription": "W poście wprowadzającym znajduje się przedstawienie koncepcji programu oraz opis jego funkcjonalności",
+         "postName": "1-wprowadzenie"}, 
+
+        {"postTitle": "#2 Wczytywanie i parsowanie danych", 
+         "postDescription": "Tutaj opisuję w jaki sposób pobierane są dane wejściowe przeznaczone do dalszej analizy",
+         "postName": "2-wczytywanie-i-parsowanie-danych"},
+
+        {"postTitle": "#3 Analiza pojedynczego miesiąca", 
+         "postDescription": "Opis scenariusza analizy jednego miesiąca",
+         "postName": "3-analiza-pojedynczego-miesiaca"},
+
+        {"postTitle": "#4 Analiza długoterminowa", 
+         "postDescription": "Opis scenariuszy analizy jednego roku oraz całości lub wybranego fragmentu całego przedziału dla którego zgromadzono dane",
+         "postName": "4-analiza-dlugoterminowa"},
+
+         {"postTitle": "#5 Dodatkowe funkcjonalności", 
+          "postDescription": "Dodatkowe funkcjonalności które oferuje program pozwalające na większą automatyzację",
+          "postName": "5-dodatkowe-funkcjonalnosci"}
+]}

@@ -1,0 +1,29 @@
+{
+	"projectTitle": "Weather forecasting accuracy assessment",
+	"postTitle": "#1 Data acquisition via API",
+
+	"previousLink": "",
+	"previousTitle": "",
+
+	"nextLink": "2-visualization-of-the-acquired-data",
+	"nextTitle": "#2 Visualization of the acquired data",
+	
+	"content": [
+				{
+					"p": "<strong>Recently I was wondering how fast does a weather forecast loose its precision when the time horizon increases. Discovering weather APIs which provide not only forecasts but also historical values came to the rescue. By downloading such data for a sufficiently long time, you can compare the predicted values with those actually observed and then present this relationship for different time horizons. This is what the project was about.</strong>"
+				},
+				
+				{
+					"p": "There are lots of weather APIs on the internet but few of them provide forecasts, historical data and are free. Finally I used Meteostat service. To get the data for a given time range you need to use the following URL: <br><br><code>https://api.meteostat.net/v1/history/hourly?station=station_id&start=start_data&end=end_date&key=API_key</code><br><br> and insert: <br> - ID number of the weather station <br> - start date (<i>yyyy-mm-dd</i>) <br> - end date (<i>yyyy-mm-dd</i>) <br> - API key"
+				},
+
+				{
+					"p": "If you pass dates from the future you will get a forecast. If you pass dates from the past you will get historical data. The results are returned with one-hour precision. The API returns a JSON file which contains such information as date, time and a range of weather parameters - temperature, atmospheric pressure, air humidity etc. The method I used to acquire data with Python can be found in the code which I share on <a href='https://github.com/patrykpalej/weather-forecast-accuracy-assessment' target=_blank>GitHub</a>."
+				},
+				
+				
+				{
+					"p": "To get the results you need to download and save forecasts for sufficiently long time and then compare them to the historical data for a given time range. In practice, it consisted of automatic daily executing a script to obtain forecasts and weekly executing a script to download historical data for the entire period and to generate proper charts. In the next post I describe how I visualized the acquired data and I discuss the results."
+				}
+			]
+}
