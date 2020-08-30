@@ -1,6 +1,6 @@
 # Homepage
 
-![img](img\img.png)
+![img](img/img.png)
 
 This is my personal webpage available at https://patrykpalej.dev
 
