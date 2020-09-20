@@ -4,6 +4,12 @@
       "title": "Analiza i wizualizacja budżetu domowego", 
       "shortDescription": "Program, który na podstawie danych o przychodach i wydatkach w domowym budżecie automatycznie generuje raporty finansowe. Dostępne są różne scenariusze, które uwzględniają jeden miesiąc, cały rok lub dowolnie wybrany okres."
    },
+
+   {
+      "name": "system-rankingowy-ofert-z-otomoto", 
+      "title": "System rankingowy ofert z otomoto", 
+      "shortDescription": "System pobierający dane z serwisu otomoto.pl, który na podstawie założonej przez użytkownika metryki wybiera najbardziej korzystne oferty a następnie tworzy ich zestawienie wraz z linkami do poszczególnych ofert."
+   },
    
 
    {

@@ -1,0 +1,17 @@
+{
+	"projectTitle": "System rankingowy ofert z otomoto",
+	"postTitle": "#3 Ranking ofert",
+
+	"previousLink": "2-pobieranie-danych-z-otomotopl",
+	"previousTitle": "#2 Pobieranie danych z otomoto.pl",
+
+	"nextLink": "4-wizualizacja-zgromadzonych-danych",
+	"nextTitle": "#4 Wizualizacja zgromadzonych danych",
+	
+	"content": [
+
+				{
+					"p": "<strong>Symulacja bitwy ludzi przeciwko zombie którą stworzyłem bazuje na dość prostych zasadach, które opiszę w tym poście. Starałem się zbytnio nie komplikować, jednocześnie tworząc symulację w czasie rzeczywistym obejmującą proste środowisko oraz interakcje między postaciami.</strong>"
+				}
+			]
+}

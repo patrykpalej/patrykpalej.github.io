@@ -1,0 +1,17 @@
+{
+	"projectTitle": "Otomoto ranking system",
+	"postTitle": "#1 Introduction",
+
+	"previousLink": "",
+	"previousTitle": "",
+
+	"nextLink": "2-acquiring-data-from-otomotopl",
+	"nextTitle": "#2 Acquiring data from otomoto.pl",
+	
+	"content": [
+
+				{
+					"p": "<strong>The simulation of humans vs. zombies battle which I created is based on quite simple rules which I am going to describe in this post. I tried not to overcomplicate it but at the same time I wanted to make a real-time simulation with a simple environment and interactions between the characters.</strong>"
+				}
+			]
+}

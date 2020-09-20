@@ -1,0 +1,24 @@
+{
+    "title": "System rankingowy ofert z otomoto", 
+
+    "github": "https://github.com/patrykpalej/otomoto-ranking-system", 
+    
+    "longDescription": "Długi opis", 
+    
+    "posts": [
+        {"postTitle": "#1 Wprowadzenie", 
+         "postDescription": "Przedstawienie założeń projektu oraz przyjętej metodyki",
+         "postName": "1-wprowadzenie"},
+        
+         {"postTitle": "#2 Pobieranie danych z otomoto.pl", 
+          "postDescription": "Akwizycja danych z wykorzystaniem web scrapingu",
+          "postName": "2-pobieranie-danych-z-otomotopl"},
+
+          {"postTitle": "#3 Ranking ofert", 
+           "postDescription": "Wyszukiwanie najlepszych ofert na podstawie stworzonej metryki",
+           "postName": "3-ranking-ofert"},
+
+          {"postTitle": "#4 Wizualizacja zgromadzonych danych", 
+           "postDescription": "Wizualizacja danych z wykorzystaniem interaktywnego dashboardu",
+           "postName": "4-wizualizacja-zgromadzonych-danych"}
+]}
