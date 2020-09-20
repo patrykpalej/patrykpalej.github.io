@@ -124,11 +124,16 @@
     background-image: url('../../assets/img/header/header.png');
     background-repeat: repeat-x;
     background-size: contain;
-    min-height: 18vw;    
+    min-height: 18vw;
+    
+    @media (max-width: $smallScreen) {
+        min-height: 15vw;
+    }
 
     @media (max-width: $mobile) {
         background-image: url('../../assets/img/header/header_mobile.png');
         margin-bottom: 30px;
+        min-height: 18vw;
     }
 }
 
@@ -244,6 +249,10 @@
         justify-content: right; 
         padding: 0;
         &--vertical {
+            @media (max-width: $smallScreen) {
+                grid-row-gap: 30px;
+            }
+            
             @media (max-width: $tablet) {
                 background: $white;
                 display: none;
