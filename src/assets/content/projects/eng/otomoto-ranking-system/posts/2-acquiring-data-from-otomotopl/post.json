@@ -10,7 +10,27 @@
 	
 	"content": [
 		{
-			"p": "<strong>The simulation of humans vs. zombies battle which I created is based on quite simple rules which I am going to describe in this post. I tried not to overcomplicate it but at the same time I wanted to make a real-time simulation with a simple environment and interactions between the characters.</strong>"
+			"p": "<strong>The key element of this project is to create a tool which would scrape and parse our offers of interest. Before ranking the results – which is technically easier however requires more creativity – we need to get the data first. </strong>"
+		},
+
+		{
+			"img": ["image1.svg", "Filters for searching car sale offers on otomoto.pl", "70%"]
+		},
+
+		{
+			"p": "In the above figure you can see a set of basic filters which can be used for searching car sale offers. Instead of manually filling them up, they can be passed in a dictionary form to the <code>requests.Session().post()</code> function from <code>requests</code> library. Next, the HTTP response (transformed by a <code>bs4.BeautifulSoup()</code> function) shall be used to extract a list of links to all found offers. Detailed algorithm is implemented in my code which is hosted on <a href='https://github.com/patrykpalej/otomoto-ranking-system' target=_blank>GitHub</a>."
+		},
+
+		{
+			"p": "After getting the whole list of links to the offers, the script is going to request each one separately and look for key car features. The list of (selected) pieces of information which are to be extracted is the following:<br/><br/>– Price <br/>– Year of production<br/>– Mileage<br/>– Fuel type<br/>– Brand and model<br/>–Longitude and latitude<br/>– ..."
+		},
+
+		{
+			"p": "Finally, the list of offers is saved to a database. The whole process should be implemented in one script and be executed daily. Below you can find ready data in a tabular form."
+		},
+
+		{
+			"img": ["image2.svg", "Scraped data saved to a database", "100%"]
 		}
-			]
+	]
 }

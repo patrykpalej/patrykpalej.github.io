@@ -3,7 +3,7 @@
 
     "github": "https://github.com/patrykpalej/otomoto-ranking-system",
     
-    "longDescription": "Long description.", 
+    "longDescription": "Searching the internet looking for a car sale offer which would best meet my expectations, I decided to employ data analytics. Instead of daily browsing new offers on otomoto.pl, I wrote a program which - using web scraping - collects key information about all the offers which match some general conditions and then calculates overall scoring for them and saves the results to a database. Such a script can be automatically executed each day and so all the offers of interest would be be stored and (in theory) ranked. Moreover, once a week a script which gets several best offers from the database and saves them to an excel worksheet along with offers' links is executed. Finally, I added a dashboard which allows for convenient visualization of all the offers, comparing them to the others.", 
     
     "posts": [
         {"postTitle": "#1 Introduction", 

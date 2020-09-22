@@ -3,7 +3,7 @@
 
     "github": "https://github.com/patrykpalej/otomoto-ranking-system", 
     
-    "longDescription": "Długi opis", 
+    "longDescription": "Szukając w internecie oferty sprzedaży samochodu, która najbardziej spełniałaby moje oczekiwania, postanowiłem, że spróbuję wykorzystać w tym celu analizę danych. Zamiast codziennie przeglądać nowe oferty na otomoto.pl napisałem program, który z wykorzystaniem web scrapingu pobiera kluczowe informacje na temat ofert spełniających określone kryteria a następnie oblicza dla nich punktową ocenę i zapisuje wyniki do bazy danych. Skrypt taki można automatycznie wykonywać każdego dnia o stałej porze i tym samym mieć cały zestaw interesujących nas ofert uszeregowanych (teoretycznie) według rosnącego stopnia atrakcyjności. Dodatkowo, raz w tygodniu wykonuje się skrypt, który pobiera z bazy kilka najlepszych ofert i zapisuje je do excelowego pliku razem z linkiem do poszczególnych ofert. Na koniec dodałem dashboard, który pozwala wygodnie zwizualizować wszystkie interesujące mnie oferty na tle pozostałych.", 
     
     "posts": [
         {"postTitle": "#1 Wprowadzenie", 

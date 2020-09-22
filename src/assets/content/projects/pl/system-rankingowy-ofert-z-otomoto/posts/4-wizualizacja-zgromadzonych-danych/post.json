@@ -11,7 +11,51 @@
 	"content": [
 
 				{
-					"p": "<strong>Symulacja bitwy ludzi przeciwko zombie którą stworzyłem bazuje na dość prostych zasadach, które opiszę w tym poście. Starałem się zbytnio nie komplikować, jednocześnie tworząc symulację w czasie rzeczywistym obejmującą proste środowisko oraz interakcje między postaciami.</strong>"
+					"p": "<strong>Oprócz oceniania i wybierania najlepszych ofert, jest jeszcze jeden sposób na to by szukać okazji. Wszystkie przechowywane w tabeli elementy mogą być łatwo przeglądane w dashboardzie, który pozwala przedstawiać dane na wykresach na wiele różnych sposobów. Wystarczy wczytać dane z bazy i można sprawdzić rozkłady wszystkich kluczowych cech. Jest nawet możliwe aby wybrać na wykresie punktowym interesujący nas samochód i sprawdzić link do aukcji na otomoto.pl. Poniżej zamieszczam kilka screenów, które ilustrują użycie dashboardu.</strong>"
+				},
+
+				{
+					"img": ["image1.svg", "Pusty dashboard", "100%"]
+				},
+		
+				{
+					"br": 4
+				},
+		
+				{
+					"img": ["image2.svg", "Filtry, które mogą zostać wykorzystane w celu uszczegółowienia wyszukiwań", "100%"]
+				},
+		
+				{
+					"br": 4
+				},
+		
+				{
+					"img": ["image3.svg", "Wykres punktowy – przebieg vs. cena", "80%"]
+				},
+		
+				{
+					"br": 4
+				},
+		
+				{
+					"img": ["image4.svg", "Wykres pudełkowy – rok produkcji vs. cena", "80%"]
+				},
+		
+				{
+					"br": 4
+				},
+		
+				{
+					"img": ["image5.svg", "Oferty samochodów na mapie", "80%"]
+				},
+		
+				{
+					"br": 4
+				},
+		
+				{
+					"img": ["image6.svg", "Wyszukiwarka linków", "80%"]
 				}				
 			]
 }

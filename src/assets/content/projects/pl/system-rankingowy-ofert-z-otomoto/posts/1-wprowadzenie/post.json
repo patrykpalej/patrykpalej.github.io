@@ -11,8 +11,20 @@
 	"content": [
 
 				{
-					"p": "<strong>Symulacja bitwy ludzi przeciwko zombie którą stworzyłem bazuje na dość prostych zasadach, które opiszę w tym poście. Starałem się zbytnio nie komplikować, jednocześnie tworząc symulację w czasie rzeczywistym obejmującą proste środowisko oraz interakcje między postaciami.</strong>"
+					"p": "<strong>Kupując samochód należy przejrzeć wiele ofert sprzedaży zanim znajdziemy taką, która najbardziej nam odpowiada. Istnieją dedykowane serwisy, np. otomoto.pl, które agregują wiele takich ofert i pozwalają przeszukiwać je z wykorzystaniem filtrów. Ale ponieważ może zabrać to wiele czasu zanim znajdziemy coś rzeczywiście interesującego, warto pomyśleć o wykorzystaniu analizy danych w celu zrobienia tego szybko i automatycznie.</strong>"
+				},
+
+
+				{
+					"p": "Ten projekt jest właśnie taką próbą. Wykonałem następujące kroki by stworzyć system, który może wykonać za mnie tę pracę i zwrócić jedynie wybrane oferty, które prawdopodobnie spodobają mi się najbardziej:<br/><br/>1. Napisałem scraper, który wysyła requesty do otomoto.pl z wykorzystaniem wcześniej zdefiniowanych filtrów<br/>2. Następnie każda oferta jest parsowana i najważniejsze informacje takie jak cena, rok produkcji itd. zostają wyciągnięte<br/>3. Dane zostają zapisane do bazy w formie tabelarycznej<br/>4.Skrypt z powyższymi krokami jest wykonywany codziennie przez automatyczny scheduler<br/>5. Inny skrypt jest uruchamiany raz w tygodniu w celu znalezienia kilku(nastu) najlepszych ofert w bazie danych<br/>6. Oferty starsze niż 14 dni zostają usunięte z bazy każdego dnia"
+				},
+
+
+				{
+					"p": "Opisuję powyższe kroki w następnych dwóch postach. Na koniec przedstawię dashboard, który pozwala na wizualizację wyników w wygodny sposób."
 				}
+
+				
 				
 			]
 }

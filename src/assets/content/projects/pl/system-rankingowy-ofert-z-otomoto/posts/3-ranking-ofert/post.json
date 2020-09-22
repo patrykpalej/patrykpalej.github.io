@@ -11,7 +11,23 @@
 	"content": [
 
 				{
-					"p": "<strong>Symulacja bitwy ludzi przeciwko zombie którą stworzyłem bazuje na dość prostych zasadach, które opiszę w tym poście. Starałem się zbytnio nie komplikować, jednocześnie tworząc symulację w czasie rzeczywistym obejmującą proste środowisko oraz interakcje między postaciami.</strong>"
+					"p": "<strong>Aby znaleźć najlepszą oferty należy stworzyć metrykę, która byłaby liczbową miarą tego jak wysoko oceniamy konkretny zestaw parametrów samochodu. Technicznie jest to bardzo łatwe – to po prostu funkcja, do której podajemy wektor cech a ona zwraca na wyjściu liczbę. Jednakże nie ma tu sposobu na to by znaleźć definitywnie najlepiej zoptymalizowaną metrykę. Nie mamy danych uczących by wytrenować model uczenia maszynowego.</strong>"
+				},
+
+				{
+					"p": "Właśnie dlatego potrzebny będzie wzór heurystyczny. Zadanie jest złożone – czy możemy po prostu założyć, że im niższa cena, tym wyższa całkowita punktacja? Może istnieje ważny powód dla którego konkretny samochód jest tak tani? A co w przypadku jeśli przebieg jest podejrzanie niski – czy powinniśmy traktować to jako zaletę? Tak czy inaczej, w pierwszym podejściu możemy użyć prostego wzoru żeby od czegoś zacząć. Następnie możemy zoptymalizować go w bardziej wyrafinowany sposób. Ostateczna postać tej metryki jest oczywiście sprawą indywidualną, ale prezentuję tutaj przykładową. Zacząłem od prostego wzoru, który łączy trzy główne zmienne liczbowe – cenę, przebieg oraz moc. Założyłem, że całkowita ocena jest proporcjonalna do mocy samochodu oraz odwrotnie proporcjonalna do zarówno ceny jak i przebiegu:"
+				},
+
+				{
+					"p": "<code>ocena = A * moc / (cena * przebieg)</code>"
+				},
+
+				{
+					"p": "Stała <code>A</code> może zostać wybrana arbitralnie w celu znormalizowania rzędu wielkości. Ja wybrałem <code>1e10</code>. Teraz ocena zostanie:<br/><br/>1. Przemnożona przez <code>0.8</code> jeśli samochód jest sprzedawany przez handlarza. Należy jednak uważać, ponieważ dość często handlarze podszywają się pod osoby prywatne<br/><br/>2. Przemnożona przez <code>1.1</code> jeśli typ paliwa to benzyna + LPG ponieważ pozwala to na tańszą eksploatację<br/><br/>3. Przemnożona przez funkcję wieku samochodu w latach. W moim przypadku czynnikiem tym jest <code>1 - 0.074*wiek - 0.0024*wiek^2</code> co bierze się z interpolacji wielomianem drugiego stopnia<br/><br/>4. Przemnożona przez funkcję odległości (w kilometrach) jaka musi zostać pokonana aby dojechać do sprzedającego. W moim przypadku jest to <code>1 - 0.003*odległość</code><br/><br/>"
+				},
+
+				{
+					"p": "Na koniec, kiedy wszystkie samochody zostaną ocenione, osobny skrypt będzie wczytywał dane co tydzień i kilka najwyżej ocenionych ofert zostanie wybranych i zapisanych do excelowego pliku. Będzie tam kilka najważniejszych informacji o każdym samochodzie razem z linkami. To pozwoli skupić się tylko na tych ofertach, które (w teorii) odpowiadają nam najbardziej."
 				}
 			]
 }

@@ -11,7 +11,15 @@
 	"content": [
 
 				{
-					"p": "<strong>The simulation of humans vs. zombies battle which I created is based on quite simple rules which I am going to describe in this post. I tried not to overcomplicate it but at the same time I wanted to make a real-time simulation with a simple environment and interactions between the characters.</strong>"
+					"p": "<strong>When buying a car you need to view lots of sale offers before you find the one that fits you best. There are websites like otomoto.pl which aggregate many such offers and allow you to search for them using filters which help you to find the best one. But as it can take a great amount of time before finding something really interesting, one can think of employing data analytics to do this work fast and automatically.</strong>"
+				},
+
+				{
+					"p": "This project is such an attempt. I used the following steps to create a system which can do the job for me and return only few selected offers which are likely to fit me best:<br/><br/>1. I created a scraper which requests otomoto.pl with queries using defined previously filters sets <br/> 2. Then each offer is parsed and essential information like price, production year etc. is extracted <br/> 3. The data is saved to a database in tabular form<br/> 4. Script with the aforementioned steps is executed every day by a task scheduler <br/> 5. Another script is executed once a week to find several best offers in the database <br/> 6. Offers older than 14 days are removed from the database on a daily basis"
+				},
+
+				{
+					"p": "I describe all of these steps in the next two posts. Finally I'm going to present a dashboard tool which allows for visualization of the results in a neat form."
 				}
 			]
 }

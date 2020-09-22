@@ -10,7 +10,51 @@
 	
 	"content": [
 		{
-			"p": "<strong>The simulation of humans vs. zombies battle which I created is based on quite simple rules which I am going to describe in this post. I tried not to overcomplicate it but at the same time I wanted to make a real-time simulation with a simple environment and interactions between the characters.</strong>"
+			"p": "<strong>Apart from ranking and selecting best car offers, there is one more way to look for the best opportunities. All items stored in the table can be easily viewed on a dashboard which allows you to plot data in many different ways. You can just load data from a database and check the distributions of all key features. It's even possible to choose a car of interest from a scatterplot and get a link to the auction on otomoto.pl. Below there are a few screenshots which illustrate usage of the dashboard. </strong>"
+		},
+
+		{
+			"img": ["image1.svg", "Empty dashboard", "100%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image2.svg", "Filters which can be used to refine your search", "100%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image3.svg", "Single scatterplot", "80%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image4.svg", "Single boxplot", "80%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image5.svg", "Car offers on a map", "80%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image6.svg", "Link searcher", "80%"]
 		}
-			]
+	]
 }
