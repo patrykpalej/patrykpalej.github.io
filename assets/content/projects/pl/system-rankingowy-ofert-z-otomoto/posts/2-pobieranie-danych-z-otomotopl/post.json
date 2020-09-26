@@ -1,0 +1,38 @@
+{
+	"projectTitle": "System rankingowy ofert z otomoto",
+	"postTitle": "#2 Pobieranie danych z otomoto.pl",
+
+	"previousLink": "1-wprowadzenie",
+	"previousTitle": "#1 Wprowadzenie",
+
+	"nextLink": "3-ranking-ofert",
+	"nextTitle": "#3 Ranking ofert",
+	
+	"content": [
+
+				{
+					"p": "<strong>Kluczowym elementem tego projektu jest stworzenie narzędzia, które będzie scrapowało i parsowało interesujące nas oferty. Przed uszeregowaniem ofert według rosnącej atrakcyjności – co jest technicznie łatwiejsze, jednak wymaga więcej kreatywności – należy najpierw zebrać dane.</strong>"
+				},
+
+
+				{
+					"img": ["image1.svg", "Filtry do wyszukiwania ofert sprzedaży samochodów na otomoto.pl", "70%"]
+				},
+
+				{
+					"p": "Na powyższym obrazku można zobaczyć zestaw podstawowych filtrów, jakie mogą zostać użyte w celu wyszukiwania ofert sprzedaży samochodów. Zamiast wypełniać je ręcznie, można przekazać je w formie słownika fo funkcji <code>requests.Session().post()</code> z biblioteki <code>requests</code>. Następnie odpowiedź HTTP (przepuszczona przez funkcję <code>bs4.BeautifulSoup</code>) powinna zostać użyta w celu wyekstrahowania z niej listy linków do wszystkich znalezionych ofert. Szczegółowy algorytm został zaimplementowany w kodzie, który znajduje się na moim <a href='https://github.com/patrykpalej/otomoto-ranking-system' target=_blank>GitHubie</a>."
+				},
+
+				{
+					"p": "Po wczytaniu całej listy linków do poszczególnych ofert skrypt wyśle do każdego z nich żądanie HTTP i przeszuka pod kątem kluczowych cech samochodu. Lista (wybranych) informacji, jakie mają zostać wyciagnięte to:<br/><br/>– Cena<br/>– Rok produkcji<br/>– Przebieg<br/>– Typ paliwa<br/>– Marka oraz model<br/>– Współrzędne geograficzne<br/>– ...<br/>"
+				},
+
+				{
+					"p": "Na koniec wszystkie oferty zostaną zapisane do bazy danych. Cały proces powinien zostać zaimplementowany w jednym skrypcie i być uruchamiany codziennie. Poniżej znajdują się gotowe dane w formie tabelarycznej."
+				},
+
+				{
+					"img": ["image2.svg", "Zescrapowane dane zapisane do tabeli", "100%"]
+				}
+			]
+}

@@ -1,0 +1,60 @@
+{
+	"projectTitle": "Otomoto ranking system",
+	"postTitle": "#4 Visualization of the acquired data",
+
+	"previousLink": "3-offers-ranking",
+	"previousTitle": "#3 Offers ranking",
+
+	"nextLink": "",
+	"nextTitle": "",
+	
+	"content": [
+		{
+			"p": "<strong>Apart from ranking and selecting best car offers, there is one more way to look for the best opportunities. All items stored in the table can be easily viewed on a dashboard which allows you to plot data in many different ways. You can just load data from a database and check the distributions of all key features. It's even possible to choose a car of interest from a scatterplot and get a link to the auction on otomoto.pl. Below there are a few screenshots which illustrate usage of the dashboard. </strong>"
+		},
+
+		{
+			"img": ["image1.svg", "Empty dashboard", "100%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image2.svg", "Filters which can be used to refine your search", "100%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image3.svg", "Single scatterplot – mileage vs. price", "80%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image4.svg", "Single boxplot – year of production vs. price", "80%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image5.svg", "Car offers on a map", "80%"]
+		},
+
+		{
+			"br": 4
+		},
+
+		{
+			"img": ["image6.svg", "Link searcher", "80%"]
+		}
+	]
+}

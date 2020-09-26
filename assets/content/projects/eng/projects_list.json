@@ -4,6 +4,13 @@
       "title": "Analysis and visualization of home budget", 
       "shortDescription": "Program which automatically generates financial reports based on incomes and spendings data. There are various scenarios available which consider one month, whole year or any chosen time span."
    },
+
+
+   {
+      "name": "otomoto-ranking-system", 
+      "title": "Otomoto ranking system", 
+      "shortDescription": "System for data acquisition from otomoto.pl which selects most advantageous offers based on the metric assumed by a user and creates a collation of them along with link to the offers."
+   },
    
 
    {

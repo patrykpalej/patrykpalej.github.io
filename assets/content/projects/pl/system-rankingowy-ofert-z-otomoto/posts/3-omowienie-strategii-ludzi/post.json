@@ -1,0 +1,20 @@
+{
+	"projectTitle": "Symulacja apokalipsy zombie",
+	"postTitle": "#3 Omówienie strategii ludzi",
+
+	"previousLink": "2-omowienie-strategii-zombie",
+	"previousTitle": "#2 Omówienie strategii zombie",
+
+	"nextLink": "4-przebieg-symulacji",
+	"nextTitle": "#4 Przebieg symulacji",
+	
+	"content": [
+				{
+					"br": 4
+				},
+				
+				{
+					"img": ["image1.svg", "Opis strategii ludzi", "140%"]
+				}
+			]
+}

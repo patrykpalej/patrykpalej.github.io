@@ -1,0 +1,32 @@
+{
+	"projectTitle": "Otomoto ranking system",
+	"postTitle": "#3 Offers ranking",
+
+	"previousLink": "2-acquiring-data-from-otomotopl",
+	"previousTitle": "#2 Acquiring data from otomoto.pl",
+
+	"nextLink": "4-visualization-of-the-acquired-data",
+	"nextTitle": "#4 Visualization of the acquired data",
+	
+	"content": [
+		{
+			"p": "<strong>To find best car offers we need to create a metric which would be a numerical measure of how high we rate a specific set of car parameters. Technically it's very easy – it's just a function which takes a vector of features and returns a numerical output. However there is no way to find a definitely most optimum metric. There is no dataset for training a machine learning model.</strong>"
+		},
+
+		{
+			"p": "That is why a heuristic formula is needed. The task is complex – can we just assume that the lower price, the higher overall scoring is? Maybe there is an important reason why this specific car is so cheap? And what if the mileage is suspiciously low  – should it be considered as an advantage? Anyway, in the initial approach a simple formula can be used to start with something. Then we can try to optimize it in a more sophisticated way. Final form of this metric is, of course, an individual matter, but I present here an exemplary one. First, I started with a simple formula which combines three main numerical variables – price, mileage and power. I assumed that the overall rating is proportional to power of the car and inversely proportional to both price and mileage:"
+		},
+
+		{
+			"p": "<code>overall rating = A * power / (price * mileage)</code>"
+		},
+
+		{
+			"p": "Constant <code>A</code> can be chosen arbitrarily just to normalize the order of magnitude. I chose <code>1e10</code>. Now the score shall be:<br/><br/>1. Multiplied by <code>0.8</code> if the car is selled by a dealer. This may be tricky, though as quite often dealers pretend to be individual sellers<br/><br/>2. Multiplied by <code>1.1</code> if the fuel type is petrol + LPG as it allows for cheaper exploatation <br/><br/> 3. Multiplied by a function of car age in years. In my case the factor is <code>1 - 0.074*age - 0.0024*age^2</code> which comes from second order polynomial interpolation<br/><br/>4. Multiplied by a function of distance (in kilometers) which I need to cover in order to reach the car seller. In my case the factor is <code>1 - 0.003*distance</code>"
+		},
+
+		{
+			"p": "Finally, when all cars are rated, a separate script loads all data every week and several best rated offers are chosen and saved to an excel file. I have there some basic information along with links. It allows me to focus only on the offers which (in theory) fit me best."
+		}
+	]
+}

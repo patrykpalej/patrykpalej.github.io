@@ -1,0 +1,68 @@
+{
+	"projectTitle": "Zombie apocalypse simulation",
+	"postTitle": "#4 Simulation course",
+
+	"previousLink": "3-discussion-of-the-humans-strategy",
+	"previousTitle": "#3 Discussion of the humans' strategy",
+
+	"nextLink": "",
+	"nextTitle": "",
+	
+	"content": [
+				{
+					"p": "<strong>In this post I'm going to describe course of the simulation step by step. For now I don't go into details of the process of possible humans' strategy optimization. Only a single battle is considered.</strong>"
+				},
+				
+				{
+					"p": "The simulation consists of discrete time steps. In each iteration several operations are performed. The following functions are called:<br><br>1. <code>prepare()</code><br>2. <code>move()</code><br>3. <code>action()</code>"
+				},
+
+				{
+					"h3": "<code>prepare()</code>"
+				},
+
+				{
+					"p": "In <code>prepare()</code> function Battle Points for all characters are calculated."
+				},
+
+				{
+					"h3": "<code>move()</code>"
+				},
+
+				{
+					"p": "In <code>move()</code> function all characters change their positions according to the rules which were described in the two previous posts. First, each character chooses its new position and then they actually move. It ensures, that all characters consider positions from the previous iteration and no-one is first to move."
+				},
+
+				{
+					"h3": "<code>action()</code>"
+				},
+
+				{
+					"p": "This function checks if there are any human-zombie pairs which are about to clash. Next, the clashes are carried out and finally results of the fights are implemented."
+				},
+
+				{
+					"h3": "Visualization"
+				},
+
+				{
+					"p": "Apart from the code which is responsible for the logic, there are also functions which visualize the simulation in each iteration. Charts generated in a single time step are depicted below:"
+				},
+				
+				{
+					"img": ["image1.svg", "Visualization of a single iteration of the simulation", "140%"]
+				},
+
+				{
+					"h3": "Final summary"
+				},
+				
+				{
+					"p": "If either all humans or all zombies are defeated, the simulation is over and the following plot is generated. It depicts: <br><br>1. Number of humans and zombies<br>2. Average number of Battle Points<br>3. Cumulative number of killed zombies and infected humans<br><br>in subsequent iterations."
+				},
+
+				{
+					"img": ["image2.svg", "Summary of the single simulation", "80%"]
+				}
+			]
+}
