@@ -30,7 +30,7 @@
 		},
 
 		{
-			"img": ["image3.svg", "Single scatterplot", "80%"]
+			"img": ["image3.svg", "Single scatterplot – mileage vs. price", "80%"]
 		},
 
 		{
@@ -38,7 +38,7 @@
 		},
 
 		{
-			"img": ["image4.svg", "Single boxplot", "80%"]
+			"img": ["image4.svg", "Single boxplot – year of production vs. price", "80%"]
 		},
 
 		{
