@@ -84,6 +84,7 @@ fetch(homeUrl)
     .then(response => response.json())
     .then(response => {
       
+      // Current job
       for (exp of response) {
         
         let expProjectsListHtml = ''
@@ -101,6 +102,33 @@ fetch(homeUrl)
         `
         <p class="exp__text">
         ${exp.description}
+        </p>
+        <ul class="exp__projects-list">
+        ${expProjectsListHtml}
+        </ul>
+        <br/>
+        <div style="border-bottom: #E5E8EC solid 2px"></div>
+        `
+      }
+
+      // Previous job
+      for (exp of response) {
+        
+        let expProjectsListHtml = ''
+
+        for (expProj of exp.projects1) {
+          expProjectsListHtml += 
+          `
+          <li class="exp__project">
+            ${expProj}
+          </li>
+          `
+        }
+        
+        experienceSection.innerHTML += 
+        `
+        <p class="exp__text">
+        ${exp.description1}
         </p>
         <ul class="exp__projects-list">
         ${expProjectsListHtml}
