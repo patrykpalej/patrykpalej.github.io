@@ -1,8 +1,12 @@
 [
   {
-    "description": "Since october 2019 I work as a <strong>Machine Learning Engineer</strong> at Comarch in the area of telecommunication. <br> <br>The main projects I've been working on are:",
+    "description": "Since December 2020 I work as a Web Security Data Scientist at Akamai.",
 
-    "projects": [
+    "projects": [],
+
+    "description1": "Between October 2019 and November 2020 I've been working as a <strong>Machine Learning Engineer</strong> at Comarch in the area of telecommunication. <br> <br>The main projects I was working on are:",
+
+    "projects1": [
       "Collaborating on an algorithm for matching devices existing in two separate datasets using text similarity metrics. The program was wrapped with desktop GUI (TKinter) and REST API (Flask & SQLAlchemy)", 
     
       "Elaborating an algorithm for clustering trouble tickets related to telecommunication network operation. Input parameters were: timestamp of the ticket, location and set of categorical features describing the ticket",

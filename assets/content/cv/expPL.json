@@ -1,8 +1,12 @@
 [
   {
-    "description": "Od października 2019 pracuję jako <strong>Machine Learning Engineer</strong> w Comarchu w  obszarze branży telekomunikacyjnej. <br> <br> Główne projekty nad którymi pracowałem to:",
+    "description": "Od grudnia 2020 pracuję jako Web Security Data Scientist w Akamai.",
 
-    "projects": [
+    "projects": [],    
+    
+    "description1": "Od października 2019 do listopada 2020 pracowałem jako <strong>Machine Learning Engineer</strong> w Comarchu w  obszarze branży telekomunikacyjnej. <br> <br> Główne projekty nad którymi pracowałem to:",
+
+    "projects1": [
       "Współtworzenie algorytmu służącego do parowania urządzeń znajdujących się w dwóch osobnych zbiorach danych z wykorzystaniem metryk podobieństwa tekstów. Program był opakowany w desktopowe GUI (TKinter) oraz REST API (Flask & SQLAlchemy)", 
     
       "Opracowanie algorytmu do segmentacji zgłoszonych problemów związanych z funkcjonowaniem sieci telekomunikacyjnej. Parametrami wejściowymi były: czas zgłoszenia, lokalizacja oraz zestaw zmiennych kategorycznych opisujących zgłoszenie",
