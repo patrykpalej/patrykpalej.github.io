@@ -1,7 +1,7 @@
 {
   "header": "Patryk Palej", 
   "subheader": "Data Scientist", 
-  "description": "Cześć! Nazywam się Patryk i od 2018 roku pracuję w branży data science. Mam background w dziedzinie energetyki odnawialnej a także fizyki procesów cieplno-przepływowych oraz ich matematycznego modelowania. Obecnie pracuję jako Web Security Data Scientist w Akamai. Zachęcam do zapoznania się z moimi pobocznymi projektami, które opisałem w sekcji <i>Projekty</i> oraz z informacjami w sekcji <i>CV</i>.",
+  "description": "Cześć! Nazywam się Patryk i od 2018 roku pracuję w branży data science. Mam background w dziedzinie energetyki odnawialnej a także fizyki procesów cieplno-przepływowych oraz ich matematycznego modelowania. Zachęcam do zapoznania się z moimi pobocznymi projektami, które opisałem w sekcji <i>Projekty</i> oraz z informacjami w sekcji <i>CV</i>.",
   "navigation": ["Strona główna", "Projekty", "CV", "Kontakt"],
   "contact": ["Skontaktuj się!", "Jestem otwarty na nowe możliwości. <br/> Jeśli masz dla mnie jakąś - porozmawiajmy o tym.", "patrykpalej@gmail.com"]
 }
