@@ -1,5 +1,5 @@
 {
-  "workingKnowledge": ["Python", "Jupyter Notebook", "Uczenie maszynowe i głębokie", "SQL oraz zarządzanie bazami danych", "Wizualizacja danych", "Git", "Matlab", "Web scraping", "Statystyka, rachunek różniczkowy, algebra"],
+  "workingKnowledge": ["Python", "Jupyter Notebook", "Uczenie maszynowe i głębokie", "SQL oraz zarządzanie bazami danych", "Wizualizacja danych", "Matlab", "Web scraping", "Testy jednostkowe", "Git", "Linux", "Statystyka, rachunek różniczkowy, algebra"],
 
-  "basic": ["R", "AWS", "Flask", "Analiza i prognozowanie szeregów czasowych", "Testy jednostkowe", "HTML / CSS / JavaScript"]
+  "basic": ["R", "AWS", "Analiza i prognozowanie szeregów czasowych", "HTML / CSS / JavaScript"]
 }
