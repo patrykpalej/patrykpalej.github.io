@@ -1,5 +1,5 @@
 {
-  "workingKnowledge": ["Python", "Jupyter Notebook", "Machine and deep learning", "SQL & database management", "Data visualization", "Git", "Matlab", "Web scraping", "Statistics, calculus, algebra"],
+  "workingKnowledge": ["Python", "Jupyter Notebook", "Machine and deep learning", "SQL & database management", "Data visualization", "Matlab", "Web scraping",  "Unit testing", "Git", "Linux", "Statistics, calculus, algebra"],
 
-  "basic": ["R", "AWS", "Flask", "Time series analysis and forecasting", "Unit testing", "HTML / CSS / JavaScript"]
+  "basic": ["R", "AWS", "Time series analysis and forecasting", "HTML / CSS / JavaScript"]
 }
