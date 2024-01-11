@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 13e9d69bf61c70d01a6019e68dbafd57748ff907 Patryk Palej <patrykpalej@gmail.com> 1704911268 +0100	commit (initial): Initial commit
+13e9d69bf61c70d01a6019e68dbafd57748ff907 1ee582df233355a5c73f873075f404939f9309a2 Patryk Palej <patrykpalej@gmail.com> 1704911521 +0100	commit: Add CNAME
+1ee582df233355a5c73f873075f404939f9309a2 1ee582df233355a5c73f873075f404939f9309a2 Patryk Palej <patrykpalej@gmail.com> 1704919665 +0100	checkout: moving from master to gh-pages
+1ee582df233355a5c73f873075f404939f9309a2 1e58ce0c539844fd53997408c5f32ed84e7388d6 Patryk Palej <patrykpalej@gmail.com> 1704919724 +0100	commit: gh-pages
+1e58ce0c539844fd53997408c5f32ed84e7388d6 eb46ef30dc8cf880fb5718bd67784e1e69bf240c Patryk Palej <patrykpalej@gmail.com> 1704919781 +0100	commit: update
+eb46ef30dc8cf880fb5718bd67784e1e69bf240c dd7cf204da2f218b3b5c57762fc9908f13a15ab5 Patryk Palej <patrykpalej@gmail.com> 1704920127 +0100	pull: Fast-forward
+dd7cf204da2f218b3b5c57762fc9908f13a15ab5 60c02a39e501700aa8e061686966d8b9de2e3be3 Patryk Palej <patrykpalej@gmail.com> 1704920142 +0100	commit: Add cname
+60c02a39e501700aa8e061686966d8b9de2e3be3 1ee582df233355a5c73f873075f404939f9309a2 Patryk Palej <patrykpalej@gmail.com> 1704959619 +0100	checkout: moving from gh-pages to master
+1ee582df233355a5c73f873075f404939f9309a2 c313c8492fa3fc6cbd313f802c882bbe8b142453 Patryk Palej <patrykpalej@gmail.com> 1704959629 +0100	pull: Fast-forward
+c313c8492fa3fc6cbd313f802c882bbe8b142453 bb88b1f1412956dd5c08aff80d752636dc23dbbd Patryk Palej <patrykpalej@gmail.com> 1704959683 +0100	commit: update
+bb88b1f1412956dd5c08aff80d752636dc23dbbd 60c02a39e501700aa8e061686966d8b9de2e3be3 Patryk Palej <patrykpalej@gmail.com> 1704959935 +0100	checkout: moving from master to gh-pages
+60c02a39e501700aa8e061686966d8b9de2e3be3 bb88b1f1412956dd5c08aff80d752636dc23dbbd Patryk Palej <patrykpalej@gmail.com> 1704960146 +0100	checkout: moving from gh-pages to master
+bb88b1f1412956dd5c08aff80d752636dc23dbbd 0000000000000000000000000000000000000000 Patryk Palej <patrykpalej@gmail.com> 1704960466 +0100	Branch: renamed refs/heads/master to refs/heads/test
+0000000000000000000000000000000000000000 bb88b1f1412956dd5c08aff80d752636dc23dbbd Patryk Palej <patrykpalej@gmail.com> 1704960466 +0100	Branch: renamed refs/heads/master to refs/heads/test
+bb88b1f1412956dd5c08aff80d752636dc23dbbd bb88b1f1412956dd5c08aff80d752636dc23dbbd Patryk Palej <patrykpalej@gmail.com> 1704960501 +0100	reset: moving to HEAD
+bb88b1f1412956dd5c08aff80d752636dc23dbbd 60c02a39e501700aa8e061686966d8b9de2e3be3 Patryk Palej <patrykpalej@gmail.com> 1704960503 +0100	checkout: moving from test to gh-pages
+60c02a39e501700aa8e061686966d8b9de2e3be3 bb88b1f1412956dd5c08aff80d752636dc23dbbd Patryk Palej <patrykpalej@gmail.com> 1704960589 +0100	checkout: moving from gh-pages to test
+bb88b1f1412956dd5c08aff80d752636dc23dbbd 60c02a39e501700aa8e061686966d8b9de2e3be3 Patryk Palej <patrykpalej@gmail.com> 1704960913 +0100	checkout: moving from test to gh-pages
+60c02a39e501700aa8e061686966d8b9de2e3be3 bb88b1f1412956dd5c08aff80d752636dc23dbbd Patryk Palej <patrykpalej@gmail.com> 1704961001 +0100	checkout: moving from gh-pages to test
+bb88b1f1412956dd5c08aff80d752636dc23dbbd 60c02a39e501700aa8e061686966d8b9de2e3be3 Patryk Palej <patrykpalej@gmail.com> 1704961031 +0100	checkout: moving from test to gh-pages
+60c02a39e501700aa8e061686966d8b9de2e3be3 bb88b1f1412956dd5c08aff80d752636dc23dbbd Patryk Palej <patrykpalej@gmail.com> 1704961052 +0100	checkout: moving from gh-pages to test
+bb88b1f1412956dd5c08aff80d752636dc23dbbd 0000000000000000000000000000000000000000 Patryk Palej <patrykpalej@gmail.com> 1704961141 +0100	Branch: renamed refs/heads/test to refs/heads/gh-pages
+0000000000000000000000000000000000000000 bb88b1f1412956dd5c08aff80d752636dc23dbbd Patryk Palej <patrykpalej@gmail.com> 1704961141 +0100	Branch: renamed refs/heads/test to refs/heads/gh-pages
+bb88b1f1412956dd5c08aff80d752636dc23dbbd bb685feb86bf35101d9d02fdf90199768dd8d3dc Patryk Palej <patrykpalej@gmail.com> 1704961256 +0100	commit: update
+bb685feb86bf35101d9d02fdf90199768dd8d3dc 3f37820aaadff8ae28aa405f38ac3c67b0a2d977 Patryk Palej <patrykpalej@gmail.com> 1704961559 +0100	commit: update

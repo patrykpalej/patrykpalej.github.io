@@ -1,0 +1,23 @@
+
+
+{
+  "name": "Patryk Palej",
+  "short_name": "Patryk Palej",
+  "description": "Patryk Palej portfolio, personal blog about python coding, data science and education",
+  "icons": [
+    {
+      "src": "/https://patrykpalej.dev/assets/img/favicons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/https://patrykpalej.dev/assets/img/favicons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "start_url": "/https://patrykpalej.dev/index.html",
+  "theme_color": "#2a1e6b",
+  "background_color": "#ffffff",
+  "display": "fullscreen"
+}
+

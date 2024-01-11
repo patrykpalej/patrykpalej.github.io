@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 1ee582df233355a5c73f873075f404939f9309a2 Patryk Palej <patrykpalej@gmail.com> 1704919665 +0100	branch: Created from HEAD
+1ee582df233355a5c73f873075f404939f9309a2 1e58ce0c539844fd53997408c5f32ed84e7388d6 Patryk Palej <patrykpalej@gmail.com> 1704919724 +0100	commit: gh-pages
+1e58ce0c539844fd53997408c5f32ed84e7388d6 eb46ef30dc8cf880fb5718bd67784e1e69bf240c Patryk Palej <patrykpalej@gmail.com> 1704919781 +0100	commit: update
+eb46ef30dc8cf880fb5718bd67784e1e69bf240c dd7cf204da2f218b3b5c57762fc9908f13a15ab5 Patryk Palej <patrykpalej@gmail.com> 1704920127 +0100	pull: Fast-forward
+dd7cf204da2f218b3b5c57762fc9908f13a15ab5 60c02a39e501700aa8e061686966d8b9de2e3be3 Patryk Palej <patrykpalej@gmail.com> 1704920142 +0100	commit: Add cname
+60c02a39e501700aa8e061686966d8b9de2e3be3 60c02a39e501700aa8e061686966d8b9de2e3be3 Patryk Palej <patrykpalej@gmail.com> 1704961085 +0100	Branch: renamed refs/heads/gh-pages to refs/heads/gh-old

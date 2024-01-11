@@ -1,0 +1,97 @@
+update
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch gh-pages
+# Your branch is up to date with 'origin/gh-pages'.
+#
+# Changes to be committed:
+#	modified:   .gitignore
+#	new file:   _site/404.html
+#	new file:   _site/app.js
+#	new file:   _site/assets/css/jekyll-theme-chirpy.css
+#	new file:   _site/assets/css/jekyll-theme-chirpy.css.map
+#	new file:   _site/assets/img/avatar.png
+#	new file:   _site/assets/img/favicons/android-chrome-192x192.png
+#	new file:   _site/assets/img/favicons/android-chrome-512x512.png
+#	new file:   _site/assets/img/favicons/apple-touch-icon.png
+#	new file:   _site/assets/img/favicons/browserconfig.xml
+#	new file:   _site/assets/img/favicons/favicon-16x16.png
+#	new file:   _site/assets/img/favicons/favicon-32x32.png
+#	new file:   _site/assets/img/favicons/favicon.ico
+#	new file:   _site/assets/img/favicons/favicon.png
+#	new file:   _site/assets/img/favicons/mstile-150x150.png
+#	new file:   _site/assets/img/favicons/site.webmanifest
+#	new file:   _site/assets/img/instalki/anaconda1.png
+#	new file:   _site/assets/img/instalki/anaconda2.png
+#	new file:   _site/assets/img/instalki/anaconda3.png
+#	new file:   _site/assets/img/instalki/anaconda4.png
+#	new file:   _site/assets/img/instalki/postgres1.png
+#	new file:   _site/assets/img/instalki/postgres2.png
+#	new file:   _site/assets/img/instalki/pycharm.png
+#	new file:   _site/assets/img/instalki/python1.png
+#	new file:   _site/assets/img/instalki/python2.png
+#	new file:   _site/assets/img/instalki/python3.png
+#	new file:   _site/assets/img/knowledge/jupyter/jupyter1.png
+#	new file:   _site/assets/img/knowledge/resources/thumbnail.png
+#	new file:   _site/assets/img/knowledge/roadmap/thumbnail.png
+#	new file:   _site/assets/img/projects/fastapi/thumbnail.png
+#	new file:   _site/assets/img/projects/numerical-simulations/gravity1.mp4
+#	new file:   _site/assets/img/projects/numerical-simulations/gravity2.mp4
+#	new file:   _site/assets/img/projects/numerical-simulations/gravity3.mp4
+#	new file:   _site/assets/img/projects/numerical-simulations/thumbnail.png
+#	new file:   _site/assets/img/projects/numerical-simulations/zombies1.mp4
+#	new file:   _site/assets/img/projects/numerical-simulations/zombies2.mp4
+#	new file:   _site/assets/img/projects/real-estate/apartments.html
+#	new file:   _site/assets/img/projects/real-estate/houses.html
+#	new file:   _site/assets/img/projects/real-estate/lands.html
+#	new file:   _site/assets/img/projects/real-estate/model.png
+#	new file:   _site/assets/img/projects/real-estate/plot.png
+#	new file:   _site/assets/img/projects/real-estate/thumbnail.png
+#	new file:   _site/assets/index.html
+#	new file:   _site/assets/js/data/search.json
+#	new file:   _site/assets/js/data/swcache.js
+#	new file:   _site/categories/dev/index.html
+#	new file:   _site/categories/edu/index.html
+#	new file:   _site/categories/general/index.html
+#	new file:   _site/categories/index.html
+#	new file:   _site/categories/knowledge/index.html
+#	new file:   _site/categories/projects/index.html
+#	new file:   _site/categories/toolkit/index.html
+#	new file:   _site/contact/index.html
+#	new file:   _site/feed.xml
+#	new file:   _site/index.html
+#	new file:   _site/install/pycharm.html
+#	new file:   _site/install/python.html
+#	new file:   _site/knowledge/index.html
+#	new file:   _site/norobots/index.html
+#	new file:   _site/posts/fastapi-training-demo/index.html
+#	new file:   _site/posts/index.html
+#	new file:   _site/posts/jupyter-notebook/index.html
+#	new file:   _site/posts/markdown/index.html
+#	new file:   _site/posts/numerical-simulation/index.html
+#	new file:   _site/posts/real-estate-market-analysis/index.html
+#	new file:   _site/posts/roadmap/index.html
+#	new file:   _site/posts/virtualenv/index.html
+#	new file:   _site/projects/index.html
+#	new file:   _site/redirects.json
+#	new file:   _site/robots.txt
+#	new file:   _site/sitemap.xml
+#	new file:   _site/sw.js
+#	new file:   _site/tags/advanced/index.html
+#	new file:   _site/tags/api/index.html
+#	new file:   _site/tags/basics/index.html
+#	new file:   _site/tags/data-science/index.html
+#	new file:   _site/tags/data-visualization/index.html
+#	new file:   _site/tags/index.html
+#	new file:   _site/tags/machine-learning/index.html
+#	new file:   _site/tags/math-modeling/index.html
+#	new file:   _site/tags/mid-level/index.html
+#	new file:   _site/tags/python/index.html
+#	new file:   _site/tags/tools/index.html
+#	new file:   _site/tags/training/index.html
+#	new file:   _site/tags/web-development/index.html
+#	new file:   _site/tags/web-scraping/index.html
+#	new file:   _site/unregister.js
+#	new file:   _site/update.sh
+#

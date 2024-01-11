@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:patrykpalej/patrykpalej.github.io.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "gh-old"]
+	remote = origin
+	merge = refs/heads/gh-pages
+[branch "gh-pages"]
+	remote = origin
+	merge = refs/heads/gh-pages

@@ -1,0 +1,49 @@
+---
+layout: page
+---
+
+<div id="my-content-wrapper">
+
+<!--  {% include lang.html %}-->
+
+  <p>
+    If you have any inquiries or if you're interested in collaboration, please don't hesitate to reach out.
+  </p>
+
+  <br>
+
+  <form action="https://formspree.io/f/mgejgwdj" method="POST">
+
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" id="name" name="name" placeholder="" required>
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="text" id="email" name="email" placeholder="" required>
+    <br>
+    <br>
+
+    <label for="message">Message:</label>
+    <br>
+    <textarea style="resize: both; height: 12rem; width: 28rem;" id="message" name="message" placeholder=""></textarea>
+    <br>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+
+
+  <div id="privacy-note">
+    <h3>Personal data processing information</h3>
+    <p>
+        Please be aware that any personal data you send via the form, will be processed <strong>solely</strong> for the purpose of responding to your message.
+    </p>
+
+    <p>
+        Your personal data will not be used for any other purposes, nor will it be shared with third parties.
+    </p>
+    <p>
+        If you have any concerns, or you prefer not to use the form, please feel free to contact me at <a href="mailto:[{{site.social.email}}]">{{site.social.email}}</a>.
+    </p>
+</div>
+</div>
