@@ -6,7 +6,7 @@ layout: home
 
 ---
 
-# 👋 Hi, I'm Patryk,
+# 👋 Hi, I'm Patryk,,
 
 ... a Python developer with a strong focus on data-related areas. 
 
