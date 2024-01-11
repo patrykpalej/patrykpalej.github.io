@@ -8,7 +8,7 @@ layout: home
 
 # 👋 Hi, I'm Patryk...
 
-... a Python developer with a strong focus on data-related areas..
+... a Python developer with a strong focus on data-related areas.
 
 I'm into fields like:
 - 📈 data analysis and visualization
