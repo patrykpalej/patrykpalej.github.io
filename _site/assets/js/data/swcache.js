@@ -1,44 +1,44 @@
 const resource = [
   /* --- CSS --- */
-  '/https://patrykpalej.dev/assets/css/jekyll-theme-chirpy.css',
+  '/assets/css/jekyll-theme-chirpy.css',
 
   /* --- PWA --- */
-  '/https://patrykpalej.dev/app.js',
-  '/https://patrykpalej.dev/sw.js',
+  '/app.js',
+  '/sw.js',
 
   /* --- HTML --- */
-  '/https://patrykpalej.dev/index.html',
-  '/https://patrykpalej.dev/404.html',
+  '/index.html',
+  '/404.html',
 
   
-    '/https://patrykpalej.dev/projects/',
+    '/projects/',
   
-    '/https://patrykpalej.dev/knowledge/',
+    '/knowledge/',
   
-    '/https://patrykpalej.dev/categories/',
+    '/categories/',
   
-    '/https://patrykpalej.dev/tags/',
+    '/tags/',
   
-    '/https://patrykpalej.dev/contact/',
+    '/contact/',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/https://patrykpalej.dev/assets/img/favicons/android-chrome-192x192.png',
-    '/https://patrykpalej.dev/assets/img/favicons/android-chrome-512x512.png',
-    '/https://patrykpalej.dev/assets/img/favicons/apple-touch-icon.png',
-    '/https://patrykpalej.dev/assets/img/favicons/favicon-16x16.png',
-    '/https://patrykpalej.dev/assets/img/favicons/favicon-32x32.png',
-    '/https://patrykpalej.dev/assets/img/favicons/favicon.ico',
-    '/https://patrykpalej.dev/assets/img/favicons/favicon.png',
-    '/https://patrykpalej.dev/assets/img/favicons/mstile-150x150.png',
-    '/https://patrykpalej.dev/assets/js/dist/categories.min.js',
-    '/https://patrykpalej.dev/assets/js/dist/commons.min.js',
-    '/https://patrykpalej.dev/assets/js/dist/home.min.js',
-    '/https://patrykpalej.dev/assets/js/dist/misc.min.js',
-    '/https://patrykpalej.dev/assets/js/dist/page.min.js',
-    '/https://patrykpalej.dev/assets/js/dist/post.min.js'
+    '/assets/img/favicons/android-chrome-192x192.png',
+    '/assets/img/favicons/android-chrome-512x512.png',
+    '/assets/img/favicons/apple-touch-icon.png',
+    '/assets/img/favicons/favicon-16x16.png',
+    '/assets/img/favicons/favicon-32x32.png',
+    '/assets/img/favicons/favicon.ico',
+    '/assets/img/favicons/favicon.png',
+    '/assets/img/favicons/mstile-150x150.png',
+    '/assets/js/dist/categories.min.js',
+    '/assets/js/dist/commons.min.js',
+    '/assets/js/dist/home.min.js',
+    '/assets/js/dist/misc.min.js',
+    '/assets/js/dist/page.min.js',
+    '/assets/js/dist/post.min.js'
 ];
 
 /* The request url with below domain will be cached */

@@ -2,7 +2,7 @@
   
   {
     "title": "Markdown language",
-    "url": "/https://patrykpalej.dev/posts/markdown/",
+    "url": "/posts/markdown/",
     "categories": "Knowledge, Toolkit",
     "tags": "basics, tools",
     "date": "2024-01-07 00:00:00 +0100",
@@ -19,7 +19,7 @@
   
   {
     "title": "🌐 FastAPI Training (Demo)",
-    "url": "/https://patrykpalej.dev/posts/fastapi-training-demo/",
+    "url": "/posts/fastapi-training-demo/",
     "categories": "Projects, Edu",
     "tags": "api, training",
     "date": "2024-01-02 00:00:00 +0100",
@@ -36,7 +36,7 @@
   
   {
     "title": "Virtual environments in Python",
-    "url": "/https://patrykpalej.dev/posts/virtualenv/",
+    "url": "/posts/virtualenv/",
     "categories": "Knowledge, Toolkit",
     "tags": "basics, tools, python",
     "date": "2023-12-30 00:00:00 +0100",
@@ -53,7 +53,7 @@
   
   {
     "title": "Python Roadmap",
-    "url": "/https://patrykpalej.dev/posts/roadmap/",
+    "url": "/posts/roadmap/",
     "categories": "Knowledge, General",
     "tags": "python, data-science, web-development, basics, mid-level, advanced",
     "date": "2023-12-29 00:00:00 +0100",
@@ -70,7 +70,7 @@
   
   {
     "title": "Jupyter Notebook",
-    "url": "/https://patrykpalej.dev/posts/jupyter-notebook/",
+    "url": "/posts/jupyter-notebook/",
     "categories": "Knowledge, Toolkit",
     "tags": "basics, tools",
     "date": "2023-12-21 00:00:00 +0100",
@@ -87,7 +87,7 @@
   
   {
     "title": "📈 Numerical Simulations",
-    "url": "/https://patrykpalej.dev/posts/numerical-simulation/",
+    "url": "/posts/numerical-simulation/",
     "categories": "Projects, Dev",
     "tags": "math-modeling, mid-level",
     "date": "2023-12-20 00:00:00 +0100",
@@ -104,7 +104,7 @@
   
   {
     "title": "🏢 Real Estate Market Analysis",
-    "url": "/https://patrykpalej.dev/posts/real-estate-market-analysis/",
+    "url": "/posts/real-estate-market-analysis/",
     "categories": "Projects, Dev",
     "tags": "web-scraping, data-visualization, machine-learning",
     "date": "2023-11-30 00:00:00 +0100",
