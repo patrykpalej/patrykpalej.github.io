@@ -1,0 +1,123 @@
+[
+  
+  {
+    "title": "Markdown language",
+    "url": "/https://patrykpalej.dev/posts/markdown/",
+    "categories": "Knowledge, Toolkit",
+    "tags": "basics, tools",
+    "date": "2024-01-07 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "OverviewMarkdown is a simple language used for text formatting. It allows you to obtain an elegant, visually attractive text just by writing a plain text document. It’s widely used due to its simpl...",
+    "content": "OverviewMarkdown is a simple language used for text formatting. It allows you to obtain an elegant, visually attractive text just by writing a plain text document. It’s widely used due to its simplicity and ease of use, making it a popular choice for:  creating documentation  writing blog posts  text formatting in various applications, e.g. Jupyter Notebookand more.Markdown syntax covers many common text formatting elements, such as:  headings  bullet lists  links  images embedding  bold, italic  code formattingand much more.Use casesBelow you can find some examples of tools and services which support Markdown:  Jupyter Notebook / Jupyter Lab  static sites generators (blogs, documentations, this website etc.)  README files in Git repositories  note taking apps (Notion, Obsidian etc.)Basic syntaxIf you want to learn Markdown, check out https://www.markdownguide.org/ website.Below I listed the most common Markdown syntax elements:1. HeadingsRaw text:# First heading (H1)## Second heading (H2)### Third heading (H3)Preview:First heading (H1)Second heading (H2)Third heading (H3)2. Bullet listsRaw text:- first item- second item- third itemPreview:  first item  second item  third item3. LinksRaw text:[Click this](https://patrykpalej.dev)Preview:Click this4. ImagesRaw text:![image alt text](https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png)Preview:5. Bold, italicRaw text:**bold text***italic text*_also italic text_***bold and italic text***Preview:bold textitalic textalso italic textbold and italic text"
+  },
+  
+  {
+    "title": "🌐 FastAPI Training (Demo)",
+    "url": "/https://patrykpalej.dev/posts/fastapi-training-demo/",
+    "categories": "Projects, Edu",
+    "tags": "api, training",
+    "date": "2024-01-02 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "The above repository contains a demo version of my FastAPI training for the beginners.Training scope  Introduction          HTTP protocol      REST API      Tools overview      JSON format      Typ...",
+    "content": "The above repository contains a demo version of my FastAPI training for the beginners.Training scope  Introduction          HTTP protocol      REST API      Tools overview      JSON format      Type annotations in Python        FastAPI overview (demo available)          Hello world      Paths and routing      POST method, request body      Pydantic, request body model      Path parameters      HTTPException      JSONResponse, default status_code      DELETE and PUT methods      Project structure      Automatic documentation        Databases          SQL, pgAdmin      Psycopg2      SQLAlchemy      Secrets management        CRUD application          CRUD letters      Implementation in psycopg2      Implementation in SQLAlchemy      Response model      Query parameters        Other topics          Passwords hashing      Authentication and authorization      Middleware      Application frontend      "
+  },
+  
+  {
+    "title": "Virtual environments in Python",
+    "url": "/https://patrykpalej.dev/posts/virtualenv/",
+    "categories": "Knowledge, Toolkit",
+    "tags": "basics, tools, python",
+    "date": "2023-12-30 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "1. What is it?Virtual environment (virtualenv in short) is a common way of managing installed packages in your Python project.2. Why do I need it?Using virtual environments allows you to separate y...",
+    "content": "1. What is it?Virtual environment (virtualenv in short) is a common way of managing installed packages in your Python project.2. Why do I need it?Using virtual environments allows you to separate your projects from each other. Packages installed in one environment are not visible in other projects. Therefore, you can handle using different versions of various libraries in your projects. Additionally the environment is lighter if it contains only the packages that are used.3. How to use it?First and foremost – in a terminal/command prompt.InstallationIf you don’t have virtualenv package installed, open your terminal/command prompt and run:pip install virtualenvInitializationIn your directory of choice (execute: cd path/to/directory) create the environment. Depending on how you installed virtualenv, you can try one of the following:virtualenv my_venvpython -m venv my_venv  Note that a conventional name for a virtual environment is venv, not my_venvActivationAfter creating a new virtualenv it needs to be activated first. To activate it, run:source my_venv/bin/activate  # for Linux or Mac.\\my_venv\\Scripts\\activate  # for WindowsAfter activation you’ll see name of the environment in brackets at the beginning of line in terminal:(my_venv) your_user:path/to/directory$  If you want to deactivate the environment, just run deactivate.Installing packagesOnly after activating the environment you can install packages to it. Do it using pip install, e.g.:pip install numpyAll libs you install are downloaded to your virtualenv in my_venv/lib directory.Freezing virtualenvIf you want to share the project, don’t send my_venv folder to anyone. Instead, you need to freeze your environment by saving its state to a .txt file, conventionally named requirements.txt:pip freeze &gt; requirements.txtNow anyone can recreate the environment by creating a new one first and then installing everything from requirements.txt:pip install -r requirements.txt4. SummaryThe workflow of virtual environments is the following:virtualenv venv  # create a virtual environment named \"venv\"source venv/bin/activate  # activate venv on Linux or Mac./venv/Scripts/activate  # activate venv on Windowspip install &lt;package_name&gt;  # install required packagespip freeze &gt; requirements.txt  # dump state of your environment to a .txt filepip install -r requirements.txt  # recreate the environment from file (after creating a new one) AlternativesThere are some alternatives for using virtualenv which are worth checking:  Anaconda – used mainly in data science, allows you to store all you need in a one big environment which can be separated from the pure Python interpreter on your machine  Poetry  Pipenv"
+  },
+  
+  {
+    "title": "Python Roadmap",
+    "url": "/https://patrykpalej.dev/posts/roadmap/",
+    "categories": "Knowledge, General",
+    "tags": "python, data-science, web-development, basics, mid-level, advanced",
+    "date": "2023-12-29 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "graph TD    A[START] --&gt;|code| beg_code_1[Language basics]    beg_code_1 --&gt; beg_code_2[Data structures]    beg_code_2 --&gt; beg_code_3[Conditional statements]    beg_code_3 --&gt; beg_code_...",
+    "content": "graph TD    A[START] --&gt;|code| beg_code_1[Language basics]    beg_code_1 --&gt; beg_code_2[Data structures]    beg_code_2 --&gt; beg_code_3[Conditional statements]    beg_code_3 --&gt; beg_code_4[Loops]     beg_code_4 --&gt; beg_code_5[Functions]     beg_code_5 --&gt; beg_code_6[Error handling]     beg_code_6 --&gt; beg_code_7[Modules and packages]     beg_code_7 --&gt; beg_code_8[Basic OOP]     beg_code_8 --&gt; beg_code_9[File operations]     beg_code_9 --&gt; B[BEGINNER LEVEL]     A --&gt; |tools and data formats| beg_tools_1[\"IDE (PyCharm / VS Code)\"]    beg_tools_1 --&gt; beg_tools_2[Jupyter Notebook]    beg_tools_2 --&gt; beg_tools_3[Virtual environment]    beg_tools_3 --&gt; beg_tools_4[Basic Linux]    beg_tools_4 --&gt; beg_tools_5[Git]    beg_tools_5 --&gt; beg_tools_6[JSON]    beg_tools_6 --&gt; beg_tools_7[Markdown]    beg_tools_7 --&gt; beg_tools_8[CSV]    beg_tools_8 --&gt; B       A --&gt;|good practices| beg_gp_1[Clean code]    beg_gp_1 --&gt; beg_gp_2[PEP 8]    beg_gp_2 --&gt; beg_gp_3[Docstrings]    beg_gp_3 --&gt; beg_gp_4[Type annotation]    beg_gp_4 --&gt; B            B --&gt; |python| mid_python_1[Datetime operations]    mid_python_1 --&gt; mid_python_2[Regular expressions]    mid_python_2 --&gt; mid_python_3[Generators and iterators]    mid_python_3 --&gt; mid_python_4[Unit testing]    mid_python_4 --&gt; mid_python_5[Logging]    mid_python_5 --&gt; mid_python_6[Command Line Interface]    mid_python_6 --&gt; mid_python_7[\"Package managers (poetry / pipenv)\"]    mid_python_7 --&gt; C[MID LEVEL]        B --&gt; |data science| mid_ds_1[Numpy]     mid_ds_1 --&gt; mid_ds_2[Pandas]    mid_ds_2 --&gt; mid_ds_3[Data visualization]    mid_ds_3 --&gt; mid_ds_4[Exploratory data analysis]    mid_ds_4 --&gt; mid_ds_5[Web dashboards]    mid_ds_5 --&gt; mid_ds_6[Statistics]    mid_ds_6 --&gt; mid_ds_7[Data cleaning]    mid_ds_7 --&gt; mid_ds_8[Regression algorithms]    mid_ds_8 --&gt; mid_ds_9[Classification algorithms]    mid_ds_9 --&gt; mid_ds_10[Clustering algorithms]    mid_ds_10 --&gt; mid_ds_11[Performance metrics]    mid_ds_11 --&gt; mid_ds_12[Overfitting handling]    mid_ds_12 --&gt; mid_ds_13[Time series analysis]    mid_ds_13 --&gt; C         B --&gt; |web development| mid_web_1[Basic HTML and CSS]     mid_web_1 --&gt; mid_web_2[HTTP protocol]    mid_web_2 --&gt; mid_web_3[Web scraping]    mid_web_3 --&gt; mid_web_4[SQL and databases]    mid_web_4 --&gt; mid_web_5[Object Relational Mapping]    mid_web_5 --&gt; mid_web_6[\"REST API (Flask/FastAPI/Django)\"]    mid_web_6 --&gt; C            C --&gt; |python| adv_python_1[Decorators]    adv_python_1 --&gt; adv_python_2[Multithreading and multiprocessing]    adv_python_2 --&gt; adv_python_3[\"Dunder methods (OOP)\"]    adv_python_3 --&gt; adv_python_4[\"Abstract classes (OOP)\"]    adv_python_4 --&gt; adv_python_5[\"Polymorphism (OOP)\"]    adv_python_5 --&gt; adv_python_6[Design patterns]    adv_python_6 --&gt; D[ADVANCED LEVEL]        C --&gt; |devops| adv_devops_1[Advanced Linux]    adv_devops_1 --&gt; adv_devops_2[Docker]    adv_devops_2 --&gt; adv_devops_3[Kubernetes]    adv_devops_3 --&gt; adv_devops_4[Cloud]    adv_devops_4 --&gt; D        C --&gt; |data science| adv_ds_1[PCA]    adv_ds_1 --&gt; adv_ds_2[Bagging and boosting]    adv_ds_2 --&gt; adv_ds_3[\"Artificial Neural Networks (perceptron)\"]    adv_ds_3 --&gt; adv_ds_4[Convolutional Neural Networks]    adv_ds_4 --&gt; adv_ds_5[Other NN architectures]    adv_ds_5 --&gt; adv_ds_6[Spark]    adv_ds_6 --&gt; D"
+  },
+  
+  {
+    "title": "Jupyter Notebook",
+    "url": "/https://patrykpalej.dev/posts/jupyter-notebook/",
+    "categories": "Knowledge, Toolkit",
+    "tags": "basics, tools",
+    "date": "2023-12-21 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "The most common way of writing Python code is using .py files. An alternative to .py are so called “notebooks” (extended with .ipynb) . They are not only another file format, but most of all a diff...",
+    "content": "The most common way of writing Python code is using .py files. An alternative to .py are so called “notebooks” (extended with .ipynb) . They are not only another file format, but most of all a different philosophy of writing (not only) Python code.What is a notebook?A notebook (.ipynb file) is actually a JSON file which contains Python code (and/or Markdown text) organized in so called “cells”. When you open the file in an editor that supportsthe .ipynb format you’ll see something like this:After running a single code cell, it is sent to the IPython kernel and executed.Editors with notebook support  Jupyter Notebook  Jupyter Lab  Google Colab  PyCharm (read only in the free version)  Visual Studio Codeand more.Many .ipynb editors (especially when they use cloud) work in a browser.Notebook key features  code and text support  each cell of code (or Markdown text) can be run separately  order of cells doesn’t matter, order of running them does  keyboard shortcuts for actions like: adding and deleting cells, navigating through the notebook, executing codeApplicationsJupyter Notebook isn’t a universal code editor. It’s not well-suited for writing production code. However, there are numerous use cases where Jupyter proves to be a valuable tool, such as:  prototyping  experiments  data analysis  educationKeyboard shortcutsWhen you escape the cell (by pressing Esc, of course), you switch it to command mode. Now you can use a number of keyboard shortcuts which allow you to perform various operations on the cell, e.g.:  creating a new cell above (a) or below (b)  deleting a cell (double d)  moving between cells (arrow up ↑, arrow down ↓)  executing a cell (Shift + Enter / Ctrl + Enter / Alt + Enter)If you want to enter the cell again (switch to edit mode) – press Enter."
+  },
+  
+  {
+    "title": "📈 Numerical Simulations",
+    "url": "/https://patrykpalej.dev/posts/numerical-simulation/",
+    "categories": "Projects, Dev",
+    "tags": "math-modeling, mid-level",
+    "date": "2023-12-20 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "Project descriptionThis project is a set of numerical simulations regarding various phenomena such as:  Gravitational interactions  Humans vs. Zombies battle🪐 Gravity SimulationIn this simulation, ...",
+    "content": "Project descriptionThis project is a set of numerical simulations regarding various phenomena such as:  Gravitational interactions  Humans vs. Zombies battle🪐 Gravity SimulationIn this simulation, you:  Set the initial conditions for a group of material points (“planets”)          they can be inserted manually or imported from a file.        Customize the animation by multiselecting elements to display          planets themselves      gravity field      planets’ trajectories        Determine strategy for collision handling          annihilate      freeze      bounce        Set simulation speedYou can also save logs and initial conditions to file but only when running locally.Sample animationsBelow you can find sample animations from the simulator:      🧟‍♂️ Humans vs. Zombies  In this simulation, two groups of characters fight each other to survive  Each character is defined by a set of characteristics, including their coordinates (x, y), velocity, and power  When a zombie wins a fight, it transforms a human into a new zombie. However, if a human prevails in the combat, they eliminate their zombie opponentSample animationsBelow you can find sample animations of the battle. Humans are orangeand zombies are green.    "
+  },
+  
+  {
+    "title": "🏢 Real Estate Market Analysis",
+    "url": "/https://patrykpalej.dev/posts/real-estate-market-analysis/",
+    "categories": "Projects, Dev",
+    "tags": "web-scraping, data-visualization, machine-learning",
+    "date": "2023-11-30 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "Project overviewIn this project, I developed a system designed for collection and analysis of real estate offers. Its primary goal is to estimate the market value of various properties, including h...",
+    "content": "Project overviewIn this project, I developed a system designed for collection and analysis of real estate offers. Its primary goal is to estimate the market value of various properties, including houses, lands, and apartments. It consists of four stages:  data scraping  data visualization  machine learning model for price estimation  model API (in progress)All data is collected exclusively for educational purposes and is not utilized commercially. Personal data is not stored.Data scrapingData used in this project is obtained from two sources:  https://www.otodom.pl/  https://www.domiporta.pl/For each of them, three property types are considered:  houses  lands  apartmentsWeb scraping process is implemented using abstract classes and inheritance according to the following scheme:flowchart LR    classDef abstractClass fill:#4444ffee, color:#fffc;        PropertyScraper --&gt; OtodomScraper    PropertyScraper --&gt; DomiportaScraper    OtodomScraper --&gt; OtodomHouseScraper    OtodomScraper --&gt; OtodomLandScraper    OtodomScraper --&gt; OtodomApartmentScraper    DomiportaScraper --&gt; DomiportaHouseScraper    DomiportaScraper --&gt; DomiportaLandScraper    DomiportaScraper --&gt; DomiportaApartmentScraper        class PropertyScraper,OtodomScraper,DomiportaScraper abstractClass;     Each concrete (non-abstract) class refers to one table in a relational database where data is stored. Moreover, the scraping process is divided into two separate parts. For each combination of data source and property type (for example otodom apartments), data acquisition process consists of:  searching offers based on assumed filters and saving URL addresses into Redis database  scraping offers corresponding to those URLs and saving them to a databaseAll scraping classes are orchestrated by a CLI (Command Line Interface) tool, which enables convenient execution of the appropriate scraper. For instance, you can search URLs of Otodom apartments by:”python orchestrator.py search otodom apartmentsOr scrape offers of lands on Domiporta by:python orchestrator.py scrape domiporta landsFor each concrete scraping class, the ETL process works according to the flowchart. For the example purposes I’m considering OtodomApartmentScraper:flowchart TB    subgraph SEARCH      Crontab1[Crontab job]  --&gt; |RUN| Python1[python orchestrator.py search otodom apartments]      Python1 --&gt; |USE| OAS1[OtodomApartmentScraper class]      OAS1 --&gt; |SAVE| Redis[URLs on Redis]    end        subgraph SCRAPE      Crontab2[Crontab job] --&gt; |RUN| Python2[python orchestrator.py scrape otodom apartments]      Python2 --&gt; |LOAD| Redis      Redis --&gt; |USE| OAS2[OtodomApartmentScraper class]      OAS2 --&gt; |SAVE| Postgres[PostgreSQL database]    endData visualizationAfter the data acquisition process, we move on to the visualization part. For this purpose, I created a web dashboard which contains interactive charts.On the dashboard you will find:  Distributions of:          house/land/apartment area      price and price per square meter      number of offers in various regions        Time-related changes in:          the number of properties offered      the average price        A map featuring marked locations of propertiesand even more. Below, you can find examples of figures for:HousesLandsApartmentsModel trainingIn the initial approach, machine learning models were trained only using Otodom data as this service provides more information about the properties. A dedicated Random Forest Regressor model was developed for each type of property, employing a scikit-learn Pipeline. Prior to the model training, a feature engineering process was undertaken to preprocess the data before modeling.The preprocessing steps on the example of houses data includes the following:  Transformation of the advert type (agency or private) into a boolean value  Transformation of the market type (primary or secondary) into a boolean value  Label encoding of the weekday and season corresponding to when the offer was posted  Calculating time difference between the offer and an arbitrarily chosen timestamp (2023-01-01) to reflect offer’s position on a timeline  Label encoding of the house location (country/suburban/city)  One hot encoding of province and subregion of the propertyFor both further preprocessing (feature scaling) and model training, a grid search was applied using the following parameters:  StandardScaler(), MinMaxScaler() for feature scaling  400, 500, 600 for n_estimators  70, 80, 90 for max_depthAdditionally, I experimented with feature extraction, however this approach resulted in a decrease in model performance.The final pipeline, configured for optimal performance in terms of mean absolute error (with a use of cross validation), includes the following elements:Metrics calculated for the whole dataset:Mean absolute error [PLN]: 127951Mean absolute percentage error [%]: 21.5The model’s performance is for from perfect, as it is influenced by various factors including the subjective nature of house evaluations. It effectively handles key aspects like location and size, but the diversity in interior details of houses presents a challenge. Additionally, the model doesn’t utilize all property features, which further impacts its accuracy. This current version is an initial step in exploring the possibilities of price modeling, with potential for future enhancements. Its primary goal is to estimate market value, rather than to establish a universal formula for price evaluation.API for the modelWork in progress"
+  }
+  
+]
+

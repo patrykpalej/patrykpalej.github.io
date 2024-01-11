@@ -1,0 +1,247 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/https://patrykpalej.dev/</id>
+  <title>Patryk Palej</title>
+  <subtitle>Patryk Palej portfolio, personal blog about python coding, data science and education</subtitle>
+  <updated>2024-01-11T09:29:15+01:00</updated>
+  <author>
+    <name>Patryk Palej</name>
+    <uri>http://localhost:4000/https://patrykpalej.dev/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/https://patrykpalej.dev/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/https://patrykpalej.dev/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2024 Patryk Palej </rights>
+  <icon>https://patrykpalej.dev/assets/img/favicons/favicon.ico</icon>
+  <logo>https://patrykpalej.dev/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Markdown language</title>
+    <link href="http://localhost:4000/https://patrykpalej.dev/posts/markdown/" rel="alternate" type="text/html" title="Markdown language" />
+    <published>2024-01-07T00:00:00+01:00</published>
+  
+    <updated>2024-01-07T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/https://patrykpalej.dev/posts/markdown/</id>
+    <content src="http://localhost:4000/https://patrykpalej.dev/posts/markdown/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Knowledge" />
+    
+    <category term="Toolkit" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Overview
+Markdown is a simple language used for text formatting. It allows you to obtain an elegant, visually attractive text just by writing a plain text document. It’s widely used due to its simplicity and ease of use, making it a popular choice for:
+
+  creating documentation
+  writing blog posts
+  text formatting in various applications, e.g. Jupyter Notebook
+
+
+and more.
+
+Markdown syntax cov...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>🌐 FastAPI Training (Demo)</title>
+    <link href="http://localhost:4000/https://patrykpalej.dev/posts/fastapi-training-demo/" rel="alternate" type="text/html" title="🌐 FastAPI Training (Demo)" />
+    <published>2024-01-02T00:00:00+01:00</published>
+  
+    <updated>2024-01-02T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/https://patrykpalej.dev/posts/fastapi-training-demo/</id>
+    <content src="http://localhost:4000/https://patrykpalej.dev/posts/fastapi-training-demo/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="Edu" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The above repository contains a demo version of my FastAPI training for the beginners.
+
+Training scope
+
+  Introduction
+    
+      HTTP protocol
+      REST API
+      Tools overview
+      JSON format
+      Type annotations in Python
+    
+  
+  FastAPI overview (demo available)
+    
+      Hello world
+      Paths and routing
+      POST method, request body
+      Pydantic, request body model
+      Pa...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Virtual environments in Python</title>
+    <link href="http://localhost:4000/https://patrykpalej.dev/posts/virtualenv/" rel="alternate" type="text/html" title="Virtual environments in Python" />
+    <published>2023-12-30T00:00:00+01:00</published>
+  
+    <updated>2023-12-30T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/https://patrykpalej.dev/posts/virtualenv/</id>
+    <content src="http://localhost:4000/https://patrykpalej.dev/posts/virtualenv/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Knowledge" />
+    
+    <category term="Toolkit" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      1. What is it?
+Virtual environment (virtualenv in short) is a common way of managing installed packages in your Python project.
+
+2. Why do I need it?
+Using virtual environments allows you to separate your projects from each other. Packages installed in one environment are not visible in other projects. Therefore, you can handle using different versions of various libraries in your projects. Add...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Python Roadmap</title>
+    <link href="http://localhost:4000/https://patrykpalej.dev/posts/roadmap/" rel="alternate" type="text/html" title="Python Roadmap" />
+    <published>2023-12-29T00:00:00+01:00</published>
+  
+    <updated>2023-12-29T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/https://patrykpalej.dev/posts/roadmap/</id>
+    <content src="http://localhost:4000/https://patrykpalej.dev/posts/roadmap/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Knowledge" />
+    
+    <category term="General" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      graph TD
+    A[START] --&amp;gt;|code| beg_code_1[Language basics]
+    beg_code_1 --&amp;gt; beg_code_2[Data structures]
+    beg_code_2 --&amp;gt; beg_code_3[Conditional statements]
+    beg_code_3 --&amp;gt; beg_code_4[Loops] 
+    beg_code_4 --&amp;gt; beg_code_5[Functions] 
+    beg_code_5 --&amp;gt; beg_code_6[Error handling] 
+    beg_code_6 --&amp;gt; beg_code_7[Modules and packages] 
+    beg_code_7 --&amp;gt; beg_code_8[Ba...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Jupyter Notebook</title>
+    <link href="http://localhost:4000/https://patrykpalej.dev/posts/jupyter-notebook/" rel="alternate" type="text/html" title="Jupyter Notebook" />
+    <published>2023-12-21T00:00:00+01:00</published>
+  
+    <updated>2023-12-21T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/https://patrykpalej.dev/posts/jupyter-notebook/</id>
+    <content src="http://localhost:4000/https://patrykpalej.dev/posts/jupyter-notebook/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Knowledge" />
+    
+    <category term="Toolkit" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The most common way of writing Python code is using .py files. An alternative to .py are so called “notebooks” (extended with .ipynb) . They are not only another file format, but most of all a different philosophy of writing (not only) Python code.
+
+What is a notebook?
+A notebook (.ipynb file) is actually a JSON file which contains Python code (and/or Markdown text) organized in so called “cell...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
