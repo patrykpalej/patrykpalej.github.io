@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>Patryk Palej</title>
-  <subtitle>Patryk Palej portfolio, personal blog about python coding, data science and education</subtitle>
-  <updated>2024-01-11T18:54:37+01:00</updated>
+  <title>🔥 Patryk Palej – personal website</title>
+  <subtitle>Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects 👉 💻</subtitle>
+  <updated>2024-01-12T13:16:44+01:00</updated>
   <author>
     <name>Patryk Palej</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,47 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>AI coding assistants</title>
+    <link href="http://localhost:4000/posts/ai-coding-assistants/" rel="alternate" type="text/html" title="AI coding assistants" />
+    <published>2024-01-12T00:00:00+01:00</published>
+  
+    <updated>2024-01-12T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/ai-coding-assistants/</id>
+    <content src="http://localhost:4000/posts/ai-coding-assistants/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="Edu" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This project aggregates AI assistants that I’ve developed to assist you with particular tasks throughout your coding learning process. As of now, there’s a single assistant available. However, in the future, you can expect to find additional ones.
+
+GPT coding mentor
+
+This assistant helps you in completing coding exercises by guiding you through the process, instead of writing the code for you.
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -198,45 +239,6 @@ Using virtual environments allows you to separate your projects from each other.
     beg_code_5 --&amp;gt; beg_code_6[Error handling] 
     beg_code_6 --&amp;gt; beg_code_7[Modules and packages] 
     beg_code_7 --&amp;gt; beg_code_8[Ba...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Jupyter Notebook</title>
-    <link href="http://localhost:4000/posts/jupyter-notebook/" rel="alternate" type="text/html" title="Jupyter Notebook" />
-    <published>2023-12-21T00:00:00+01:00</published>
-  
-    <updated>2023-12-21T00:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/jupyter-notebook/</id>
-    <content src="http://localhost:4000/posts/jupyter-notebook/" />
-    <author>
-      <name>Patryk Palej</name>
-    </author>
-
-  
-    
-    <category term="Knowledge" />
-    
-    <category term="Toolkit" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      The most common way of writing Python code is using .py files. An alternative to .py are so called “notebooks” (extended with .ipynb) . They are not only another file format, but most of all a different philosophy of writing (not only) Python code.
-
-What is a notebook?
-A notebook (.ipynb file) is actually a JSON file which contains Python code (and/or Markdown text) organized in so called “cell...
     </summary>
   
 

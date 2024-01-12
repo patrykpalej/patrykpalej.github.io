@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "AI coding assistants",
+    "url": "/posts/ai-coding-assistants/",
+    "categories": "Projects, Edu",
+    "tags": "ai",
+    "date": "2024-01-12 00:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "This project aggregates AI assistants that I’ve developed to assist you with particular tasks throughout your coding learning process. As of now, there’s a single assistant available. However, in t...",
+    "content": "This project aggregates AI assistants that I’ve developed to assist you with particular tasks throughout your coding learning process. As of now, there’s a single assistant available. However, in the future, you can expect to find additional ones.GPT coding mentorThis assistant helps you in completing coding exercises by guiding you through the process, instead of writing the code for you."
+  },
+  
+  {
     "title": "Markdown language",
     "url": "/posts/markdown/",
     "categories": "Knowledge, Toolkit",
@@ -106,7 +123,7 @@
     "title": "🏢 Real Estate Market Analysis",
     "url": "/posts/real-estate-market-analysis/",
     "categories": "Projects, Dev",
-    "tags": "web-scraping, data-visualization, machine-learning",
+    "tags": "web-scraping, data-visualization, machine-learning, cli",
     "date": "2023-11-30 00:00:00 +0100",
     
 

@@ -4,7 +4,7 @@ tldr: Scraping offers + web dashboard for visualization + ML price modeling  # +
 
 categories: [Projects, Dev]
 technologies: [BeautifulSoup, PostgreSQL, Streamlit, Scikit-learn]  # , FastAPI
-tags: [web-scraping, data-visualization, machine-learning]  #, api
+tags: [web-scraping, data-visualization, machine-learning, cli]  #, api
 
 pin: true
 project: true
