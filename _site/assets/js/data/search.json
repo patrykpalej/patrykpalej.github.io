@@ -103,7 +103,7 @@
   },
   
   {
-    "title": "📈 Numerical Simulations",
+    "title": "🔢 Numerical Simulations",
     "url": "/posts/numerical-simulation/",
     "categories": "Projects, Dev",
     "tags": "math-modeling, mid-level",
@@ -120,7 +120,7 @@
   },
   
   {
-    "title": "🏢 Real Estate Market Analysis",
+    "title": "🏘️ Real Estate Market Analysis",
     "url": "/posts/real-estate-market-analysis/",
     "categories": "Projects, Dev",
     "tags": "web-scraping, data-visualization, machine-learning, cli",

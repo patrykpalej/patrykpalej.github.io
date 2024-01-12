@@ -1,5 +1,5 @@
 ---
-title: 🏢 Real Estate Market Analysis
+title: 🏘️ Real Estate Market Analysis
 tldr: Scraping offers + web dashboard for visualization + ML price modeling  # + API for the trained model
 
 categories: [Projects, Dev]

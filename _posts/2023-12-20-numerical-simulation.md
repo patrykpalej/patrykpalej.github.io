@@ -1,5 +1,5 @@
 ---
-title: 📈 Numerical Simulations
+title: 🔢 Numerical Simulations
 tldr: A couple of mathematical simulations of various phenomena
 
 categories: [Projects, Dev]
