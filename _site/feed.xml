@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>🔥 Patryk Palej – personal website</title>
   <subtitle>Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects 👉 💻</subtitle>
-  <updated>2024-01-12T13:22:47+01:00</updated>
+  <updated>2024-01-12T13:23:48+01:00</updated>
   <author>
     <name>Patryk Palej</name>
     <uri>http://localhost:4000/</uri>
@@ -20,8 +20,8 @@
 
   
   <entry>
-    <title>🦾 AI coding assistants</title>
-    <link href="http://localhost:4000/posts/ai-coding-assistants/" rel="alternate" type="text/html" title="🦾 AI coding assistants" />
+    <title>🦾 AI Coding Assistants</title>
+    <link href="http://localhost:4000/posts/ai-coding-assistants/" rel="alternate" type="text/html" title="🦾 AI Coding Assistants" />
     <published>2024-01-12T00:00:00+01:00</published>
   
     <updated>2024-01-12T13:19:11+01:00</updated>

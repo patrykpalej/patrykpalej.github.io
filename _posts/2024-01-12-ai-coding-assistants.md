@@ -1,5 +1,5 @@
 ---
-title: 🦾 AI coding assistants
+title: 🦾 AI Coding Assistants
 tldr: Assistants which help you to perform specific tasks
 
 categories: [Projects, Edu]
