@@ -15,12 +15,12 @@ timezone: Europe/Warsaw
 # ↓ --------------------------
 
 sidebar_title: Patryk Palej
-title: 🔥 Patryk Palej – personal website
+title: Patryk Palej – personal website
 
 tagline: Python dev, data scientist, coding trainer
 
 description: >- # used by seo meta and the atom feed
-  Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects 👉 💻
+  Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
