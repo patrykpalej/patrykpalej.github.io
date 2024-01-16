@@ -112,6 +112,8 @@ collections:
   tabs:
     output: true
     sort_by: order
+  szkolenia:
+    output: true
 
 defaults:
   - scope:

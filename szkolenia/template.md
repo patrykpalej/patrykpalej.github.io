@@ -1,0 +1,9 @@
+---
+layout: default
+title: ...
+categories: szkolenia
+---
+
+# ...
+
+...

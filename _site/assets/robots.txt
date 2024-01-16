@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /norobots/
+Disallow: /install/*
+Disallow: /szkolenia/*
+
+Sitemap: /sitemap.xml

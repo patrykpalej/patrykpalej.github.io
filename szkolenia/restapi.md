@@ -1,3 +1,9 @@
+---
+layout: default
+title: REST API
+categories: szkolenia
+---
+
 # Stacja IT – REST API w Pythonie
 
 **17-18.01.2024** 
@@ -8,11 +14,11 @@
 
 **Przerwy:** 2x20 minut
 
-**Materiały:** https://github.com/patrykpalej/FastAPI-Training-Demo
+**Materiały:** [https://github.com/patrykpalej/FastAPI-Training-Demo](https://github.com/patrykpalej/FastAPI-Training-Demo)
 
-**Proszę zainstalować:** https://www.postman.com/downloads/
+**Proszę zainstalować:** [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 
-**Ankieta po:** https://bit.ly/3tDFfSQ
+**Ankieta po:** [https://bit.ly/3tDFfSQ](https://bit.ly/3tDFfSQ)
 
 ---
 
