@@ -18,7 +18,6 @@ categories: szkolenia
 
 **Proszę zainstalować:** [https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 
-**Ankieta po:** [https://bit.ly/3tDFfSQ](https://bit.ly/3tDFfSQ)
 
 ---
 
