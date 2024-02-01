@@ -35,23 +35,24 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="data-science" />
+<meta property="og:title" content="Missing data in machine learning" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects" />
-<meta property="og:description" content="Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects" />
-<link rel="canonical" href="http://localhost:4000/tags/data-science/" />
-<meta property="og:url" content="http://localhost:4000/tags/data-science/" />
+<meta name="description" content="One of the most common issues regarding training machine learning models is dealing with missing data. This problem isn’t just about having less information to feed the model, but also that many machine learning algorithms can’t handle missing data. In this article, I’m going to give a quick overview of the most important issues related to this topic." />
+<meta property="og:description" content="One of the most common issues regarding training machine learning models is dealing with missing data. This problem isn’t just about having less information to feed the model, but also that many machine learning algorithms can’t handle missing data. In this article, I’m going to give a quick overview of the most important issues related to this topic." />
+<link rel="canonical" href="http://localhost:4000/posts/missing-data/" />
+<meta property="og:url" content="http://localhost:4000/posts/missing-data/" />
 <meta property="og:site_name" content="Patryk Palej – personal website" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-02-01T00:00:00+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="data-science" />
+<meta property="twitter:title" content="Missing data in machine learning" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects","headline":"data-science","url":"http://localhost:4000/tags/data-science/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-01T00:00:00+01:00","datePublished":"2024-02-01T00:00:00+01:00","description":"One of the most common issues regarding training machine learning models is dealing with missing data. This problem isn’t just about having less information to feed the model, but also that many machine learning algorithms can’t handle missing data. In this article, I’m going to give a quick overview of the most important issues related to this topic.","headline":"Missing data in machine learning","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/missing-data/"},"url":"http://localhost:4000/posts/missing-data/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>data-science | Patryk Palej – personal website
+  <title>Missing data in machine learning | Patryk Palej – personal website
   </title>
 
   <!--
@@ -106,9 +107,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -495,16 +503,10 @@
           
         
           
-            <span>
-              <a href="/tags">
-                Tags
-              </a>
-            </span>
-          
         
           
             
-              <span>data-science</span>
+              <span>Missing data in machine learning</span>
             
 
           
@@ -518,7 +520,7 @@
     </button>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -544,77 +546,459 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              <!--
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+<!--
 
 -->
 
 <article class="px-1">
-  
-    
+  <header>
+    <h1 data-toc-skip>Missing data in machine learning</h1>
+
+    <div class="post-meta text-muted">
+
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
 
 
 
-<div id="page-tag">
-  <h1 class="ps-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    data-science
-    <span class="lead text-muted ps-2">2</span>
-  </h1>
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/missing-data/">Missing data in machine learning</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+<!-- words per minute -->
 
 
 
 
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1706742000"
-  data-df="ll"
-  
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="972 words"
 >
-  Feb  1, 2024
-</time>
+  <em>11 min</em> read</span>
 
-      </li>
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <br> <br>
+  <hr>
+
+  
+
+  <hr>
+
+  <div class="post-content">
+    <p>One of the most common issues regarding training machine learning models is dealing with missing data. This problem isn’t just about having less information to feed the model, but also that many machine learning algorithms can’t handle missing data. In this article, I’m going to give a quick overview of the most important issues related to this topic.</p>
+
+<h3 id="which-models-accept-missing-data"><span class="me-2">Which models accept missing data?</span><a href="#which-models-accept-missing-data" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Out of the most common machine learning algorithms, like: decision trees (+ their ensembles), linear models, SVM, KNN etc. only decision trees support using missing data. At least in scikit-learn implementation. When using any other algorithm, we must remove NaN values first. The most common methods for this are:</p>
+<ul>
+  <li>imputation</li>
+  <li>deletion</li>
+</ul>
+
+<h3 id="nature-of-missing-data"><span class="me-2">Nature of missing data</span><a href="#nature-of-missing-data" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Before proceeding to these methods, let’s first understand the nature and patterns in the missing data. Identifying why the data is missing is crucial in choosing the right strategy for handling it. Broadly, missing data can be categorized into three types:</p>
+<ul>
+  <li>Missing Completely At Random (<strong>MCAR</strong>)</li>
+  <li>Missing At Random (<strong>MAR</strong>)</li>
+  <li>Missing Not At Random (<strong>MNAR</strong>)</li>
+</ul>
+
+<p>Let’s dive into all of these categories, considering a case of a survey in which you are asked to provide various details about you, including your income.</p>
+
+<h4 id="mcar"><span class="me-2">MCAR</span><a href="#mcar" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>This type of NaN values occurs when the absence of data is completely independent of any other data, implying that the reasons for the missing values are entirely random and have no relation to the dataset.</p>
+
+<p><strong>Example:</strong>
+Some respondents skipped this question because of missing it. They didn’t omit the question by intentention.</p>
+
+<h4 id="mar"><span class="me-2">MAR</span><a href="#mar" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>Missing At Random occurs when the missingness of data in one feature is related to other features in the dataset, but not to the missing value itself. In other words, while the data is not missing completely at random, the tendency for a data point to be missing is only related to some of the observed data.</p>
+
+<p><strong>Example:</strong>
+Younger respondents may be more open to disclosing their incomes, while older ones might consider such information confidential.</p>
+
+<h4 id="mnar"><span class="me-2">MNAR</span><a href="#mnar" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>Missing Not At Random occurs when the missingness is related to the unobserved data itself. In other words, there is a reason related to the missing data which influences its absence.</p>
+
+<p><strong>Example:</strong> High-income individuals might intentionally skip the income question due to privacy concerns. Here, the tendency to omit the income information is directly related to the income value itself.</p>
+
+<h3 id="meaning-of-the-missing-data"><span class="me-2">Meaning of the missing data</span><a href="#meaning-of-the-missing-data" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>There is also another dichotomy of NaN values which regards their meaning. We distinguish the following categories:</p>
+<ul>
+  <li>informative missing data</li>
+  <li>non-informative missing data</li>
+</ul>
+
+<p><strong>Informative missing data</strong> occurs when the absence of a value itself provides some insights.</p>
+
+<p>For example, if there is a missing value for the “University Degree” field, it may indicate that the individual did not obtain a degree from any university. This conveys a specific information.</p>
+
+<p><strong>Non-informative missing data</strong> happens when the absence of data does not convey any additional information about the dataset. This typically happens in situations where data is missing completely at random, without any underlying pattern or reason related to the data itself.</p>
+
+<p>For example, if there is a NaN value for age, we cannot determine the reason for this missingness, as in fact there is always an actual value for this feature.</p>
+
+<h3 id="how-to-deal-with-missing-data"><span class="me-2">How to deal with missing data?</span><a href="#how-to-deal-with-missing-data" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>As stated before, there are two main ways of handling missing data:</p>
+<ul>
+  <li>imputation (assigning a value in place of a NaN)</li>
+  <li>deletion</li>
+</ul>
+
+<p>Main reasons to choose <strong>imputation</strong>:</p>
+<ul>
+  <li>The occurrence of missing values is a natural process, and the model should be able to handle them</li>
+  <li>We can explain the nature of the missingness, thus we can substitute it with a specific value</li>
+  <li>Missing data occur in many rows, and we do not want to remove a significant portion of the data</li>
+  <li>The dataset has many important features, but only a few contain empty values</li>
+</ul>
+
+<p>Main reasons to choose <strong>deletion</strong>:</p>
+<ul>
+  <li>Data is Missing Completely At Random and it’s not going to happen on a regular basis</li>
+  <li>The presence of NaN values is marginal, and their deletion will not significantly impact the size of the dataset</li>
+</ul>
+
+<p>Have in mind, that usually deletion means deleting <strong>rows</strong> with NaN values. However, if there is a feature with a lot of missing data, it might be better to delete the whole <strong>column</strong>.</p>
+
+<h3 id="methods-of-imputation"><span class="me-2">Methods of imputation</span><a href="#methods-of-imputation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>While deleting data is a simple process, imputation is definitely more complex. There are multiple methods of imputation, such as:</p>
+
+<h4 id="imputing-a-specific-value"><span class="me-2">Imputing a specific value</span><a href="#imputing-a-specific-value" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>Sometimes, understanding the nature of a NaN allows for a logical explanation. For example, if there is missing data for the question “How many cigarettes do you smoke a day?” and it is known that the person is a non-smoker, we can reasonably impute the value as 0.</p>
+
+<h4 id="imputing-a-calculated-value"><span class="me-2">Imputing a calculated value</span><a href="#imputing-a-calculated-value" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>For categoric features we may impute the most frequent category in the dataset, as it’s the most likely value.</p>
+
+<p>For numeric features we may impute the mean or median, as it’s the most representative value for that feature. Imputing the mean works well for symmetrically distributed data, where the mean provides a good central estimate. However, in skewed distributions, the median is often a better choice as it is less affected by outliers.</p>
+
+<h4 id="imputing-a-value-calculated-in-a-subset"><span class="me-2">Imputing a value calculated in a subset</span><a href="#imputing-a-value-calculated-in-a-subset" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>When calculating mean, median or mode, we can use only a subset of the whole dataset which consists of the most similar observations in terms of some other features.</p>
+
+<h4 id="training-a-model-for-estimating-the-missing-values"><span class="me-2">Training a model for estimating the missing values</span><a href="#training-a-model-for-estimating-the-missing-values" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>Training an auxiliary model to estimate missing data is a sophisticated approach that involves using existing data to predict absent values. For instance, a regression model could be used for estimating continuous numeric data, whereas a classification model might be appropriate for categoric data.</p>
+
+<p>This approach may not always be optimal, as it can lead to an increase in the computational complexity of the overall problem.</p>
+
+  </div>
+
+  <br> <br>
+ <div class="contact-section" style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding-top: 20px;">
+    <p style="font-weight: bold; font-size: 16px;">
+      Any questions regarding this article? <a target="_blank" href="../../contact">Let me know!</a>
+    </p>
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/roadmap/">Python Roadmap</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1703804400"
-  data-df="ll"
-  
->
-  Dec 29, 2023
-</time>
-
-      </li>
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/knowledge/">Knowledge</a>,
+          <a href="/categories/data/">Data</a>
+      </div>
     
-  </ul>
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/mid-level/"
+            class="post-tag no-text-decoration"
+          >mid-level</a>
+        
+          <a
+            href="/tags/machine-learning/"
+            class="post-tag no-text-decoration"
+          >machine-learning</a>
+        
+          <a
+            href="/tags/data-science/"
+            class="post-tag no-text-decoration"
+          >data-science</a>
+        
+      </div>
+    
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fmissing-data%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+        <i class="fa-fw fab fa-linkedin"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
-  
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -1096,12 +1480,295 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/roadmap/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1703804400"
+  data-df="ll"
+  
+>
+  Dec 29, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Python Roadmap</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  graph TD
+    A[START] --&amp;gt;|code| beg_code_1[Language basics]
+    beg_code_1 --&amp;gt; beg_code_2[Data structures]
+    beg_code_2 --&amp;gt; beg_code_3[Conditional statements]
+    beg_code_3 --&amp;gt; beg_c...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/real-estate-market-analysis/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1701298800"
+  data-df="ll"
+  
+>
+  Nov 30, 2023
+</time>
+
+              <h4 class="pt-0 my-2">🏘️ Real Estate Market Analysis</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Project overview
+In this project, I developed a system designed for collection and analysis of real estate offers. Its primary goal is to estimate the market value of various properties, including ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/numerical-simulation/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1703026800"
+  data-df="ll"
+  
+>
+  Dec 20, 2023
+</time>
+
+              <h4 class="pt-0 my-2">🔢 Numerical Simulations</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Project description
+This project is a set of numerical simulations regarding various phenomena such as:
+
+  Gravitational interactions
+  Humans vs. Zombies battle
+
+
+🪐 Gravity Simulation
+In this simu...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/ai-coding-assistants/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>🦾 AI Coding Assistants</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1621,6 +2288,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1684,16 +2358,44 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

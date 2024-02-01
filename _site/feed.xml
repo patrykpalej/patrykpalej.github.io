@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Patryk Palej – personal website</title>
   <subtitle>Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects</subtitle>
-  <updated>2024-01-31T09:17:47+01:00</updated>
+  <updated>2024-02-01T13:19:18+01:00</updated>
   <author>
     <name>Patryk Palej</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,45 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Missing data in machine learning</title>
+    <link href="http://localhost:4000/posts/missing-data/" rel="alternate" type="text/html" title="Missing data in machine learning" />
+    <published>2024-02-01T00:00:00+01:00</published>
+  
+    <updated>2024-02-01T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/missing-data/</id>
+    <content src="http://localhost:4000/posts/missing-data/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Knowledge" />
+    
+    <category term="Data" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      One of the most common issues regarding training machine learning models is dealing with missing data. This problem isn’t just about having less information to feed the model, but also that many machine learning algorithms can’t handle missing data. In this article, I’m going to give a quick overview of the most important issues related to this topic.
+
+Which models accept missing data?
+Out of t...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -195,50 +234,6 @@ Virtual environment (virtualenv in short) is a common way of managing installed 
 
 2. Why do I need it?
 Using virtual environments allows you to separate your projects from each other. Packages installed in one environment are not visible in other projects. Therefore, you can handle using different versions of various libraries in your projects. Add...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Python Roadmap</title>
-    <link href="http://localhost:4000/posts/roadmap/" rel="alternate" type="text/html" title="Python Roadmap" />
-    <published>2023-12-29T00:00:00+01:00</published>
-  
-    <updated>2023-12-29T00:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/roadmap/</id>
-    <content src="http://localhost:4000/posts/roadmap/" />
-    <author>
-      <name>Patryk Palej</name>
-    </author>
-
-  
-    
-    <category term="Knowledge" />
-    
-    <category term="General" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      graph TD
-    A[START] --&amp;gt;|code| beg_code_1[Language basics]
-    beg_code_1 --&amp;gt; beg_code_2[Data structures]
-    beg_code_2 --&amp;gt; beg_code_3[Conditional statements]
-    beg_code_3 --&amp;gt; beg_code_4[Loops] 
-    beg_code_4 --&amp;gt; beg_code_5[Functions] 
-    beg_code_5 --&amp;gt; beg_code_6[Error handling] 
-    beg_code_6 --&amp;gt; beg_code_7[Modules and packages] 
-    beg_code_7 --&amp;gt; beg_code_8[Ba...
     </summary>
   
 
