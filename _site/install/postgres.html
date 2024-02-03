@@ -568,15 +568,15 @@
 
 <p><strong>PostgreSQL</strong></p>
 
-<p><code>
+<pre>
 sudo apt install postgresql -y
-sudo -u postgres psql</code></p>
+sudo -u postgres psql
 
-<h1 id="tutaj-otworzy-się-interfejs-cli--postgresa">tutaj otworzy się interfejs CLI  postgresa</h1>
+# tutaj otworzy się interfejs CLI  postgresa
 
-<p>ALTER USER postgres PASSWORD ‘postgres’;
+ALTER USER postgres PASSWORD 'postgres';
 \q 
-&lt;/code&gt;</p>
+</pre>
 
 <p><strong>pgAdmin</strong></p>
 
@@ -598,35 +598,22 @@ sudo apt install pgadmin4 -y
 
 <p>Aby sprawdzić, czy instalacja przebiegła pomyślnie wykonaj poniższy skrypt, wstawiając do niego swoje hasło:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">psycopg2</span>
+<pre>
+import psycopg2
 
-<span class="n">db_password</span> <span class="o">=</span> <span class="sh">"</span><span class="s">postgres</span><span class="sh">"</span>
+db_password = "postgres"
 
-<span class="c1"># ---
-</span><span class="n">create_query</span> <span class="o">=</span> <span class="sh">"</span><span class="s">create table test (a integer, b integer)</span><span class="sh">"</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="p">.</span><span class="nf">connect</span><span class="p">(</span><span class="n">dbname</span><span class="o">=</span><span class="sh">"</span><span class="s">postgres</span><span class="sh">"</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="sh">"</span><span class="s">postgres</span><span class="sh">"</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">db_password</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="sh">"</span><span class="s">localhost</span><span class="sh">"</span><span class="p">)</span>
-<span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="p">.</span><span class="nf">cursor</span><span class="p">()</span>
+# ---
+create_query = "create table test (a integer, b integer)"
+conn = psycopg2.connect(dbname="postgres", user="postgres", password=db_password, host="localhost")
+cur = conn.cursor()
 
-<span class="n">cur</span><span class="p">.</span><span class="nf">execute</span><span class="p">(</span><span class="n">create_query</span><span class="p">)</span>
-<span class="n">conn</span><span class="p">.</span><span class="nf">commit</span><span class="p">()</span>
+cur.execute(create_query)
+conn.commit()
 
-<span class="n">cur</span><span class="p">.</span><span class="nf">close</span><span class="p">()</span>
-<span class="n">conn</span><span class="p">.</span><span class="nf">close</span><span class="p">()</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+cur.close()
+conn.close()
+</pre>
 
 <p>a następnie otwórz pgAdmina i sprawdź, czy pojawiła się w nim tabela “test”:</p>
 

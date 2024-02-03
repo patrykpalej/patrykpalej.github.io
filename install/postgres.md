@@ -33,7 +33,7 @@ Instalacja na przykładzie dystrybucji Ubuntu:
 
 **PostgreSQL**
 
-<code>
+<pre>
 sudo apt install postgresql -y
 sudo -u postgres psql
 
@@ -41,11 +41,9 @@ sudo -u postgres psql
 
 ALTER USER postgres PASSWORD 'postgres';
 \q 
-</code>
-
+</pre>
 
 **pgAdmin**
-
 
 <pre>
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
@@ -66,7 +64,7 @@ Jeżeli używasz Anacondy, upewnij się, że jest ona aktywna w terminalu. Nast�
 
 Aby sprawdzić, czy instalacja przebiegła pomyślnie wykonaj poniższy skrypt, wstawiając do niego swoje hasło:
 
-```python
+<pre>
 import psycopg2
 
 db_password = "postgres"
@@ -81,7 +79,7 @@ conn.commit()
 
 cur.close()
 conn.close()
-```
+</pre>
 
 a następnie otwórz pgAdmina i sprawdź, czy pojawiła się w nim tabela "test":
 
