@@ -22,9 +22,8 @@ Jeżeli instalator poprosi o ustawienie hasła, pamiętaj że ta baza będzie do
 
 Ta instalacja obejmuje zarówno bazę danych PostgreSQL, jak również klienta pgAdmin4. Aby zainstalować bibliotekę `psycopg2` użyj komendy:
 
-```
-pip install psycopg2
-```
+
+`pip install psycopg2`
 
 w Anaconda Prompt (jeśli używasz Anacondy) lub w CMD.
 
@@ -34,9 +33,7 @@ Instalacja na przykładzie dystrybucji Ubuntu:
 
 **PostgreSQL**
 
----
-
-```bash
+```python
 sudo apt install postgresql -y
 sudo -u postgres psql
 
@@ -46,32 +43,24 @@ ALTER USER postgres PASSWORD 'postgres';
 \q 
 ```
 
----
 
 **pgAdmin**
 
----
 
-```bash
+```python
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
 
 sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update' 
 
 sudo apt install pgadmin4 -y
 ```
----
 
 **`psycopg2`**
 
 Jeżeli używasz Anacondy, upewnij się, że jest ona aktywna w terminalu. Następnie wykonaj instrukcję:
 
----
+`pip install psycopg2`
 
-```bash
-pip install psycopg2
-```
-
----
 
 ## Test działania
 
