@@ -85,3 +85,4 @@ conn.close()
 a następnie otwórz pgAdmina i sprawdź, czy pojawiła się w nim tabela "test":
 
 ![pgadmin](/assets/img/instalki/postgres2.png)
+
