@@ -570,43 +570,54 @@
 
 <p><strong>PostgreSQL</strong></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<hr />
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
 7
-</pre></td><td class="rouge-code"><pre>sudo apt install postgresql -y
-sudo -u postgres psql
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt <span class="nb">install </span>postgresql <span class="nt">-y</span>
+<span class="nb">sudo</span> <span class="nt">-u</span> postgres psql
 
-# tutaj otworzy się interfejs CLI  postgresa
+<span class="c"># tutaj otworzy się interfejs CLI  postgresa</span>
 
-ALTER USER postgres PASSWORD 'postgres';
-\q 
+ALTER USER postgres PASSWORD <span class="s1">'postgres'</span><span class="p">;</span>
+<span class="se">\q</span> 
 </pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
 
 <p><strong>pgAdmin</strong></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<hr />
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-</pre></td><td class="rouge-code"><pre>curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+</pre></td><td class="rouge-code"><pre>curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | <span class="nb">sudo </span>apt-key add
 
-sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" &gt; /etc/apt/sources.list.d/pgadmin4.list &amp;&amp; apt update' 
+<span class="nb">sudo </span>sh <span class="nt">-c</span> <span class="s1">'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" &gt; /etc/apt/sources.list.d/pgadmin4.list &amp;&amp; apt update'</span> 
 
-sudo apt install pgadmin4 -y
+<span class="nb">sudo </span>apt <span class="nb">install </span>pgadmin4 <span class="nt">-y</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
+<hr />
 
 <p><strong><code class="language-plaintext highlighter-rouge">psycopg2</code></strong></p>
 
 <p>Jeżeli używasz Anacondy, upewnij się, że jest ona aktywna w terminalu. Następnie wykonaj instrukcję:</p>
 
+<hr />
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>pip <span class="nb">install </span>psycopg2
 </pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
 
 <h2 id="test-działania">Test działania</h2>
 

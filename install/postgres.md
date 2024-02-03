@@ -34,7 +34,9 @@ Instalacja na przykładzie dystrybucji Ubuntu:
 
 **PostgreSQL**
 
-```
+---
+
+```bash
 sudo apt install postgresql -y
 sudo -u postgres psql
 
@@ -44,23 +46,32 @@ ALTER USER postgres PASSWORD 'postgres';
 \q 
 ```
 
+---
+
 **pgAdmin**
 
-```
+---
+
+```bash
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
 
 sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update' 
 
 sudo apt install pgadmin4 -y
 ```
+---
 
 **`psycopg2`**
 
 Jeżeli używasz Anacondy, upewnij się, że jest ona aktywna w terminalu. Następnie wykonaj instrukcję:
 
+---
+
 ```bash
 pip install psycopg2
 ```
+
+---
 
 ## Test działania
 
