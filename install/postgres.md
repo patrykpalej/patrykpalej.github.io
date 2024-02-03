@@ -22,7 +22,7 @@ Jeżeli instalator poprosi o ustawienie hasła, pamiętaj że ta baza będzie do
 
 Ta instalacja obejmuje zarówno bazę danych PostgreSQL, jak również klienta pgAdmin4. Aby zainstalować bibliotekę `psycopg2` użyj komendy:
 
-```
+```bash
 pip install psycopg2
 ```
 
@@ -57,7 +57,8 @@ sudo apt install pgadmin4 -y
 **`psycopg2`**
 
 Jeżeli używasz Anacondy, upewnij się, że jest ona aktywna w terminalu. Następnie wykonaj instrukcję:
-```
+
+```bash
 pip install psycopg2
 ```
 
