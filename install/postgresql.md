@@ -3,7 +3,7 @@ visible: true
 layout: default
 ---
 
-# Postgres – instrukcja instalacji
+# PostgreSQL – instrukcja instalacji
 
 Aby móc korzystać w pełni z baz danych PostgreSQL należy zainstalować:
 - PostgreSQL
