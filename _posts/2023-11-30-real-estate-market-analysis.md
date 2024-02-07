@@ -20,7 +20,8 @@ image:
 demo: 
   - https://real-estate-market-pl.streamlit.app/
 repos:
-  - https://github.com/patrykpalej/Real-Estate-Market-Analysis
+  - https://github.com/patrykpalej/Real-Estate-Market-Analysis-scraping
+  - https://github.com/patrykpalej/Real-Estate-Market-Analysis-modeling
   - https://github.com/patrykpalej/Real-Estate-Market-Analysis-dashboard
 ---
 
