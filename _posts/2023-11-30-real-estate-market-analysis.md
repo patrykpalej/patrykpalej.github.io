@@ -23,6 +23,7 @@ repos:
   - https://github.com/patrykpalej/Real-Estate-Market-Analysis-scraping
   - https://github.com/patrykpalej/Real-Estate-Market-Analysis-modeling
   - https://github.com/patrykpalej/Real-Estate-Market-Analysis-dashboard
+  - https://github.com/patrykpalej/Real-Estate-Market-Analysis-api
 ---
 
 ## Project overview
@@ -146,14 +147,18 @@ The final pipeline, configured for optimal performance in terms of **mean absolu
 
 ![model](/assets/img/projects/real-estate/model.png)
 
-<u>Metrics calculated for the whole dataset:</u>
+<u>Metrics calculated for the whole houses dataset:</u>
 
-**Mean absolute error** [PLN]: 127951
+**Mean absolute error** [PLN]: 165599.68
 
-**Mean absolute percentage error** [%]: 21.5
+**Mean absolute percentage error** [%]: 25.7
 
 
-The model's performance is for from perfect, as it is influenced by various factors including the subjective nature of house evaluations. It effectively handles key aspects like location and size, but the diversity in interior details of houses presents a challenge. Additionally, the model doesn't utilize all property features, which further impacts its accuracy. This current version is an initial step in exploring the possibilities of price modeling, with potential for future enhancements. Its primary goal is to estimate market value, rather than to establish a universal formula for price evaluation.
+The model's performance is far from perfect, as it is influenced by various factors including the subjective nature of house evaluations. It effectively handles key aspects like location and size, but the diversity in interior details of houses presents a challenge. Additionally, the model doesn't utilize all property features, which further impacts its accuracy. This current version is an initial step in exploring the possibilities of price modeling, with potential for future enhancements. Its primary goal is to estimate market value, rather than to establish a universal formula for price evaluation.
 
 ## API for the model
-Work in progress
+The API utilizes pickled models stored on Google Cloud Storage. It supports two types of get endpoints for each property type:
+- `estimate_price_from_json`
+- `estimate_price_otodom_offer`
+
+You can find the code in the linked repository. The API is not hosted due to big memory usage caused by loading serialized models.
