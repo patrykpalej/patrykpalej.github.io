@@ -1,5 +1,5 @@
 ---
-title: Jupyter Notebook
+title: Scripts automation on Linux
 
 categories: [Knowledge, Toolkit]
 tags: [tools, mid-level]
