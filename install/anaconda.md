@@ -27,4 +27,4 @@ Przejdź w terminalu do lokalizacji, w której znajduje się pobrany plik. Nast�
 bash < Anaconda-installer-file-name.sh >
 </pre>
 
-i wykonaj instalację na domyślnych ustawieniach.
+i kontynuuj instalację na domyślnych ustawieniach.
