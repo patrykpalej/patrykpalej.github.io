@@ -23,8 +23,8 @@ Uruchom pobrany plik i przejdź przez proces instalacji wybierając:
 ## 2. Linux
 
 Przejdź w terminalu do lokalizacji, w której znajduje się pobrany plik. Następnie wykonaj:
-```
-bash <Anaconda-installer-file-name.sh>
-```
+<pre>
+bash < Anaconda-installer-file-name.sh >
+</pre>
 
 i wykonaj instalację na domyślnych ustawieniach.
