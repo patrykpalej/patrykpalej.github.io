@@ -4,8 +4,8 @@ title: REST API
 categories: szkolenia
 ---
 
-## Stacja IT – cz.1 REST API w Pythonie
-## Stacja IT – cz.2 Bazy danych w REST API
+## Stacja IT – cz.1 REST API w Pythonie (FastAPI)
+## Stacja IT – cz.2 Bazy danych w FastAPI
 ## Stacja IT - cz.3 Średnio zaawansowane elementy FastAPI
 
 ---
