@@ -10,11 +10,8 @@ Rekomendowana wersja Pythona: >=3.11
 Podczas szkolenia będą potrzebne następujące biblioteki:
 
 - [requests](https://pypi.org/project/requests/)
-
 - [beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
-
 - [numpy](https://pypi.org/project/numpy/)
-
 - [pandas](https://pypi.org/project/pandas/)
 - [matplotlib](https://pypi.org/project/matplotlib)
 - [jupyterlab](https://pypi.org/project/jupyterlab)
@@ -23,18 +20,14 @@ Podczas szkolenia będą potrzebne następujące biblioteki:
 - [nltk](https://pypi.org/project/nltk/)
 - [pystempel](https://pypi.org/project/pystempel/)
 - [wordcloud](https://pypi.org/project/wordcloud/)
-
 - [gensim](https://pypi.org/project/gensim/)
-
 - [presidio-anonymizer](https://pypi.org/project/presidio-anonymizer/)
 - [presidio-analyzer](https://pypi.org/project/presidio-analyzer/)
-
 
 
 Rekomendowane jest utworzenie środowiska wirtualnego. Poniżej znajduje się zawartość pliku `requirements.txt`
 
 ```
-
 annotated-types==0.7.0
 anyio==4.4.0
 argon2-cffi==23.1.0
@@ -181,9 +174,7 @@ webencodings==0.5.1
 websocket-client==1.8.0
 wordcloud==1.9.3
 wrapt==1.16.0
-
 ```
-
 
 
 Oprócz tego potrzebne będzie pobranie modeli używanych przez powyższe biblioteki.
@@ -192,21 +183,19 @@ Oprócz tego potrzebne będzie pobranie modeli używanych przez powyższe biblio
 
 W terminalu/wierszu poleceń wykonaj:
 
-```bash
-python -m spacy download pl_core_news_sm
-python -m spacy download en_core_web_sm
-```
+`python -m spacy download pl_core_news_sm`
+
+`python -m spacy download en_core_web_sm`
+
 
 Pamiętaj aby zrobić to przy aktywnym środowisku wirtualnym.
 
 Uruchom również poniższy kod. Uwaga - pobieranie modelu będzie czasochłonne!
 
-```
-import gensim.downloader as api
+`import gensim.downloader as api`
 
+`model = api.load('word2vec-google-news-300')`
 
-model = api.load('word2vec-google-news-300')
-```
 
 Model ten zajmuje 1.7GB i zostanie zapisany w folderze `gensim-data` w katalogu użytkownika.
 
