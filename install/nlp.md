@@ -27,7 +27,7 @@ Podczas szkolenia będą potrzebne następujące biblioteki:
 
 Rekomendowane jest utworzenie środowiska wirtualnego. Poniżej znajduje się zawartość pliku `requirements.txt`
 
-```
+<pre>
 annotated-types==0.7.0
 anyio==4.4.0
 argon2-cffi==23.1.0
@@ -174,7 +174,8 @@ webencodings==0.5.1
 websocket-client==1.8.0
 wordcloud==1.9.3
 wrapt==1.16.0
-```
+</pre>
+
 
 
 Oprócz tego potrzebne będzie pobranie modeli używanych przez powyższe biblioteki.
