@@ -7,7 +7,10 @@ layout: default
 
 Rekomendowana wersja Pythona: >=3.11
 
-Podczas szkolenia będą potrzebne następujące biblioteki:
+Materiały udostępnione zostaną w plikach .ipynb (Jupyter Notebook) i edytor ten jest rekomendowany podczas szkolenia.
+
+
+Będą potrzebne również następujące biblioteki:
 
 - [requests](https://pypi.org/project/requests/)
 - [beautifulsoup4](https://pypi.org/project/beautifulsoup4/)
