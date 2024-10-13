@@ -18,6 +18,7 @@ categories: szkolenia
 - 10 minut ~ 10:30
 - 10 minut ~ 11:30
 - 50 minut ~ 12:40
+- 10 minut ~ 15:00
 
 **Repozytoria:**
 - [To szkolenie](https://github.com/pp-szkolenia/2024-10-14_REST-API)
