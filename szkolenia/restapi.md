@@ -4,21 +4,25 @@ title: REST API
 categories: szkolenia
 ---
 
-## Stacja IT – cz.1 REST API w Pythonie (FastAPI)
-## Stacja IT – cz.2 Bazy danych w FastAPI
-## Stacja IT - cz.3 Średnio zaawansowane elementy FastAPI
+## Tworzenie REST API w Pythonie
 
 ---
 
-**12.05.2024** 
+**14-16.10.2024** 
 
 **9:00-17:00**
 
 ---
 
-**Przerwy:** 3x10 minut + 45 minut
+**Przerwy:** 
+- 10 minut ~ 10:30
+- 10 minut ~ 11:30
+- 50 minut ~ 12:40
 
-**Repozytorium:** [https://github.com/pp-szkolenia/fastapi-mid](https://github.com/pp-szkolenia/fastapi-mid)
+**Repozytoria:**
+- [To szkolenie](https://github.com/pp-szkolenia/2024-10-14_REST-API)
+- [Szkolenie wersja demo](https://github.com/patrykpalej/FastAPI-Training-Demo)
+
 
 **Proszę zainstalować:**
 
