@@ -21,9 +21,8 @@ categories: szkolenia
 - 10 minut ~ 15:00
 
 **Repozytoria:**
-- [To szkolenie](https://github.com/pp-szkolenia/2024-10-14_REST-API)
+- [To szkolenie](https://github.com/pp-szkolenia/2025-02-26_Sages_FastAPI)
 - [Szkolenie wersja demo](https://github.com/patrykpalej/FastAPI-Training-Demo)
-
 
 **Proszę zainstalować:**
 
