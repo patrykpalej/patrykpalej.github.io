@@ -8,7 +8,7 @@ layout: default
 
 Wejdź na stronę [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-i wybierz najnowszą wersję Pythona 3.11 w sekcji "Looking for a specific release?"
+i wybierz najnowszą wersję Pythona 3.13 w sekcji "Looking for a specific release?"
 
 ![python-download](/assets/img/instalki/python1.png) 
 
