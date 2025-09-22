@@ -8,7 +8,7 @@ layout: default
 Aby móc korzystać w pełni z baz danych PostgreSQL należy zainstalować:
 - PostgreSQL
 - Klienta bazodanowego (rekomenduję pgAdmin4)
-- bibliotekę [`psycopg2`](https://pypi.org/project/psycopg2/)
+- bibliotekę [`psycopg`](https://pypi.org/project/psycopg/)
 
 
 #### 1. Windows
