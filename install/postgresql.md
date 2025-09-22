@@ -18,12 +18,12 @@ Wejdź na [https://www.postgresql.org/download/windows/](https://www.postgresql.
 
 Pobierz najnowszą wersję instalatora dla systemu Windows. W trakcie instalacji **zachowaj domyślne ustawienia**. Możesz jedynie odznaczyć instalację Stack Buildera.
 
-Jeżeli instalator poprosi o ustawienie hasła, pamiętaj że ta baza będzie dostępna tylko na serwerze lokalnym. Hasło nie musi być więc złożone, a ponieważ w niektórych przykładach będzie ono trzymane w kodzie, nie powinno być również tajne. Zalecane hasło: *postgres*  
+Jeżeli instalator poprosi o ustawienie hasła, pamiętaj że ta baza będzie dostępna tylko na serwerze lokalnym. Hasło nie musi być więc złożone, a ponieważ w niektórych przykładach będzie ono trzymane w kodzie, nie powinno być również tajne. Zalecane hasło: *postgres*
 
-Ta instalacja obejmuje zarówno bazę danych PostgreSQL, jak również klienta pgAdmin4. Aby zainstalować bibliotekę `psycopg2` użyj komendy:
+Ta instalacja obejmuje zarówno bazę danych PostgreSQL, jak również klienta pgAdmin4. Aby zainstalować bibliotekę `psycopg` użyj komendy:
 
 
-`pip install psycopg2`
+`pip install psycopg`
 
 w Anaconda Prompt (jeśli używasz Anacondy) lub w CMD.
 
@@ -53,11 +53,11 @@ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_
 sudo apt install pgadmin4 -y
 </pre>
 
-**`psycopg2`**
+**`psycopg`**
 
 Jeżeli używasz Anacondy, upewnij się, że jest ona aktywna w terminalu. Następnie wykonaj instrukcję:
 
-`pip install psycopg2`
+`pip install psycopg`
 
 
 ## Test działania
@@ -65,13 +65,13 @@ Jeżeli używasz Anacondy, upewnij się, że jest ona aktywna w terminalu. Nast�
 Aby sprawdzić, czy instalacja przebiegła pomyślnie wykonaj poniższy skrypt, wstawiając do niego swoje hasło:
 
 <pre>
-import psycopg2
+import psycopg
 
 db_password = "postgres"
 
 # ---
 create_query = "create table test (a integer, b integer)"
-conn = psycopg2.connect(dbname="postgres", user="postgres", password=db_password, host="localhost")
+conn = psycopg.connect(dbname="postgres", user="postgres", password=db_password, host="localhost")
 cur = conn.cursor()
 
 cur.execute(create_query)
