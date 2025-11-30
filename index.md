@@ -6,31 +6,24 @@ layout: home
 
 ---
 
-# 👋 Hi, I'm Patryk...
+# 👋 Cześć, jestem Patryk...
 
-... a Python developer with a strong focus on data-related areas.
+... Python developer ze specjalizacją w AI i przetwarzaniu danych.
 
-I'm into fields like:
-- 📈 data analysis and visualization
-- 🌐️ web scraping 
-- 🔢 mathematical modeling
+Interesuję się takimi dziedzinami jak:
+- 📈 analiza i wizualizacja danych
+- 🌐️ web scraping
+- 🔢 modelowanie matematyczne
+- 🤖 sztuczna inteligencja
 
-and more.
+i nie tylko.
 
 ---
 
-💻 On this site, you can find an overview of the **[projects](projects)** I've been working on after hours.
-
-
-🧠 Additionally, I share Python **programming [knowledge](knowledge)** which may be helpful, especially if you're just getting started or trying to level up your skills.
+💻 Na tej stronie znajdziesz przegląd **[projektów](projects)**, nad którymi pracowałem po godzinach.
 
 <br>
 
-**Besides my programming activity**, I also conduct [training sessions](https://www.sages.pl/o-nas/zespol/patryk-palej) and engage in various educational initiatives, including:
-- 👨‍💻 [data science bootcamp](https://datasciencepro.kodolamacz.pl/)
-- 🎓 [postgraduate studies](https://ds.ii.pw.edu.pl/wizualizacjadanych.html)
-- 🤝 private lessons
+**Oprócz działalności programistycznej** prowadzę także szkolenia z programowania w Pythonie i data science.
 
----
-
-💬 Feel free to reach me using the [contact form](contact).
+Więcej informacji o mojej ofercie szkoleniowej znajdziesz na [edu.palej.tech](https://edu.palej.tech).

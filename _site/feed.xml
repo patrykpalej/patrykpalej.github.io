@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Patryk Palej – personal website</title>
   <subtitle>Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects</subtitle>
-  <updated>2024-02-05T12:26:36+01:00</updated>
+  <updated>2025-11-30T11:09:30+01:00</updated>
   <author>
     <name>Patryk Palej</name>
     <uri>http://localhost:4000/</uri>
@@ -13,10 +13,93 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2024 Patryk Palej </rights>
+  <rights> © 2025 Patryk Palej </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Scripts automation on Linux</title>
+    <link href="http://localhost:4000/posts/scripts-automation/" rel="alternate" type="text/html" title="Scripts automation on Linux" />
+    <published>2024-04-07T00:00:00+02:00</published>
+  
+    <updated>2024-04-08T09:47:11+02:00</updated>
+  
+    <id>http://localhost:4000/posts/scripts-automation/</id>
+    <content src="http://localhost:4000/posts/scripts-automation/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Knowledge" />
+    
+    <category term="Toolkit" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      A common issue in projects regarding data acquisition or frequently run scripts is the need to automate these processes. There area various methods to achieving this. The most common one is crontab. As an alternative, Windows users can utilize Windows Task Scheduler which is a desktop application for running specific executables  after a predefined trigger.
+
+For example purposes, let’s consider...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Rounding algorithms in Python</title>
+    <link href="http://localhost:4000/posts/rounding/" rel="alternate" type="text/html" title="Rounding algorithms in Python" />
+    <published>2024-03-04T00:00:00+01:00</published>
+  
+    <updated>2024-03-04T00:00:00+01:00</updated>
+  
+    <id>http://localhost:4000/posts/rounding/</id>
+    <content src="http://localhost:4000/posts/rounding/" />
+    <author>
+      <name>Patryk Palej</name>
+    </author>
+
+  
+    
+    <category term="Knowledge" />
+    
+    <category term="Dev" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      To round a number in Python you can use the round() function. It’s straightforward, but there is a nuance to be aware of. When you pass a number that is exactly halfway between two integers to this function, its behavior might be surprising:
+
+round(1.5)
+# 2
+
+round(2.5)
+# 2
+
+
+This happens because round() employs an algorithm known as bankers’ rounding (BR), instead of arithmetic rounding (AR). T...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -139,101 +222,6 @@ Markdown is a simple language used for text formatting. It allows you to obtain 
 and more.
 
 Markdown syntax cov...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>🌐 FastAPI Training (Demo)</title>
-    <link href="http://localhost:4000/posts/fastapi-training-demo/" rel="alternate" type="text/html" title="🌐 FastAPI Training (Demo)" />
-    <published>2024-01-02T00:00:00+01:00</published>
-  
-    <updated>2024-01-02T00:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/fastapi-training-demo/</id>
-    <content src="http://localhost:4000/posts/fastapi-training-demo/" />
-    <author>
-      <name>Patryk Palej</name>
-    </author>
-
-  
-    
-    <category term="Projects" />
-    
-    <category term="Edu" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      The above repository contains a demo version of my FastAPI training for the beginners.
-
-Training scope
-
-  Introduction
-    
-      HTTP protocol
-      REST API
-      Tools overview
-      JSON format
-      Type annotations in Python
-    
-  
-  FastAPI overview (demo available)
-    
-      Hello world
-      Paths and routing
-      POST method, request body
-      Pydantic, request body model
-      Pa...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Virtual environments in Python</title>
-    <link href="http://localhost:4000/posts/virtualenv/" rel="alternate" type="text/html" title="Virtual environments in Python" />
-    <published>2023-12-30T00:00:00+01:00</published>
-  
-    <updated>2023-12-30T00:00:00+01:00</updated>
-  
-    <id>http://localhost:4000/posts/virtualenv/</id>
-    <content src="http://localhost:4000/posts/virtualenv/" />
-    <author>
-      <name>Patryk Palej</name>
-    </author>
-
-  
-    
-    <category term="Knowledge" />
-    
-    <category term="Toolkit" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      1. What is it?
-Virtual environment (virtualenv in short) is a common way of managing installed packages in your Python project.
-
-2. Why do I need it?
-Using virtual environments allows you to separate your projects from each other. Packages installed in one environment are not visible in other projects. Therefore, you can handle using different versions of various libraries in your projects. Add...
     </summary>
   
 

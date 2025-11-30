@@ -13,14 +13,6 @@ const resource = [
   
     '/projects/',
   
-    '/knowledge/',
-  
-    '/categories/',
-  
-    '/tags/',
-  
-    '/contact/',
-  
 
   /* --- Favicons & compressed JS --- */
   
