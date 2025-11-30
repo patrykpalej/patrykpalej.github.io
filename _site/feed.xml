@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://0.0.0.0:4000/</id>
-  <title>Patryk Palej – personal website</title>
+  <title>Patryk Palej – Python AI dev</title>
   <subtitle>Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects</subtitle>
-  <updated>2025-11-30T12:43:47+01:00</updated>
+  <updated>2025-11-30T12:51:40+01:00</updated>
   <author>
     <name>Patryk Palej</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -146,7 +146,7 @@ Out of t...
     <link href="http://0.0.0.0:4000/posts/ai-coding-assistants/" rel="alternate" type="text/html" title="🦾 Asystenci AI do kodowania" />
     <published>2024-01-12T00:00:00+01:00</published>
   
-    <updated>2024-01-12T13:23:50+01:00</updated>
+    <updated>2025-11-30T12:45:53+01:00</updated>
   
     <id>http://0.0.0.0:4000/posts/ai-coding-assistants/</id>
     <content src="http://0.0.0.0:4000/posts/ai-coding-assistants/" />

@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://0.0.0.0:4000/posts/real-estate-market-analysis/</loc>
-<lastmod>2024-02-28T18:33:04+01:00</lastmod>
+<lastmod>2025-11-30T12:45:53+01:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/posts/numerical-simulation/</loc>
-<lastmod>2024-01-12T13:23:20+01:00</lastmod>
+<lastmod>2025-11-30T12:45:53+01:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/posts/jupyter-notebook/</loc>
@@ -26,7 +26,7 @@
 </url>
 <url>
 <loc>http://0.0.0.0:4000/posts/ai-coding-assistants/</loc>
-<lastmod>2024-01-12T13:23:50+01:00</lastmod>
+<lastmod>2025-11-30T12:45:53+01:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/posts/missing-data/</loc>
@@ -42,7 +42,7 @@
 </url>
 <url>
 <loc>http://0.0.0.0:4000/projects/</loc>
-<lastmod>2025-11-30T12:43:47+01:00</lastmod>
+<lastmod>2025-11-30T12:51:40+01:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/szkolenia/!template.html</loc>
