@@ -1,6 +1,6 @@
 ---
-title: 🦾 AI Coding Assistants
-tldr: Assistants which help you to perform specific tasks
+title: 🦾 Asystenci AI do kodowania
+tldr: Asystenci, którzy pomogą Ci w konkretnych zadaniach programistycznych
 
 categories: [Projects, Edu]
 technologies: [GPT, Streamlit]
@@ -16,15 +16,15 @@ image:
   path: /assets/img/projects/ai-assistants/thumbnail.png
   alt:
 
-demo: 
+demo:
   - https://coding-mentor.streamlit.app/
 repos:
   - https://github.com/patrykpalej/GPT-coding-mentor
 ---
 
-This project aggregates AI assistants that I've developed to assist you with particular tasks throughout your coding learning process. As of now, there's a single assistant available. However, in the future, you can expect to find additional ones.
+Projekt zawiera asystentów AI, które stworzyłem, aby pomóc Ci w konkretnych zadaniach podczas nauki programowania. Obecnie dostępny jest jeden asystent, ale w przyszłości planuję dodać kolejne.
 
 
 ## GPT coding mentor
 
-This assistant helps you in completing coding exercises by guiding you through the process, instead of writing the code for you.
+Ten asystent pomaga w rozwiązywaniu zadań programistycznych poprzez naprowadzanie Cię na właściwe rozwiązanie, zamiast pisania kodu za Ciebie.

@@ -1,6 +1,6 @@
 ---
-title: 🔢 Numerical Simulations
-tldr: A couple of mathematical simulations of various phenomena
+title: 🔢 Symulacje numeryczne
+tldr: Zestaw symulacji matematycznych różnych zjawisk
 
 categories: [Projects, Dev]
 technologies: [NumPy, Streamlit, Plotly]
@@ -14,41 +14,41 @@ mermaid: true
 
 image:
   path: /assets/img/projects/numerical-simulations/thumbnail.png
-  alt: Numerical simulations
+  alt: Symulacje numeryczne
 
-demo: 
+demo:
   - https://numerical-simulations.streamlit.app/
 repos:
   - https://github.com/patrykpalej/Numerical-Simulations
 ---
 
-# Project description
-This project is a set of numerical simulations regarding various phenomena such as:
-- Gravitational interactions
-- Humans vs. Zombies battle 
+# Opis projektu
+Projekt zawiera zestaw symulacji numerycznych różnych zjawisk, takich jak:
+- Oddziaływania grawitacyjne
+- Bitwa ludzi z zombie 
 
-## 🪐 Gravity Simulation
-In this simulation, you:
-1. Set the initial conditions for a group of material points ("planets")
-- they can be inserted manually or imported from a file.
+## 🪐 Symulacja grawitacji
+W tej symulacji możesz:
+1. Ustawić warunki początkowe dla grupy punktów materialnych ("planet")
+- można je wprowadzić ręcznie lub zaimportować z pliku
 
-2. Customize the animation by multiselecting elements to display 
-- planets themselves
-- gravity field
-- planets' trajectories
+2. Dostosować animację poprzez wybór elementów do wyświetlenia
+- same planety
+- pole grawitacyjne
+- trajektorie planet
 
-3. Determine strategy for collision handling
-- annihilate
-- freeze
-- bounce
+3. Określić strategię obsługi kolizji
+- anihilacja
+- zamrożenie
+- odbicie
 
-4. Set simulation speed
+4. Ustawić prędkość symulacji
 
-You can also save logs and initial conditions to file but only when running locally.
+Możesz także zapisać logi i warunki początkowe do pliku, ale tylko podczas uruchamiania lokalnego.
 
-### Sample animations
+### Przykładowe animacje
 
-Below you can find sample animations from the simulator:
+Poniżej znajdziesz przykładowe animacje z symulatora:
 
 <video controls>
   <source src="/assets/img/projects/numerical-simulations/gravity1.mp4" type="video/mp4">
@@ -63,15 +63,15 @@ Below you can find sample animations from the simulator:
   <source src="/assets/img/projects/numerical-simulations/gravity3.mp4" type="video/mp4">
 </video>
 
-## 🧟‍♂️ Humans vs. Zombies
-- In this simulation, two groups of characters fight each other to survive
-- Each character is defined by a set of characteristics, including their coordinates (x, y), velocity, and power
-- When a zombie wins a fight, it transforms a human into a new zombie. However, if a human prevails in the combat, they eliminate their zombie opponent
+## 🧟‍♂️ Ludzie vs. Zombie
+- W tej symulacji dwie grupy postaci walczą ze sobą o przetrwanie
+- Każda postać jest zdefiniowana przez zestaw cech, w tym współrzędne (x, y), prędkość i siłę
+- Gdy zombie wygra walkę, przekształca człowieka w nowego zombie. Jeśli jednak człowiek zwycięży, eliminuje swojego zombie-przeciwnika
 
-### Sample animations
+### Przykładowe animacje
 
-Below you can find sample animations of the battle. Humans are <span style="color: orange;">orange</span>
-and zombies are <span style="color: green;">green</span>.
+Poniżej znajdziesz przykładowe animacje bitwy. Ludzie są <span style="color: orange;">pomarańczowi</span>,
+a zombie <span style="color: green;">zielone</span>.
 
 <video controls>
   <source src="/assets/img/projects/numerical-simulations/zombies1.mp4" type="video/mp4">

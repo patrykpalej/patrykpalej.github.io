@@ -1,10 +1,10 @@
 ---
-title: 🏘️ Real Estate Market Analysis
-tldr: Scraping offers + web dashboard for visualization + ML price modeling  # + API for the trained model
+title: 🏘️ Analiza rynku nieruchomości
+tldr: Scraping ogłoszeń + dashboard do wizualizacji + modelowanie cen z użyciem ML
 
 categories: [Projects, Dev]
-technologies: [BeautifulSoup, PostgreSQL, Streamlit, Scikit-learn]  # , FastAPI
-tags: [web-scraping, data-visualization, machine-learning, cli]  #, api
+technologies: [BeautifulSoup, PostgreSQL, Streamlit, Scikit-learn]
+tags: [web-scraping, data-visualization, machine-learning, cli]
 
 pin: true
 project: true
@@ -14,10 +14,9 @@ mermaid: true
 
 image:
   path: /assets/img/projects/real-estate/thumbnail.png
-  alt: 
+  alt:
 
-# the link is mentioned below in the text
-demo: 
+demo:
   - https://real-estate-market-pl.streamlit.app/
 repos:
   - https://github.com/patrykpalej/Real-Estate-Market-Analysis-scraping
@@ -26,26 +25,26 @@ repos:
   - https://github.com/patrykpalej/Real-Estate-Market-Analysis-api
 ---
 
-## Project overview
-In this project, I developed a system designed for **collection and analysis** of real estate offers. Its primary goal is to **estimate the market value** of various properties, including <u>houses, lands, and apartments</u>. It consists of four stages:
-- data scraping
-- data visualization
-- machine learning model for price estimation
-- model API (in progress)
+## Opis projektu
+W tym projekcie stworzyłem system do **zbierania i analizy** ofert nieruchomości. Głównym celem jest **oszacowanie wartości rynkowej** różnych typów nieruchomości: <u>domów, działek i mieszkań</u>. Projekt składa się z czterech etapów:
+- scraping danych
+- wizualizacja danych
+- model ML do estymacji cen
+- API dla modelu (w trakcie)
 
-All data is collected exclusively for educational purposes and is not utilized commercially. Personal data is not stored.
+Wszystkie dane są zbierane wyłącznie w celach edukacyjnych i nie są wykorzystywane komercyjnie. Dane osobowe nie są przechowywane.
 
-## Data scraping
-Data used in this project is obtained from two sources: 
-- [https://www.otodom.pl/](https://www.otodom.pl/) 
+## Scraping danych
+Dane w tym projekcie pochodzą z dwóch źródeł:
+- [https://www.otodom.pl/](https://www.otodom.pl/)
 - [https://www.domiporta.pl/](https://www.domiporta.pl/)
 
-For each of them, three property types are considered:
-- houses
-- lands
-- apartments
+Dla każdego z nich uwzględniane są trzy typy nieruchomości:
+- domy
+- działki
+- mieszkania
 
-Web scraping process is implemented using **<span style="color: rgb(65, 65, 240);">abstract classes</span>** and inheritance according to the following scheme:
+Proces scrapingu jest zaimplementowany przy użyciu **<span style="color: rgb(65, 65, 240);">klas abstrakcyjnych</span>** i dziedziczenia według poniższego schematu:
 
 ```mermaid
 flowchart LR
@@ -64,23 +63,23 @@ flowchart LR
      
 ```
 
-Each concrete (non-abstract) **class** refers to **one table** in a relational database where data is stored. Moreover, the scraping process is divided into **two separate parts**. For each combination of data source and property type (for example _otodom apartments_), data acquisition process consists of:
-- **searching** offers based on assumed filters and saving URL addresses into Redis database
-- **scraping** offers corresponding to those URLs and saving them to a database 
+Każda konkretna (nieabstrakcyjna) **klasa** odpowiada **jednej tabeli** w relacyjnej bazie danych, w której zapisywane są dane. Ponadto proces scrapingu jest podzielony na **dwie oddzielne części**. Dla każdej kombinacji źródła danych i typu nieruchomości (np. _mieszkania z Otodom_), proces pozyskiwania danych składa się z:
+- **wyszukiwania** ofert na podstawie założonych filtrów i zapisywania adresów URL w bazie Redis
+- **scrapowania** ofert odpowiadających tym adresom URL i zapisywania ich w bazie danych
 
-All scraping classes are orchestrated by a CLI (Command Line Interface) tool, which enables convenient execution of the appropriate scraper. For instance, you can search URLs of Otodom apartments by:"
+Wszystkie klasy scrapujące są orkiestrowane przez narzędzie CLI (Command Line Interface), które umożliwia wygodne uruchamianie odpowiedniego scrapera. Na przykład, możesz wyszukać URL-e mieszkań z Otodom przez:
 
 ```shell
 python orchestrator.py search otodom apartments
 ```
 
-Or scrape offers of lands on Domiporta by:
+Lub zescrapować oferty działek z Domiporta przez:
 
 ```shell
 python orchestrator.py scrape domiporta lands
 ```
 
-For each concrete scraping class, the ETL process works according to the flowchart. For the example purposes I'm considering `OtodomApartmentScraper`:
+Dla każdej konkretnej klasy scrapującej proces ETL działa zgodnie z poniższym schematem. Dla celów przykładowych rozważam `OtodomApartmentScraper`:
 
 ```mermaid
 flowchart TB
@@ -98,67 +97,67 @@ flowchart TB
     end
 ```
 
-## Data visualization
-After the data acquisition process, we move on to the visualization part. For this purpose, I created a <a href="https://real-estate-market-pl.streamlit.app/" target="_blank">web dashboard</a> which contains interactive charts.
+## Wizualizacja danych
+Po zakończeniu procesu pozyskiwania danych przechodzimy do części wizualizacyjnej. W tym celu stworzyłem <a href="https://real-estate-market-pl.streamlit.app/" target="_blank">dashboard webowy</a>, który zawiera interaktywne wykresy.
 
-On the dashboard you will find:
-1. Distributions of:
-- house/land/apartment area
-- price and price per square meter
-- number of offers in various regions
+Na dashboardzie znajdziesz:
+1. Rozkłady:
+- powierzchni domów/działek/mieszkań
+- ceny i ceny za metr kwadratowy
+- liczby ofert w różnych regionach
 
-2. Time-related changes in:
-- the number of properties offered
-- the average price
+2. Zmiany w czasie:
+- liczby oferowanych nieruchomości
+- średniej ceny
 
-3. A map featuring marked locations of properties
+3. Mapę z zaznaczonymi lokalizacjami nieruchomości
 
-and even more. Below, you can find examples of figures for:
+i wiele więcej. Poniżej znajdziesz przykładowe wykresy dla:
 
-### Houses
+### Domy
 <iframe src="/assets/img/projects/real-estate/houses.html" width="600" height="600"></iframe>
 
-### Lands
+### Działki
 <iframe src="/assets/img/projects/real-estate/lands.html" width="500" height="700"></iframe>
 
-### Apartments
+### Mieszkania
 <iframe src="/assets/img/projects/real-estate/apartments.html" width="700" height="700"></iframe>
 
 
-## Model training
-In the initial approach, machine learning models were trained only using **Otodom data** as this service provides more information about the properties. A dedicated **Random Forest Regressor** model was developed for each type of property, employing a scikit-learn `Pipeline`. Prior to the model training, a **feature engineering** process was undertaken to preprocess the data before modeling.
+## Trenowanie modelu
+W początkowym podejściu modele ML były trenowane wyłącznie na **danych z Otodom**, ponieważ ten serwis dostarcza więcej informacji o nieruchomościach. Dla każdego typu nieruchomości stworzony został dedykowany model **Random Forest Regressor** przy użyciu `Pipeline` z scikit-learn. Przed trenowaniem modelu przeprowadzony został proces **feature engineering** w celu przygotowania danych.
 
-The preprocessing steps on the example of **houses data** includes the following:
-- Transformation of the advert type (**agency or private**) into a <u>boolean value</u>
-- Transformation of the market type (**primary or secondary**) into a <u>boolean value</u>
-- <u>Label encoding</u> of the **weekday** and **season** corresponding to when the offer was posted
-- Calculating <u>time difference</u> between the offer and an arbitrarily chosen timestamp (2023-01-01) to reflect **offer's position on a timeline**
-- <u>Label encoding</u> of the house location (**country/suburban/city**)
-- <u>One hot encoding</u> of **province** and **subregion** of the property
+Kroki preprocessingu na przykładzie **danych o domach** obejmują:
+- Przekształcenie typu ogłoszenia (**agencja lub prywatne**) na <u>wartość boolean</u>
+- Przekształcenie typu rynku (**pierwotny lub wtórny**) na <u>wartość boolean</u>
+- <u>Label encoding</u> **dnia tygodnia** i **pory roku**, w których została dodana oferta
+- Obliczenie <u>różnicy czasu</u> między ofertą a arbitralnie wybranym timestampem (2023-01-01), aby odzwierciedlić **pozycję oferty na osi czasu**
+- <u>Label encoding</u> lokalizacji domu (**wieś/przedmieścia/miasto**)
+- <u>One hot encoding</u> **województwa** i **podregionu** nieruchomości
 
-For both **further preprocessing** (feature scaling) and **model training**, a <u>grid search</u> was applied using the following parameters:
-- `StandardScaler()`, `MinMaxScaler()` for feature scaling
-- 400, 500, 600 for `n_estimators`
-- 70, 80, 90 for `max_depth`
+Zarówno do **dalszego preprocessingu** (skalowanie cech), jak i **trenowania modelu**, zastosowano <u>grid search</u> z następującymi parametrami:
+- `StandardScaler()`, `MinMaxScaler()` do skalowania cech
+- 400, 500, 600 dla `n_estimators`
+- 70, 80, 90 dla `max_depth`
 
-Additionally, I experimented with feature extraction, however this approach resulted in a decrease in model performance.
+Dodatkowo eksperymentowałem z ekstrakcją cech, jednak to podejście skutkowało pogorszeniem wydajności modelu.
 
-The final pipeline, configured for optimal performance in terms of **mean absolute error** (with a use of cross validation), includes the following elements:
+Finalny pipeline, skonfigurowany dla optymalnej wydajności pod względem **mean absolute error** (z użyciem walidacji krzyżowej), zawiera następujące elementy:
 
 ![model](/assets/img/projects/real-estate/model.png)
 
-<u>Metrics calculated for the whole houses dataset:</u>
+<u>Metryki obliczone dla całego zbioru danych o domach:</u>
 
 **Mean absolute error** [PLN]: 165599.68
 
 **Mean absolute percentage error** [%]: 25.7
 
 
-The model's performance is far from perfect, as it is influenced by various factors including the subjective nature of house evaluations. It effectively handles key aspects like location and size, but the diversity in interior details of houses presents a challenge. Additionally, the model doesn't utilize all property features, which further impacts its accuracy. This current version is an initial step in exploring the possibilities of price modeling, with potential for future enhancements. Its primary goal is to estimate market value, rather than to establish a universal formula for price evaluation.
+Wydajność modelu jest daleka od doskonałości, na co wpływa wiele czynników, w tym subiektywny charakter wyceny domów. Model dobrze radzi sobie z kluczowymi aspektami takimi jak lokalizacja czy wielkość, ale różnorodność detali wnętrz stanowi wyzwanie. Dodatkowo model nie wykorzystuje wszystkich cech nieruchomości, co wpływa na jego dokładność. Ta wersja to początkowy krok w eksploracji możliwości modelowania cen, z potencjałem na przyszłe ulepszenia. Głównym celem jest oszacowanie wartości rynkowej, a nie stworzenie uniwersalnej formuły wyceny.
 
-## API for the model
-The API utilizes pickled models stored on Google Cloud Storage. It supports two types of get endpoints for each property type:
+## API dla modelu
+API wykorzystuje spiklowane modele przechowywane na Google Cloud Storage. Wspiera dwa typy endpointów GET dla każdego typu nieruchomości:
 - `estimate_price_from_json`
 - `estimate_price_otodom_offer`
 
-You can find the code in the linked repository. The API is not hosted due to big memory usage caused by loading serialized models.
+Kod znajdziesz w podlinkowanym repozytorium. API nie jest zhostowane ze względu na duże zużycie pamięci wynikające z ładowania zserializowanych modeli.

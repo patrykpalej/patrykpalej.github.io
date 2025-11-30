@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/</id>
+  <id>http://0.0.0.0:4000/</id>
   <title>Patryk Palej – personal website</title>
   <subtitle>Portfolio and knowledge sharing. I write about Python coding, and education in IT. Check out my projects</subtitle>
-  <updated>2025-11-30T11:09:30+01:00</updated>
+  <updated>2025-11-30T12:43:47+01:00</updated>
   <author>
     <name>Patryk Palej</name>
-    <uri>http://localhost:4000/</uri>
+    <uri>http://0.0.0.0:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://localhost:4000/"/>
+    href="http://0.0.0.0:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
   <rights> © 2025 Patryk Palej </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>Scripts automation on Linux</title>
-    <link href="http://localhost:4000/posts/scripts-automation/" rel="alternate" type="text/html" title="Scripts automation on Linux" />
+    <link href="http://0.0.0.0:4000/posts/scripts-automation/" rel="alternate" type="text/html" title="Scripts automation on Linux" />
     <published>2024-04-07T00:00:00+02:00</published>
   
     <updated>2024-04-08T09:47:11+02:00</updated>
   
-    <id>http://localhost:4000/posts/scripts-automation/</id>
-    <content src="http://localhost:4000/posts/scripts-automation/" />
+    <id>http://0.0.0.0:4000/posts/scripts-automation/</id>
+    <content src="http://0.0.0.0:4000/posts/scripts-automation/" />
     <author>
       <name>Patryk Palej</name>
     </author>
@@ -59,13 +59,13 @@ For example purposes, let’s consider...
   
   <entry>
     <title>Rounding algorithms in Python</title>
-    <link href="http://localhost:4000/posts/rounding/" rel="alternate" type="text/html" title="Rounding algorithms in Python" />
+    <link href="http://0.0.0.0:4000/posts/rounding/" rel="alternate" type="text/html" title="Rounding algorithms in Python" />
     <published>2024-03-04T00:00:00+01:00</published>
   
     <updated>2024-03-04T00:00:00+01:00</updated>
   
-    <id>http://localhost:4000/posts/rounding/</id>
-    <content src="http://localhost:4000/posts/rounding/" />
+    <id>http://0.0.0.0:4000/posts/rounding/</id>
+    <content src="http://0.0.0.0:4000/posts/rounding/" />
     <author>
       <name>Patryk Palej</name>
     </author>
@@ -104,13 +104,13 @@ This happens because round() employs an algorithm known as bankers’ rounding (
   
   <entry>
     <title>Missing data in machine learning</title>
-    <link href="http://localhost:4000/posts/missing-data/" rel="alternate" type="text/html" title="Missing data in machine learning" />
+    <link href="http://0.0.0.0:4000/posts/missing-data/" rel="alternate" type="text/html" title="Missing data in machine learning" />
     <published>2024-02-01T00:00:00+01:00</published>
   
     <updated>2024-02-01T00:00:00+01:00</updated>
   
-    <id>http://localhost:4000/posts/missing-data/</id>
-    <content src="http://localhost:4000/posts/missing-data/" />
+    <id>http://0.0.0.0:4000/posts/missing-data/</id>
+    <content src="http://0.0.0.0:4000/posts/missing-data/" />
     <author>
       <name>Patryk Palej</name>
     </author>
@@ -142,14 +142,14 @@ Out of t...
 
   
   <entry>
-    <title>🦾 AI Coding Assistants</title>
-    <link href="http://localhost:4000/posts/ai-coding-assistants/" rel="alternate" type="text/html" title="🦾 AI Coding Assistants" />
+    <title>🦾 Asystenci AI do kodowania</title>
+    <link href="http://0.0.0.0:4000/posts/ai-coding-assistants/" rel="alternate" type="text/html" title="🦾 Asystenci AI do kodowania" />
     <published>2024-01-12T00:00:00+01:00</published>
   
     <updated>2024-01-12T13:23:50+01:00</updated>
   
-    <id>http://localhost:4000/posts/ai-coding-assistants/</id>
-    <content src="http://localhost:4000/posts/ai-coding-assistants/" />
+    <id>http://0.0.0.0:4000/posts/ai-coding-assistants/</id>
+    <content src="http://0.0.0.0:4000/posts/ai-coding-assistants/" />
     <author>
       <name>Patryk Palej</name>
     </author>
@@ -170,11 +170,11 @@ Out of t...
 
 
 
-      This project aggregates AI assistants that I’ve developed to assist you with particular tasks throughout your coding learning process. As of now, there’s a single assistant available. However, in the future, you can expect to find additional ones.
+      Projekt zawiera asystentów AI, które stworzyłem, aby pomóc Ci w konkretnych zadaniach podczas nauki programowania. Obecnie dostępny jest jeden asystent, ale w przyszłości planuję dodać kolejne.
 
 GPT coding mentor
 
-This assistant helps you in completing coding exercises by guiding you through the process, instead of writing the code for you.
+Ten asystent pomaga w rozwiązywaniu zadań programistycznych poprzez naprowadzanie Cię na właściwe rozwiązanie, zamiast pisania kodu za Ciebie.
 
     </summary>
   
@@ -184,13 +184,13 @@ This assistant helps you in completing coding exercises by guiding you through t
   
   <entry>
     <title>Markdown language</title>
-    <link href="http://localhost:4000/posts/markdown/" rel="alternate" type="text/html" title="Markdown language" />
+    <link href="http://0.0.0.0:4000/posts/markdown/" rel="alternate" type="text/html" title="Markdown language" />
     <published>2024-01-07T00:00:00+01:00</published>
   
     <updated>2024-01-07T00:00:00+01:00</updated>
   
-    <id>http://localhost:4000/posts/markdown/</id>
-    <content src="http://localhost:4000/posts/markdown/" />
+    <id>http://0.0.0.0:4000/posts/markdown/</id>
+    <content src="http://0.0.0.0:4000/posts/markdown/" />
     <author>
       <name>Patryk Palej</name>
     </author>

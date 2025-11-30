@@ -24,7 +24,7 @@ layout: compress
         {% include topbar.html lang=lang %}
 
         <div class="row flex-grow-1 justify-content-center">
-          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-11 px-md-4">
             {% if layout.refactor or layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
@@ -35,7 +35,7 @@ layout: compress
 
         <div class="row justify-content-center">
           <!-- tail -->
-          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-11 px-md-4">
             {% for _include in layout.tail_includes %}
               {% assign _include_path = _include | append: '.html' %}
               {% include {{ _include_path }} lang=lang %}
