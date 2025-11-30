@@ -20,9 +20,6 @@ Interesuję się takimi dziedzinami jak:
 
 Na tej stronie znajdziesz przegląd **[projektów](projects)**, nad którymi pracowałem w ostatnim czasie.
 
-<br>
 
-Oprócz zawodowego i hobbystycznego kodowania prowadzę także szkolenia z różnych obszarów programowania w Pythonie.
-
-Więcej informacji o mojej ofercie szkoleniowej znajdziesz na [edu.palej.tech](https://edu.palej.tech).
+Oprócz zawodowego i hobbystycznego kodowania prowadzę także szkolenia z różnych obszarów programowania w Pythonie. Więcej informacji o mojej ofercie szkoleniowej znajdziesz na **[edu.palej.tech](https://edu.palej.tech)**.
 
